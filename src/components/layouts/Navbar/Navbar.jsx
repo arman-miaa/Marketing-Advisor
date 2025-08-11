@@ -25,8 +25,8 @@ export default function Navbar() {
 
       {/* Desktop Header */}
       <header
-        className={`relative z-50 transition-colors duration-300 ${
-          activeDropdown ? "bg-black text-white" : "bg-transparent text-black"
+        className={`absolute top-9 left-0 right-0 w-full z-50 transition-colors duration-300 ${
+          activeDropdown ? "bg-black text-white" : "bg-transparent text-white"
         }`}
       >
         <div className="container mx-auto px-4">
@@ -43,7 +43,7 @@ export default function Navbar() {
             />
 
             {/* Desktop Right Side */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-6">
               <Link
                 href="/login"
                 className="flex items-center space-x-1 hover:text-blue-400 transition-colors"
