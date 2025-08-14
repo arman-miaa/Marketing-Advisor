@@ -2,20 +2,20 @@ import sampleImage from "../../../assets/images/Home Page/logo.webp";
 
 export default function WorkingWithBest() {
   return (
-    <section className="bg-base-100 py-16 px-4">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="bg-base-100 pt-30 px-4">
+      <div className=" mx-auto text-center">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-extrabold">
-          Working with the <span className="text-primary">Best</span>
-        </h2>
-
-        {/* Subtitle */}
-        <p className="text-base-content/70 mt-3 text-lg">
-          Connected with the providers that matter to maximize your revenue
+        <p className="text-blue-400 text-sm font-semibold uppercase mb-6 tracking-[0.35em]">
+          working with the Best
         </p>
 
+        {/* Subtitle */}
+        <h3 className=" container mx-auto mt-3 text-2xl md:text-6xl font-semibold leading-20">
+          Connected with the providers that matter to maximize your revenue
+        </h3>
+
         {/* Image */}
-        <div className="mt-8 rounded-xl overflow-hidden shadow-lg">
+        <div className="mt-20 rounded-xl bg-blue-50 overflow-hidden ">
           <img
             src={sampleImage}
             alt="Working with the best providers"

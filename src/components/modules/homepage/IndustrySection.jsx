@@ -82,7 +82,7 @@ export default function IndustrySection() {
   const [isHoveringRight, setIsHoveringRight] = useState(false);
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-30 px-4 bg-blue-50">
       <div className="container mx-auto">
         <div className="text-left mb-8">
           <p className="text-blue-400 text-sm font-semibold uppercase mb-6 tracking-[0.35em]">
