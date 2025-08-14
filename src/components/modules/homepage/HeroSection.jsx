@@ -76,7 +76,7 @@ function HeroSection() {
 
         {/* CTA Button */}
         <div className="mb-16">
-          <Button />
+          <Button text="Get Started" to="/get-started" />
         </div>
 
         {/* Partner Logos */}
@@ -98,8 +98,6 @@ function HeroSection() {
           />
         </div>
       </div>
-
- 
     </div>
   );
 }

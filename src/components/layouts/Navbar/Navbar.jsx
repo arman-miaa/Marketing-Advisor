@@ -64,7 +64,7 @@ export default function Navbar() {
               </Link>
 
               {/* button */}
-      <Button/>
+              <Button text="Get Started" to="/get-started" />
             </div>
 
             {/* Mobile Menu Button */}

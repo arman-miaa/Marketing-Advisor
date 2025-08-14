@@ -1,15 +1,18 @@
 import { Link } from "react-router";
 
 
-export default function Button() {
+export default function Button({text,to}) {
   return (
-    <div>
+    <>
+      <button>
+
       <Link
-        href="/get-started"
-        className="bg-blue-500 hover:bg-blue-600 px-4 py-3 rounded-full transition-colors"
+        href={to}
+        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 rounded-full transition-colors"
       >
-        Get Started
+        {text}
       </Link>
-    </div>
+      </button>
+    </>
   );
 }
