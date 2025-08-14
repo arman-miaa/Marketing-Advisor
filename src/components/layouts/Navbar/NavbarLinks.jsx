@@ -24,7 +24,7 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown }) {
   };
 
   const linkClass = (name) =>
-    `relative transition-colors  
+    `cursor-pointer text-lg  relative transition-colors  
     after:content-[''] after:absolute after:left-0 after:right-0 
     after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 
     after:opacity-0 hover:after:opacity-100 

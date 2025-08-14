@@ -4,30 +4,39 @@ import { Link } from "react-router";
 
 const whoWeHelpData = {
   homeServices: [
-    { name: "Electrical", icon: "⚡" },
-    { name: "HVAC", icon: "❄️" },
-    { name: "Landscaping", icon: "🌿" },
-    { name: "Pest Control", icon: "🐛" },
-    { name: "Plumbing", icon: "🔧" },
-    { name: "Roofing", icon: "🏠" },
+    { name: "Electrical", icon: "⚡", path: "/services/electrical" },
+    { name: "HVAC", icon: "❄️", path: "/hvac" },
+    { name: "Landscaping", icon: "🌿", path: "/services/landscaping" },
+    { name: "Pest Control", icon: "🐛", path: "/services/pest-control" },
+    { name: "Plumbing", icon: "🔧", path: "/services/plumbing" },
+    { name: "Roofing", icon: "🏠", path: "/services/roofing" },
   ],
   legal: [
-    { name: "Bankruptcy", icon: "💼" },
-    { name: "Criminal Defense", icon: "⚖️" },
-    { name: "Employment Law", icon: "👥" },
-    { name: "Estate and Probate", icon: "📋" },
-    { name: "Family Law", icon: "👨‍👩‍👧‍👦" },
-    { name: "General Legal", icon: "📖" },
-    { name: "Immigration", icon: "🌍" },
-    { name: "Personal Injury", icon: "🏥" },
+    { name: "Bankruptcy", icon: "💼", path: "/legal/bankruptcy" },
+    { name: "Criminal Defense", icon: "⚖️", path: "/legal/criminal-defense" },
+    { name: "Employment Law", icon: "👥", path: "/legal/employment-law" },
+    { name: "Estate and Probate", icon: "📋", path: "/legal/estate-probate" },
+    { name: "Family Law", icon: "👨‍👩‍👧‍👦", path: "/legal/family-law" },
+    { name: "General Legal", icon: "📖", path: "/legal/general" },
+    { name: "Immigration", icon: "🌍", path: "/legal/immigration" },
+    { name: "Personal Injury", icon: "🏥", path: "/legal/personal-injury" },
   ],
   other: [
-    { name: "Franchise", icon: "🏪" },
-    { name: "Medical", icon: "🏥" },
-    { name: "Platforms & Multi-Location", icon: "📍" },
-    { name: "Hospital & Healthcare Systems", icon: "🏥" },
+    { name: "Franchise", icon: "🏪", path: "/other/franchise" },
+    { name: "Medical", icon: "🏥", path: "/other/medical" },
+    {
+      name: "Platforms & Multi-Location",
+      icon: "📍",
+      path: "/other/platforms",
+    },
+    {
+      name: "Hospital & Healthcare Systems",
+      icon: "🏥",
+      path: "/other/hospital-healthcare",
+    },
   ],
-}
+};
+
 
 
 
@@ -94,8 +103,8 @@ return (
           {whoWeHelpData.homeServices.map((item) => (
             <li key={item.name}>
               <Link
-                href="#"
-                className="flex items-center space-x-2 hover:text-blue-400 transition-colors"
+                to={item.path}
+                className="flex items-center space-x-3 hover:text-blue-400 transition-colors"
               >
                 <span>{item.icon}</span>
                 <span>{item.name}</span>
