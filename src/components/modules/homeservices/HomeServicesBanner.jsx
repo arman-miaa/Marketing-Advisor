@@ -1,126 +1,109 @@
-"use client";
-
 import { useState } from "react";
+import img1 from "../../../assets/images/home-services/electrical-alt.jpg.2503270842590.webp";
+import img2 from "../../../assets/images/home-services/hvac-alt.jpg.2503270842570.webp";
+import img3 from "../../../assets/images/home-services/pest-control-alt.jpg.2503270842581.webp";
+import img4 from "../../../assets/images/home-services/plumbing-alt.jpg.2503270842581.webp";
+import img5 from "../../../assets/images/home-services/landscaping-alt.jpg.2503270842581.webp";
+import img6 from "../../../assets/images/home-services/roofing-alt.jpg.2503270842571.webp";
+import { useNavigate } from "react-router";
 
 const services = [
   {
     id: "electrical",
     name: "Electrical",
-    image: "/placeholder-zu79p.png",
+    image: img1,
     href: "/services/electrical",
   },
-  {
-    id: "hvac",
-    name: "HVAC",
-    image: "/hvac-technician-ac-unit.png",
-    href: "/services/hvac",
-  },
+  { id: "hvac", name: "HVAC", image: img2, href: "/services/hvac" },
   {
     id: "pest-control",
     name: "Pest Control",
-    image: "/pest-control-spraying.png",
+    image: img3,
     href: "/services/pest-control",
   },
-  {
-    id: "plumbing",
-    name: "Plumbing",
-    image: "/plumber-under-sink.png",
-    href: "/services/plumbing",
-  },
+  { id: "plumbing", name: "Plumbing", image: img4, href: "/services/plumbing" },
   {
     id: "landscaping",
     name: "Landscaping",
-    image: "/placeholder-il5a5.png",
+    image: img5,
     href: "/services/landscaping",
   },
-  {
-    id: "roofing",
-    name: "Roofing",
-    image: "/roofer-residential-roof.png",
-    href: "/services/roofing",
-  },
+  { id: "roofing", name: "Roofing", image: img6, href: "/services/roofing" },
 ];
 
 export default function HomeServicesBanner() {
-const [hoveredService, setHoveredService] = useState(null);
+  const [hoveredService, setHoveredService] = useState(null);
 
+  const navigate = useNavigate(); 
 
   const handleServiceClick = (href) => {
-    // For demo purposes, we'll just log the navigation
-    // In a real app, you'd use Next.js router or window.location
-    console.log(`Navigating to: ${href}`);
-    // router.push(href) // if using Next.js router
+   navigate(href)
   };
 
   return (
-    <section className="relative w-full bg-gray-900 overflow-hidden">
-      {/* Desktop Banner Layout */}
-      <div className="hidden lg:block relative h-[500px]">
-        <div className="absolute inset-0 flex">
+    <section className="relative w-full h-screen bg-gray-900 overflow-hidden">
+      {/* Desktop Layout */}
+      <div className="hidden lg:block relative h-full w-full rounded-2xl ">
+        <div className="absolute inset-0 flex gap-[8px] pb-10 bg-black rounded-2xl overflow-hidden">
           {services.map((service) => (
             <div
               key={service.id}
-              className="relative flex-1 cursor-pointer group transition-all duration-500 ease-in-out"
+              className="relative flex-1 cursor-pointer group transition-all duration-500 ease-in-out rounded-2xl overflow-hidden bg-black"
               onMouseEnter={() => setHoveredService(service.id)}
               onMouseLeave={() => setHoveredService(null)}
               onClick={() => handleServiceClick(service.href)}
             >
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-all duration-500"
-                style={{
-                  backgroundImage: `url(${service.image})`,
-                  filter:
-                    hoveredService === service.id
-                      ? "brightness(1.2) contrast(1.1)"
-                      : "brightness(0.7) contrast(0.9)",
-                }}
+              {/* Image */}
+              <img
+                src={service.image}
+                alt={service.name}
+                className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ${
+                  hoveredService === service.id
+                    ? "brightness-110 contrast-105"
+                    : "brightness-75 contrast-90"
+                }`}
               />
 
               {/* Overlay */}
               <div
-                className={`absolute inset-0 transition-all duration-500 ${
-                  hoveredService === service.id ? "bg-black/20" : "bg-black/50"
-                }`}
+                className={`absolute inset-0 bottom-0 transition-all duration-500 pointer-events-none
+          ${hoveredService === service.id ? "opacity-60" : "opacity-100"}`}
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%)",
+                }}
               />
 
-              {/* Service Label */}
+              {/* Text */}
               <div className="absolute bottom-6 left-6 z-10">
-                <h3 className="text-white text-xl font-semibold tracking-wide">
+                <h3 className="text-white text-xl md:text-2xl font-semibold tracking-wide">
                   {service.name}
                 </h3>
               </div>
-
-              {/* Hover Effect Border */}
-              <div
-                className={`absolute inset-0 border-2 transition-all duration-300 ${
-                  hoveredService === service.id
-                    ? "border-blue-500"
-                    : "border-transparent"
-                }`}
-              />
             </div>
           ))}
         </div>
 
-        {/* Center Content */}
+        {/* Center Heading */}
         <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
           <div className="text-center text-white">
-            <h1 className="text-5xl font-bold mb-2">Home Services</h1>
-            <p className="text-xl opacity-90">Choose your industry.</p>
+            <h1 className="text-5xl md:text-[120px] text-[#dfe6f0] font-bold mb-2">
+              Home Services
+            </h1>
+            <p className="text-xl md:text-4xl opacity-90">
+              Choose your industry.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Mobile Grid Layout */}
+      {/* Mobile Layout */}
       <div className="lg:hidden bg-gray-900 py-12">
-        {/* Header */}
         <div className="text-center text-white mb-8 px-4">
           <h1 className="text-4xl font-bold mb-2">Home Services</h1>
           <p className="text-lg opacity-90">Choose your industry.</p>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-2 gap-4 px-4 max-w-2xl mx-auto">
           {services.map((service) => (
             <div
@@ -128,26 +111,17 @@ const [hoveredService, setHoveredService] = useState(null);
               className="relative h-48 rounded-lg overflow-hidden cursor-pointer group"
               onClick={() => handleServiceClick(service.href)}
             >
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-all duration-300 group-hover:brightness-110 group-hover:contrast-110"
-                style={{
-                  backgroundImage: `url(${service.image})`,
-                  filter: "brightness(0.8) contrast(0.9)",
-                }}
+              <img
+                src={service.image}
+                alt={service.name}
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-300 group-hover:brightness-110 group-hover:contrast-105 brightness-75 contrast-90"
               />
-
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300" />
-
-              {/* Service Label */}
               <div className="absolute bottom-4 left-4 z-10">
                 <h3 className="text-white text-lg font-semibold">
                   {service.name}
                 </h3>
               </div>
-
-              {/* Hover Border */}
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 transition-all duration-300 rounded-lg" />
             </div>
           ))}
