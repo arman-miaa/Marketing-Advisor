@@ -6,7 +6,7 @@ export default function WorkingWithBest() {
       <div className=" mx-auto text-center">
         {/* Title */}
         <p className="text-blue-400 text-sm font-semibold uppercase mb-6 tracking-[0.35em]">
-          working with the Best
+          working with the Best54
         </p>
 
         {/* Subtitle */}
