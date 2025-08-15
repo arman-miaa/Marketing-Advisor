@@ -37,7 +37,7 @@ const HvacNewsSection = () => {
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
             <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
               HVAC
-            </span>{" "}
+            </span>
             news and insights
           </h2>
           <h2 className="text-4xl  mt-10 text-gray-900">

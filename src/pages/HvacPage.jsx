@@ -18,9 +18,9 @@ export default function HvacPage() {
       <RevenueMaxSection />
       <HvacSolutionsCarousel />
       <VideoTestimonialsSection/>
-      <ClientSuccessSection/>
       <KeepTechsBusySection />
       <WorkingWithTheBestSection/>
+      <ClientSuccessSection/>
       <HvacNewsSection />
     </div>
   )

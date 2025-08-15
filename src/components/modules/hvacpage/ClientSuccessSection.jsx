@@ -1,17 +1,19 @@
+"use client";
+
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { ChevronLeft, ChevronRight, TrendingUp } from "lucide-react";
 
-// Image imports
 import slideImg1 from "../../../assets/images/hvac/hembree-logo.png";
 import slideImg2 from "../../../assets/images/hvac/logo2.webp";
 import slideImg3 from "../../../assets/images/hvac/logo1.webp";
 import slideImg4 from "../../../assets/images/hvac/arctic-air-home-services.png";
 import slideImg5 from "../../../assets/images/hvac/serviceone.2311291526178.png";
 import slideImg6 from "../../../assets/images/hvac/logo4.png";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const clientData = [
   {
@@ -36,7 +38,7 @@ const clientData = [
     metric: "9x",
     title: "Return on paid investment",
     description:
-      "With Scorpion's help and custom-tailored marketing solutions, Swift Services is experiencing meaningful growth.",
+      "With Scorpion's help and custom-tailored marketing solutions, Swift Services, a home services company in South Carolina, is experiencing meaningful growth.",
   },
   {
     id: 4,
@@ -44,7 +46,7 @@ const clientData = [
     metric: "18x",
     title: "Attributed return on total investment",
     description:
-      "Arctic Air Home Services continues to see double-digit revenue growth powered by Scorpion’s RevenueMAX.",
+      "As a long-time Scorpion client, Arctic Air Home Services continues to see double-digit revenue growth and strong ROI powered by Scorpion's RevenueMAX.",
   },
   {
     id: 5,
@@ -52,7 +54,7 @@ const clientData = [
     metric: "2x",
     title: "Increase in revenue growth",
     description:
-      "Our cost per lead is going down, and our organic search rankings are going up.",
+      "Our cost per lead is going down, and our organic search rankings are going up. It's been a really great experience.",
   },
   {
     id: 6,
@@ -60,7 +62,7 @@ const clientData = [
     metric: "35%",
     title: "Increase in average ticket value",
     description:
-      "Scorpion’s AI technology drives in calls that are bookable jobs.",
+      "Scorpion's AI technology drives in calls that are bookable jobs.",
   },
 ];
 
@@ -68,71 +70,102 @@ export default function ClientSuccessSection() {
   const swiperRef = useRef(null);
 
   return (
-    <section className="py-16 bg-gray-50 relative overflow-visible">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-20 md:py-30 bg-gradient-to-b from-blue-0 to-blue-50 relative overflow-hidden">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-blue-600 uppercase text-sm font-semibold tracking-wider mb-2">
+        <div className=" container mx-auto text-left mb-16">
+          <p className="text-blue-500 uppercase text-sm font-semibold tracking-wider mb-4">
             CLIENT SUCCESS
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
             Results that make a{" "}
-            <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded">
+            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
               difference
             </span>
           </h2>
         </div>
 
-        {/* Swiper */}
-        <Swiper
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
-          spaceBetween={24}
-          slidesPerView={3.5} // মাঝের ৩টা ফুল, দুই পাশে হাফ
-          centeredSlides={true} // সেন্টারে রাখার জন্য
-          breakpoints={{
-            320: { slidesPerView: 1.2, centeredSlides: true },
-            640: { slidesPerView: 2.2, centeredSlides: true },
-            1024: { slidesPerView: 3.5, centeredSlides: true },
-          }}
-          loop={true}
-          modules={[Navigation]}
-          className="pb-12 relative"
-        >
-          {clientData.map((client) => (
-            <SwiperSlide key={client.id}>
-              <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow h-full flex flex-col">
-                <img
-                  src={client.logo}
-                  alt={client.title}
-                  className="h-12 w-auto mb-4 object-contain"
-                />
-                <h3 className="text-2xl font-bold mb-2">
-                  <span className="text-green-600">↑</span> {client.metric}
-                </h3>
-                <p className="font-semibold mb-2">{client.title}</p>
-                <p className="text-gray-600 text-sm">{client.description}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-
-          {/* Arrow Right */}
-   
-        </Swiper>
-
-        {/* Arrows */}
-        <div className="flex justify-center gap-3 mt-6">
-          <button
-            onClick={() => swiperRef.current?.slidePrev()}
-            className="bg-white border border-gray-300 w-10 h-10 rounded-full shadow hover:bg-gray-100 flex items-center justify-center text-xl"
+        {/* Swiper Container */}
+        <div className="relative">
+          <Swiper
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            spaceBetween={24}
+            slidesPerView={1}
+            centeredSlides={false}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 28,
+              },
+              1280: {
+                slidesPerView: 5,
+                spaceBetween: 32,
+              },
+            }}
+            loop={true}
+            modules={[Navigation]}
+            className="pb-4"
           >
-            <IoIosArrowBack />
-          </button>
-          <button
-            onClick={() => swiperRef.current?.slideNext()}
-            className="bg-white border border-gray-300 w-10 h-10 rounded-full shadow hover:bg-gray-100 flex items-center justify-center text-xl"
-          >
-            <IoIosArrowForward />
-          </button>
+            {clientData.map((client) => (
+              <SwiperSlide key={client.id}>
+                <div className="bg-white p-8  rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 min-h-[450px] flex flex-col border border-gray-100 group">
+                  {/* Logo */}
+                  <div className="mb-20 h-16  flex items-center">
+                    <img
+                      src={client.logo || "/placeholder.svg"}
+                      alt={`${client.title} client logo`}
+                      className="h-18 w-auto object-contain"
+                    />
+                  </div>
+
+                  {/* Metric */}
+                  <div className="mb-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center">
+                        <FaArrowUpLong className="font-bold text-6xl text-green-600" />
+                      </div>
+                      <h3 className="text-4xl md:text-6xl font-bold text-gray-900">
+                        {client.metric}
+                      </h3>
+                    </div>
+                    <p className="font-semibold text-gray-900 text-xl mb-4">
+                      {client.title}
+                    </p>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-900 text-lg leading-relaxed flex-grow">
+                    "{client.description}"
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Navigation Arrows */}
+          <div className="flex justify-center gap-2 mt-12 bg-white w-fit p-1 border border-gray-200 mx-auto mr-120 ">
+            <button
+              onClick={() => swiperRef.current?.slidePrev()}
+              className="w-8 h-8 flex items-center justify-center cursor-pointer text-gray-900 hover:text-gray-600 transition-colors duration-200"
+              aria-label="Previous testimonials"
+            >
+              <ChevronLeft className="w-8 h-7" />
+            </button>
+            <button
+              onClick={() => swiperRef.current?.slideNext()}
+              className="w-8 h-8 flex items-center justify-center cursor-pointer text-gray-900 hover:text-gray-600 transition-colors duration-200"
+            >
+              <ChevronRight className="w-8 h-7" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
