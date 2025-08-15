@@ -2,8 +2,9 @@ import ContactFormSection from "../components/modules/homeservices/ContactFormSe
 import HomeServicesBanner from "../components/modules/homeservices/HomeServicesBanner";
 import HomeServicesSection from "../components/modules/homeservices/HomeServicesSection";
 import MarketingProsSection from "../components/modules/homeservices/MarketingProsSection";
+import WorkingWithBestServicePage from "../components/modules/homeservices/WorkingWithBestServicePage";
 import HvacNewsSection from "../components/modules/hvacpage/HvacNewsSection";
-import WorkingWithTheBestSection from "../components/modules/hvacpage/WorkingWithTheBestSection";
+
 
 
 export default function HomeServices() {
@@ -12,7 +13,7 @@ export default function HomeServices() {
       <HomeServicesBanner />
       <MarketingProsSection />
       <HomeServicesSection />
-      <WorkingWithTheBestSection />
+     <WorkingWithBestServicePage/>
       <ContactFormSection />
       <HvacNewsSection />
     </div>
