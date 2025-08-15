@@ -70,7 +70,7 @@ export default function ClientSuccessSection() {
   const swiperRef = useRef(null);
 
   return (
-    <section className="py-20 md:py-30 bg-gradient-to-b from-blue-0 to-blue-50 relative overflow-hidden">
+    <section className="py-20 md:py-38 bg-gradient-to-b from-blue-0 to-blue-50 relative overflow-hidden">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className=" container mx-auto text-left mb-16">

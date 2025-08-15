@@ -1,9 +1,10 @@
 import img from "../../../assets/images/hvac/hvac-houses.png.2506041957058.webp";
+import Button from "../../ui/Button";
 
 const KeepTechsBusySection = () => {
   return (
     <section
-      className="relative  bg-cover bg-center bg-no-repeat overflow-hidden"
+      className="relative bg-black  bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: `url(${img})` }}
     >
       {/* Overlay for better text readability */}
@@ -15,12 +16,10 @@ const KeepTechsBusySection = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
             Keep Your Techs Busy
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-4xl text-gray-300 mb-12 max-w-2xl mx-auto">
             And your job board full.
           </p>
-          <button className="px-8 py-3 text-white bg-blue-600 hover:bg-blue-700 border-none rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
-            Learn How
-          </button>
+     <Button text='Learn How' />
         </div>
       </div>
 
