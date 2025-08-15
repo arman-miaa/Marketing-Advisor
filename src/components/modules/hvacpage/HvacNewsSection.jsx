@@ -1,6 +1,7 @@
 import img1 from "../../../assets/images/hvac/woman.webp";
 import img2 from "../../../assets/images/hvac/group.webp";
 import img3 from "../../../assets/images/hvac/news.webp";
+import Button from "../../ui/Button";
 
 const HvacNewsSection = () => {
   const articles = [
@@ -9,7 +10,6 @@ const HvacNewsSection = () => {
       date: "Jul 23, 2024",
       title: "Why SEO Marketing for HVAC Businesses Matters More Than Ever",
       image: img1,
-      size: "large",
     },
     {
       id: 2,
@@ -17,71 +17,83 @@ const HvacNewsSection = () => {
       title:
         "How HVAC and Plumbing Businesses Are Winning More Jobs in a Changing Market",
       image: img2,
-      size: "small",
     },
     {
       id: 3,
       date: "Jul 3, 2024",
       title: "Your HVAC Website Should Work as Hard as You Do",
       image: img3,
-      size: "small",
     },
   ];
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 md:py-30 px-4 bg-white">
+      <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-blue-600 text-sm font-semibold tracking-wider uppercase mb-2">
-            YOUR COMPETITIVE ADVANTAGE
+        <div className="text-center mb-18">
+          <p className="text-blue-500 text-sm font-semibold uppercase tracking-[0.35em] mb-14">
+            Resources
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-blue-600">HVAC</span> news and insights
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
+            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
+              Home services
+            </span>{" "}
+            news and insights
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            The information you need to maximize your revenue.
-          </p>
         </div>
 
         {/* Articles Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-          {/* Large Left Box */}
-          <div className="lg:col-span-2 relative h-96 md:h-[500px] overflow-hidden rounded-xl shadow-lg">
+        <div className="grid lg:grid-cols-2 gap-6">
+          {/* Left Large Card */}
+          <div className="relative rounded-2xl overflow-hidden shadow-lg group  ">
             <img
               src={articles[0].image}
               alt={articles[0].title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black/40 flex flex-col justify-start p-6 md:p-8">
-              <span className="text-white text-sm mb-2">
+            {/* Stronger & smoother gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-10 flex flex-col justify-end transition duration-500">
+              <span className="text-white text-xl mb-4">
                 {articles[0].date}
               </span>
-              <h3 className="text-white text-2xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-white text-2xl md:text-4xl font-semibold leading-snug">
                 {articles[0].title}
               </h3>
+
+              {/* HR before Learn More */}
+              <hr className="border-white/30 my-4" />
+
+              <button className="mt-1 cursor-pointer text-white flex items-center gap-1 hover:text-blue-100">
+                Learn More →
+              </button>
             </div>
           </div>
 
-          {/* Right Small Boxes */}
-          <div className="flex flex-col gap-6">
+          {/* Right Small Cards */}
+          <div className="grid gap-6">
             {articles.slice(1).map((article) => (
               <div
                 key={article.id}
-                className="relative h-48 md:h-64 overflow-hidden rounded-xl shadow-lg"
+                className="relative rounded-2xl overflow-hidden shadow-lg group"
               >
                 <img
                   src={article.image}
                   alt={article.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/30 flex flex-col justify-start p-4">
-                  <span className="text-white text-xs mb-1">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-transparent p-10 flex flex-col justify-end transition duration-500">
+                  <span className="text-white text-xl mb-4">
                     {article.date}
                   </span>
-                  <h3 className="text-white text-lg md:text-xl font-bold leading-tight">
+                  <h3 className="text-white text-lg md:text-3xl font-semibold leading-snug">
                     {article.title}
                   </h3>
+
+                  <hr className="border-white/30 my-4" />
+
+                  <button className="mt-1 cursor-pointer text-white flex items-center gap-1 hover:text-blue-100">
+                    Learn More →
+                  </button>
                 </div>
               </div>
             ))}
@@ -89,10 +101,8 @@ const HvacNewsSection = () => {
         </div>
 
         {/* More Insights Button */}
-        <div className="text-center mt-8">
-          <button className="btn btn-primary px-8 py-3 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">
-            More Insights
-          </button>
+        <div className="text-left mt-16">
+          <Button text="More Insights" />
         </div>
       </div>
     </section>
