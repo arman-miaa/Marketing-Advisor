@@ -27,9 +27,13 @@ const row3 = [logo15, logo16, logo17, logo18, logo19, logo20, logo21];
 
 export default function Nationwide() {
   return (
-    <div className="py-20 overflow-hidden bg-white">
+    <div className="bg-gradient-to-b from-blue-50 to-white py-20 md:py-36 overflow-hidden ">
       <h2 className="text-2xl md:text-4xl lg:text-6xl text-center mb-12">
-        Trusted by HVAC companies nationwide
+        Trusted by{" "}
+        <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
+          HVAC companies
+        </span>{" "}
+        nationwide
       </h2>
 
       <div className="space-y-8">
@@ -57,12 +61,12 @@ function Marquee({ logos, direction }) {
         {[...logos, ...logos].map((logo, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-lg px-12 py-2 flex items-center justify-center shadow-sm"
+            className="bg-white rounded-lg min-w-[360px] py-2 flex items-center justify-center shadow-sm"
           >
             <img
               src={logo}
               alt="HVAC company logo"
-              className="h-16 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
           </div>
         ))}
