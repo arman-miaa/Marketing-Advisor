@@ -1,8 +1,7 @@
-"use client";
-
 
 
 import { useState } from "react";
+
 
 export default function ContactFormSection() {
   const [formData, setFormData] = useState({
@@ -14,14 +13,15 @@ export default function ContactFormSection() {
     industry: "",
   });
 
-const handleInputChange = (e) => {
-  const { name, value } = e.target;
-  setFormData((prev) => ({
-    ...prev,
-    [name]: value,
-  }));
-};
-
+  const handleInputChange = (
+    e
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,8 +30,8 @@ const handleInputChange = (e) => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-purple-100 to-blue-100 py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-gradient-to-br from-blue-0 to-blue-100 py-16 md:py-30 px-4">
+      <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Heading */}
           <div className="space-y-4">
@@ -44,10 +44,10 @@ const handleInputChange = (e) => {
           </div>
 
           {/* Right side - Form */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="bg-gradient-to-r from-purple-200 to-blue-200 rounded-2xl p-14 shadow-lg">
+            <form onSubmit={handleSubmit} className="space-y-10">
               {/* First Name & Last Name */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="form-control">
                   <input
                     type="text"
@@ -55,7 +55,7 @@ const handleInputChange = (e) => {
                     placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full bg-white border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                    className="w-full bg-white border border-gray-200 rounded-lg px-4 py-4 text-lg focus:outline-none focus:ring-0 focus:border-gray-200"
                     required
                   />
                 </div>
@@ -66,14 +66,14 @@ const handleInputChange = (e) => {
                     placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full bg-white border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                    className="w-full bg-white border border-gray-200 rounded-lg px-4 py-4 text-lg focus:outline-none focus:ring-0 focus:border-gray-200"
                     required
                   />
                 </div>
               </div>
 
               {/* Email & Phone */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="form-control">
                   <input
                     type="email"
@@ -81,7 +81,7 @@ const handleInputChange = (e) => {
                     placeholder="Email Address"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full bg-white border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                    className="w-full bg-white border border-gray-200 rounded-lg px-4 py-4 text-lg focus:outline-none focus:ring-0 focus:border-gray-200"
                     required
                   />
                 </div>
@@ -92,14 +92,14 @@ const handleInputChange = (e) => {
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full bg-white border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                    className="w-full bg-white border border-gray-200 rounded-lg px-4 py-4 text-lg focus:outline-none focus:ring-0 focus:border-gray-200"
                     required
                   />
                 </div>
               </div>
 
               {/* Company & Industry */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="form-control">
                   <input
                     type="text"
@@ -107,7 +107,7 @@ const handleInputChange = (e) => {
                     placeholder="Company Name"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full bg-white border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                    className="w-full bg-white border border-gray-200 rounded-lg px-4 py-4 text-lg focus:outline-none focus:ring-0 focus:border-gray-200"
                     required
                   />
                 </div>
@@ -116,7 +116,7 @@ const handleInputChange = (e) => {
                     name="industry"
                     value={formData.industry}
                     onChange={handleInputChange}
-                    className="select select-bordered w-full bg-white border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                    className="w-full bg-white border border-gray-200 rounded-lg px-4 py-4 text-lg focus:outline-none focus:ring-0 focus:border-gray-200"
                     required
                   >
                     <option value="" disabled>
@@ -130,6 +130,7 @@ const handleInputChange = (e) => {
                     <option value="cleaning">Cleaning Services</option>
                     <option value="other">Other</option>
                   </select>
+                  <p className=" text-gray-600 mt-1">This field is required.</p>
                 </div>
               </div>
 
@@ -137,7 +138,7 @@ const handleInputChange = (e) => {
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="btn bg-blue-600 hover:bg-blue-700 text-white border-none w-full md:w-auto px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 hover:shadow-lg"
+                  className="bg-blue-500 cursor-pointer text-white px-8 py-3 rounded-full transition-colors "
                 >
                   Get Started
                 </button>
@@ -145,17 +146,11 @@ const handleInputChange = (e) => {
 
               {/* Disclaimer */}
               <div className="pt-2">
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  By submitting this form, you agree to our{" "}
-                  <a href="#" className="text-blue-600 hover:underline">
-                    Terms of Service
-                  </a>{" "}
-                  and{" "}
-                  <a href="#" className="text-blue-600 hover:underline">
-                    Privacy Policy
-                  </a>
-                  . We may contact you about our services and you can opt out at
-                  any time.
+                <p className=" text-gray-500 leading-relaxed">
+                  By providing a telephone number and submitting this form, you
+                  are consenting to be contacted by SMS text message. Message &
+                  data rates may apply. You can reply STOP to opt-out of further
+                  messaging.
                 </p>
               </div>
             </form>
