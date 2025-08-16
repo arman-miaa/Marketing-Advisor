@@ -4,8 +4,9 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
-import { ChevronLeft, ChevronRight, TrendingUp } from "lucide-react";
+import "swiper/css/navigation"; // only navigation css
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 import slideImg1 from "../../../assets/images/hvac/hembree-logo.png";
 import slideImg2 from "../../../assets/images/hvac/logo2.webp";
@@ -13,7 +14,6 @@ import slideImg3 from "../../../assets/images/hvac/logo1.webp";
 import slideImg4 from "../../../assets/images/hvac/arctic-air-home-services.png";
 import slideImg5 from "../../../assets/images/hvac/serviceone.2311291526178.png";
 import slideImg6 from "../../../assets/images/hvac/logo4.png";
-import { FaArrowUpLong } from "react-icons/fa6";
 
 const clientData = [
   {
@@ -71,9 +71,9 @@ export default function ClientSuccessSection() {
 
   return (
     <section className="py-20 md:py-38 bg-gradient-to-b from-blue-0 to-blue-50 relative overflow-hidden">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className=" container mx-auto text-left mb-16">
+        <div className="container mx-auto text-left mb-16">
           <p className="text-blue-500 uppercase text-sm font-semibold tracking-wider mb-4">
             CLIENT SUCCESS
           </p>
@@ -88,37 +88,23 @@ export default function ClientSuccessSection() {
         {/* Swiper Container */}
         <div className="relative">
           <Swiper
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            spaceBetween={24}
-            slidesPerView={1}
-            centeredSlides={false}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-              },
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 28,
-              },
-              1280: {
-                slidesPerView: 5,
-                spaceBetween: 32,
-              },
-            }}
-            loop={true}
+            slidesPerView={4}
+            centeredSlides={true}
+            spaceBetween={30}
+            grabCursor={true}
             modules={[Navigation]}
-            className="pb-4"
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+            allowTouchMove={false}
+            simulateTouch={false}
+            className="mySwiper"
           >
             {clientData.map((client) => (
               <SwiperSlide key={client.id}>
-                <div className="bg-white p-8  rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 min-h-[450px] flex flex-col border border-gray-100 group">
+                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 h-[460px] flex flex-col border border-gray-100 group">
                   {/* Logo */}
-                  <div className="mb-20 h-16  flex items-center">
+                  <div className="mb-20 h-16 flex items-center">
                     <img
                       src={client.logo || "/placeholder.svg"}
                       alt={`${client.title} client logo`}
@@ -151,17 +137,18 @@ export default function ClientSuccessSection() {
           </Swiper>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-center gap-2 mt-12 bg-white w-fit p-1 border border-gray-200 mx-auto mr-120 ">
+          <div className="flex justify-center gap-2 mt-12 bg-white w-fit p-1 border border-gray-200  mx-auto mr-50">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="w-8 h-8 flex items-center justify-center cursor-pointer text-gray-900 hover:text-gray-600 transition-colors duration-200"
-              aria-label="Previous testimonials"
+              aria-label="Previous slide"
             >
               <ChevronLeft className="w-8 h-7" />
             </button>
             <button
               onClick={() => swiperRef.current?.slideNext()}
               className="w-8 h-8 flex items-center justify-center cursor-pointer text-gray-900 hover:text-gray-600 transition-colors duration-200"
+              aria-label="Next slide"
             >
               <ChevronRight className="w-8 h-7" />
             </button>

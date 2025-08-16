@@ -81,13 +81,13 @@ const HvacSolutionsCarousel = () => {
  ];
 
 
-  // ✅ refs & states
+  //  refs & states
   const videoRefs = useRef([]);
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
 
-  // ✅ play / pause toggle
+  // play / pause toggle
   const handlePlay = (index) => {
     const video = videoRefs.current[index];
     if (video) {
@@ -99,7 +99,7 @@ const HvacSolutionsCarousel = () => {
     }
   };
 
-  // ✅ update progress bar
+  // update progress bar
   useEffect(() => {
     const video = videoRefs.current[activeIndex];
     if (!video) return;
@@ -114,18 +114,18 @@ const HvacSolutionsCarousel = () => {
   }, [activeIndex]);
 
   return (
-    <section className="py-16 md:py-30 px-4">
+    <section className="bg-gradient-to-b from-gray-900 to-blue-50 py-16 md:pt-30 px-4">
       <div>
         {/* Header */}
         <div className="text-left mb-12 container mx-auto">
           <p className="text-blue-500 uppercase font-semibold tracking-wider mb-4">
-            FEATURED TESTIMONIALS
+            Revenuemax Solutions
           </p>
-          <h2 className="text-4xl md:text-6xl mt-12 font-bold text-gray-900">
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
-              Spotlight
+          <h2 className="text-4xl md:text-6xl mt-12 font-bold text-white">
+            HVAC Marketing That Makes You the
+            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md text-black">
+              First Call
             </span>{" "}
-            stories for HVAC companies
           </h2>
         </div>
 
@@ -141,6 +141,9 @@ const HvacSolutionsCarousel = () => {
             el: ".custom-pagination-first",
           }}
           modules={[Pagination]}
+         
+          allowTouchMove={false} 
+          simulateTouch={false}
           className="mySwiper pb-14"
         >
           {testimonials.map((testimonial, index) => (
@@ -165,7 +168,7 @@ const HvacSolutionsCarousel = () => {
                 {/* Content */}
 
                 {/* top tag */}
-             
+
                 <div className="absolute top-0 left-0 right-0 p-8 text-white">
                   <span className="flex items-center gap-2 border border-blue-700 font-medium w-fit px-4 py-2 rounded-md bg-black/30 backdrop-blur-sm">
                     {testimonial.tag}

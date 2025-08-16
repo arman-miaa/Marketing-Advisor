@@ -92,6 +92,8 @@ const VideoTestimonialsSection = () => {
             el: ".custom-pagination",
           }}
           modules={[Pagination]}
+          allowTouchMove={false}
+          simulateTouch={false}
           className="mySwiper pb-14"
         >
           {testimonials.map((testimonial) => (
@@ -139,7 +141,6 @@ const VideoTestimonialsSection = () => {
         <div className="container mx-auto">
           <div className="custom-pagination  mt-8 bg-white p-5 px-8 border border-gray-300 w-fit rounded-full inline-flex gap-4" />
         </div>
-        
       </div>
 
       {/* Video Modal */}
