@@ -19,9 +19,10 @@ import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import VideoModal from "../../../shared/VideoModel";
 
 const VideoTestimonialsSection = () => {
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentVideoUrl, setCurrentVideoUrl] = useState("");
 
   const testimonials = [
@@ -60,24 +61,21 @@ const VideoTestimonialsSection = () => {
 
   const handlePlayVideo = (videoUrl) => {
     setCurrentVideoUrl(videoUrl);
-    setIsVideoModalOpen(true);
+    setIsModalOpen(true);
   };
 
-  const closeVideoModal = () => {
-    setIsVideoModalOpen(false);
-    setCurrentVideoUrl("");
-  };
+
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 md:py-30 px-4 ">
       <div className="">
         {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-blue-600 text-sm font-semibold tracking-wider uppercase mb-4">
+        <div className="text-left mb-12 container mx-auto ">
+          <p className="text-blue-500 uppercase  font-semibold tracking-wider mb-4">
             FEATURED TESTIMONIALS
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            <span className="bg-purple-100 px-3 py-1 rounded-lg">
+          <h2 className="text-4xl md:text-6xl mt-12 font-bold text-gray-900">
+            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
               Spotlight
             </span>{" "}
             stories for HVAC companies
@@ -99,7 +97,7 @@ const VideoTestimonialsSection = () => {
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id} className="!w-[80%] md:!w-[60%]">
               <div
-                className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer h-80 flex flex-col"
+                className="relative rounded-4xl overflow-hidden shadow-lg group cursor-pointer h-[700px] flex flex-col"
                 style={{
                   backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(${testimonial.backgroundImage})`,
                   backgroundSize: "cover",
@@ -108,10 +106,10 @@ const VideoTestimonialsSection = () => {
                 onClick={() => handlePlayVideo(testimonial.videoUrl)}
               >
                 {/* Play Button (bottom-right) */}
-                <div className="absolute bottom-4 right-4">
+                <div className="absolute bottom-8 right-8">
                   <button
                     onClick={() => handlePlayVideo(testimonial.videoUrl)}
-                    className="w-14 h-14 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300"
+                    className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-xl flex items-center justify-center transition-all duration-300"
                   >
                     <svg
                       className="w-6 h-6 text-white ml-1"
@@ -124,11 +122,11 @@ const VideoTestimonialsSection = () => {
                 </div>
 
                 {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <blockquote className="text-lg font-medium mb-3 leading-relaxed">
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <blockquote className="text-lg md:text-4xl font-medium mb-3 leading-relaxed">
                     "{testimonial.quote}"
                   </blockquote>
-                  <cite className="text-sm opacity-90 not-italic">
+                  <cite className="text-xl opacity-90 not-italic">
                     {testimonial.company}
                   </cite>
                 </div>
@@ -138,47 +136,18 @@ const VideoTestimonialsSection = () => {
         </Swiper>
 
         {/* Pagination container */}
-        <div className="custom-pagination mt-8 bg-white p-3 px-6 border border-gray-300 w-fit rounded-full inline-flex gap-4" />
+        <div className="container mx-auto">
+          <div className="custom-pagination  mt-8 bg-white p-5 px-8 border border-gray-300 w-fit rounded-full inline-flex gap-4" />
+        </div>
+        
       </div>
 
       {/* Video Modal */}
-      {isVideoModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative w-full max-w-4xl mx-4">
-            {/* Close Button */}
-            <button
-              onClick={closeVideoModal}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
-            >
-              <svg
-                className="w-8 h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-
-            {/* Video Container */}
-            <div className="relative w-full h-0 pb-[56.25%] bg-black rounded-lg overflow-hidden">
-              <iframe
-                src={currentVideoUrl}
-                className="absolute inset-0 w-full h-full"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Testimonial Video"
-              />
-            </div>
-          </div>
-        </div>
-        
+      {isModalOpen && (
+        <VideoModal
+          videoSrc={currentVideoUrl}
+          onClose={() => setIsModalOpen(false)}
+        />
       )}
     </section>
   );
