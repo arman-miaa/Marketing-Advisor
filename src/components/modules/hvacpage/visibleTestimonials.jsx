@@ -1,13 +1,28 @@
-"use client"
+import img1 from "../../../assets/images/hvac/hembree-vans.jpg";
+import img2 from "../../../assets/images/hvac/Hedricks-Group.jpg.2506040928374.webp";
+import img3 from "../../../assets/images/hvac/bill-gouty.jpg.2506111016246.webp";
+import img4 from "../../../assets/images/hvac/JC-Refrigeration.2006041556273.png";
 
-import { useState } from "react"
 
 
+import video1 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (10) [hvac-10].mp4";
+import video2 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (11) [hvac-11].mp4";
+import video3 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (12) [hvac-12].mp4";
+import video4 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (13) [hvac-13].mp4";
+
+
+
+
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const VideoTestimonialsSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
-  const [currentVideoUrl, setCurrentVideoUrl] = useState("")
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [currentVideoUrl, setCurrentVideoUrl] = useState("");
 
   const testimonials = [
     {
@@ -15,102 +30,115 @@ const VideoTestimonialsSection = () => {
       quote:
         "Just in the past few years since our partnership with Scorpion began, Hembree Heating & Air has grown by over 3x.",
       company: "Hembree Heating & Air Conditioning",
-      backgroundImage: "/placeholder-7v6w4.png",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      backgroundImage: img1,
+      videoUrl: video1,
     },
     {
       id: 2,
       quote: "If I could give my past self any advice...",
       company: "Hedrick's Service Now",
-      backgroundImage: "/hvac-team.png",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      backgroundImage: img2,
+      videoUrl: video2,
     },
     {
       id: 3,
-      quote: "Our revenue has increased dramatically since working with Scorpion.",
+      quote:
+        "Our revenue has increased dramatically since working with Scorpion.",
       company: "Arctic Air Home Services",
-      backgroundImage: "/placeholder-ialzs.png",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      backgroundImage: img3,
+      videoUrl: video3,
     },
     {
       id: 4,
-      quote: "The results speak for themselves - we're booking more jobs than ever.",
+      quote:
+        "The results speak for themselves - we're booking more jobs than ever.",
       company: "ServiceOne AC & Plumbing",
-      backgroundImage: "/placeholder-aq557.png",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      backgroundImage: img4,
+      videoUrl: video4,
     },
-  ]
+  ];
 
   const handlePlayVideo = (videoUrl) => {
-    setCurrentVideoUrl(videoUrl)
-    setIsVideoModalOpen(true)
-  }
+    setCurrentVideoUrl(videoUrl);
+    setIsVideoModalOpen(true);
+  };
 
   const closeVideoModal = () => {
-    setIsVideoModalOpen(false)
-    setCurrentVideoUrl("")
-  }
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index)
-  }
-
-  const visibleTestimonials = testimonials.slice(currentSlide, currentSlide + 2)
+    setIsVideoModalOpen(false);
+    setCurrentVideoUrl("");
+  };
 
   return (
     <section className="py-16 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-blue-600 text-sm font-semibold tracking-wider uppercase mb-4">FEATURED TESTIMONIALS</p>
+          <p className="text-blue-600 text-sm font-semibold tracking-wider uppercase mb-4">
+            FEATURED TESTIMONIALS
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            <span className="bg-purple-100 px-3 py-1 rounded-lg">Spotlight</span> stories for HVAC companies
+            <span className="bg-purple-100 px-3 py-1 rounded-lg">
+              Spotlight
+            </span>{" "}
+            stories for HVAC companies
           </h2>
         </div>
 
-        {/* Testimonial Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          {visibleTestimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer h-80"
-              style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(${testimonial.backgroundImage})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-              onClick={() => handlePlayVideo(testimonial.videoUrl)}
-            >
-              {/* Play Button */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button className="w-16 h-16 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                  <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-              </div>
+        {/* Swiper Carousel */}
+        <Swiper
+          slidesPerView={"auto"}
+          centeredSlides={true}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+            el: ".custom-pagination",
+          }}
+          modules={[Pagination]}
+          className="mySwiper pb-14"
+        >
+          {testimonials.map((testimonial) => (
+            <SwiperSlide key={testimonial.id} className="!w-[80%] md:!w-[60%]">
+              <div
+                className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer h-80 flex flex-col"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(${testimonial.backgroundImage})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                onClick={() => handlePlayVideo(testimonial.videoUrl)}
+              >
+                {/* Play Button (bottom-right) */}
+                <div className="absolute bottom-4 right-4">
+                  <button
+                    onClick={() => handlePlayVideo(testimonial.videoUrl)}
+                    className="w-14 h-14 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <svg
+                      className="w-6 h-6 text-white ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </button>
+                </div>
 
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <blockquote className="text-lg font-medium mb-3 leading-relaxed">"{testimonial.quote}"</blockquote>
-                <cite className="text-sm opacity-90 not-italic">{testimonial.company}</cite>
-              </div>
-            </div>
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <blockquote className="text-lg font-medium mb-3 leading-relaxed">
+                    "{testimonial.quote}"
+                  </blockquote>
+                  <cite className="text-sm opacity-90 not-italic">
+                    {testimonial.company}
+                  </cite>
+                </div>
+              </div>{" "}
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
-        {/* Pagination Dots */}
-        <div className="flex justify-center space-x-2">
-          {Array.from({ length: Math.ceil(testimonials.length / 2) }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index * 2)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                Math.floor(currentSlide / 2) === index ? "bg-blue-600 w-8" : "bg-gray-300 hover:bg-gray-400"
-              }`}
-            />
-          ))}
-        </div>
+        {/* Pagination container */}
+        <div className="custom-pagination mt-8 bg-white p-3 px-6 border border-gray-300 w-fit rounded-full inline-flex gap-4" />
       </div>
 
       {/* Video Modal */}
@@ -122,8 +150,18 @@ const VideoTestimonialsSection = () => {
               onClick={closeVideoModal}
               className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
             >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
 
@@ -140,9 +178,10 @@ const VideoTestimonialsSection = () => {
             </div>
           </div>
         </div>
+        
       )}
     </section>
-  )
-}
+  );
+};
 
-export default VideoTestimonialsSection
+export default VideoTestimonialsSection;

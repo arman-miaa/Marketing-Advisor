@@ -27,3 +27,11 @@
 .animate-marquee.reverse {
   animation: marquee-reverse 60s linear infinite;
 }
+
+/* custom css file for pagination */
+.custom-pagination {
+  width: auto !important;  
+  display: inline-flex !important;
+  justify-content: center;
+}
+
