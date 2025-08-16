@@ -29,6 +29,12 @@
 }
 
 /* custom css file for pagination */
+.custom-pagination-first {
+  width: auto !important;  
+  display: inline-flex !important;
+  justify-content: center;
+}
+/* custom css file for pagination */
 .custom-pagination {
   width: auto !important;  
   display: inline-flex !important;
