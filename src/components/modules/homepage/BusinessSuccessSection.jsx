@@ -21,7 +21,7 @@ export default function BusinessSuccessSection() {
     <div className="bg-[#050519] text-white py-16 px-6">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-left my-16">
+        <div className="text-left my-8 md:my-16">
           <p className="text-blue-400 text-sm font-semibold uppercase mb-6 tracking-[0.35em]">
             MAXIMIZE YOUR SUCCESS
           </p>
@@ -29,7 +29,7 @@ export default function BusinessSuccessSection() {
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
             Every business we serve exists to help others.
           </h2>
-          <p className="text-4xl md:text-6xl font-bold pt-2">
+          <p className="text-4xl md:text-6xl font-bold md:pt-2">
             <span className="bg-white text-black px-4  py- rounded-lg">
               Our job
             </span>{" "}
@@ -39,7 +39,7 @@ export default function BusinessSuccessSection() {
 
         <div className="grid lg:grid-cols-2 gap-12   items-center ">
           {/* Stats */}
-          <div className="grid grid-cols-2 gap-40 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40 md:justify-items-center">
             {[
               {
                 value: "20k+",
@@ -71,7 +71,7 @@ export default function BusinessSuccessSection() {
           </div>
 
           {/* Awards */}
-          <div className="flex flex-col gap-6 mx-12">
+          <div className="flex flex-col gap-6 md:mx-12">
             {[
               {
                 logo: logo1,

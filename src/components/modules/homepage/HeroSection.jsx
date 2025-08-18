@@ -28,7 +28,7 @@ function HeroSection() {
   }, [index]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[calc(100vh-200px)] md:h-screen overflow-hidden">
       {/* Full Screen Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"

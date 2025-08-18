@@ -3,7 +3,7 @@ import SectionWithTitleImage from "../../../shared/SectionWithTitleImage";
 
 export default function WorkingWithBest() {
   return (
-    <section className="">
+    <section className="py-12 md:py-0">
       <SectionWithTitleImage
         title="Working with the Best"
         subtitle="Connected with the providers that matter to maximize your revenue"
