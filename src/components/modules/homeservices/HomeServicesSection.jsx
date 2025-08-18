@@ -21,7 +21,7 @@ export default function HomeServicesSection() {
   const [hoveredService, setHoveredService] = useState(null);
 
   return (
-    <div className="bg-gradient-to-b from-[#fff] to-blue-100 py-16 px-6">
+    <div className="bg-gradient-to-b from-[#fff] to-blue-100 py-10 md:py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -65,7 +65,7 @@ export default function HomeServicesSection() {
           </div>
 
           {/* Right Side - Active Image */}
-          <div className="overflow-hidden rounded-2xl shadow-lg h-full">
+          <div className="overflow-hidden hidden md:flex rounded-2xl shadow-lg h-full">
             <img
               src={hoveredService?.image || services[0].image}
               alt={hoveredService?.name || services[0].name}

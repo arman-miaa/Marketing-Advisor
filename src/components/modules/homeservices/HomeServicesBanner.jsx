@@ -41,7 +41,7 @@ export default function HomeServicesBanner() {
   };
 
   return (
-    <section className="relative w-full h-screen bg-gray-900 overflow-hidden">
+    <section className="relative pt-12 md:pt-0 w-full h-screen bg-gray-900 overflow-hidden">
       {/* Desktop Layout */}
       <div className="hidden lg:block relative h-full w-full rounded-2xl ">
         <div className="absolute inset-0 flex gap-[8px] pb-10 bg-black rounded-2xl overflow-hidden">
@@ -108,7 +108,7 @@ export default function HomeServicesBanner() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="relative h-48 rounded-lg overflow-hidden cursor-pointer group"
+              className="relative h-40 rounded-lg overflow-hidden cursor-pointer group"
               onClick={() => handleServiceClick(service.href)}
             >
               <img

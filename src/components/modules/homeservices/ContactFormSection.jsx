@@ -34,8 +34,8 @@ export default function ContactFormSection() {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Heading */}
-          <div className="space-y-4">
-            <p className="text-sm font-medium text-blue-600 tracking-wider uppercase">
+          <div className="space-y-4  text-center">
+            <p className=" font-medium text-blue-600 tracking-wider uppercase">
               Ready to talk now?
             </p>
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900">
@@ -44,10 +44,10 @@ export default function ContactFormSection() {
           </div>
 
           {/* Right side - Form */}
-          <div className="bg-gradient-to-r from-purple-200 to-blue-200 rounded-2xl p-14 shadow-lg">
+          <div className="bg-gradient-to-r from-purple-200 to-blue-200 rounded-2xl p-8 md:p-14 shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-10">
               {/* First Name & Last Name */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                 <div className="form-control">
                   <input
                     type="text"
@@ -73,7 +73,7 @@ export default function ContactFormSection() {
               </div>
 
               {/* Email & Phone */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                 <div className="form-control">
                   <input
                     type="email"
@@ -99,7 +99,7 @@ export default function ContactFormSection() {
               </div>
 
               {/* Company & Industry */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                 <div className="form-control">
                   <input
                     type="text"

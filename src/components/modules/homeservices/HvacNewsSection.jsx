@@ -30,8 +30,8 @@ const HvacNewsSection = () => {
     <section className="py-20 md:py-30 px-4 bg-white">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center mb-18">
-          <p className="text-blue-500 text-sm font-semibold uppercase tracking-[0.35em] mb-14">
+        <div className="text-center mb-16 md:mb-18">
+          <p className="text-blue-500 text-sm font-semibold uppercase tracking-[0.35em] mb-12 md:mb-14">
             Resources
           </p>
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
@@ -45,11 +45,11 @@ const HvacNewsSection = () => {
         {/* Articles Grid */}
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Left Large Card */}
-          <div className="relative rounded-2xl overflow-hidden shadow-lg group  ">
+          <div className="relative rounded-2xl  overflow-hidden shadow-lg group  ">
             <img
               src={articles[0].image}
               alt={articles[0].title}
-              className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full  object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
             {/* Stronger & smoother gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-10 flex flex-col justify-end transition duration-500">
@@ -70,7 +70,7 @@ const HvacNewsSection = () => {
           </div>
 
           {/* Right Small Cards */}
-          <div className="grid gap-6">
+          <div className="md:grid gap-6 hidden ">
             {articles.slice(1).map((article) => (
               <div
                 key={article.id}
