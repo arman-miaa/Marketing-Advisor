@@ -70,11 +70,11 @@ const VideoTestimonialsSection = () => {
     <section className="py-16 md:py-30 px-4 ">
       <div className="">
         {/* Header */}
-        <div className="text-left mb-12 container mx-auto ">
+        <div className="text-left px-4 md:px-0 mb-12 container mx-auto ">
           <p className="text-blue-500 uppercase  font-semibold tracking-wider mb-4">
             FEATURED TESTIMONIALS
           </p>
-          <h2 className="text-4xl md:text-6xl mt-12 font-bold text-gray-900">
+          <h2 className="text-4xl md:text-6xl mt-8 md:mt-12 font-bold text-gray-900">
             <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
               Spotlight
             </span>{" "}
@@ -97,9 +97,9 @@ const VideoTestimonialsSection = () => {
           className="mySwiper pb-14"
         >
           {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id} className="!w-[80%] md:!w-[60%]">
+            <SwiperSlide key={testimonial.id} className="!w-[90%] md:!w-[60%]">
               <div
-                className="relative rounded-4xl overflow-hidden shadow-lg group cursor-pointer h-[700px] flex flex-col"
+                className="relative rounded-4xl overflow-hidden shadow-lg group cursor-pointer h-[500px] md:h-[700px] flex flex-col"
                 style={{
                   backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(${testimonial.backgroundImage})`,
                   backgroundSize: "cover",
@@ -125,10 +125,10 @@ const VideoTestimonialsSection = () => {
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <blockquote className="text-lg md:text-4xl font-medium mb-3 leading-relaxed">
+                  <blockquote className="text-2xl md:text-4xl font-medium mb-3 leading-relaxed">
                     "{testimonial.quote}"
                   </blockquote>
-                  <cite className="text-xl opacity-90 not-italic">
+                  <cite className="text-xl  not-italic">
                     {testimonial.company}
                   </cite>
                 </div>

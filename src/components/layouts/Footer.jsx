@@ -14,14 +14,14 @@ export default function Footer() {
       {/* Call to Action Section */}
       <div className="px-4 py-16 md:py-40 text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-7xl  font-bold mb-4">
-            MAXIMIZE
-          </h2>
+          <h2 className="text-4xl md:text-7xl  font-bold mb-4">MAXIMIZE</h2>
           <h3 className="text-3xl md:text-4xl lg:text-6xl font-light mb-20">
             Your Growth
           </h3>
-{/* btn */}
-          <Button text={` Schedule Consultation`} />
+          {/* btn */}
+          <div className="flex justify-center">
+            <Button text={` Schedule Consultation`} />
+          </div>
         </div>
       </div>
 
@@ -33,14 +33,17 @@ export default function Footer() {
           <div className="flex items-center w-full">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h4 className="text-2xl font-bold tracking-wider cursor-pointer ">
+              <h4 className="text-2xl hidden md:flex font-bold tracking-wider cursor-pointer ">
                 <Link>SCORPION</Link>
               </h4>
             </div>
 
             {/* Navigation Links */}
             <nav className="flex-1">
-              <ul className="flex justify-between w-full md:text-base">
+              <h4 className="text-2xl md:hidden text-center  font-bold tracking-wider cursor-pointer ">
+                <Link>SCORPION</Link>
+              </h4>
+              <ul className="flex flex-col md:flex-row justify-between w-full md:text-base  border-gray-700 md:border-0 pt-4 md:pt-0 gap-2 md:gap-0">
                 {[
                   { href: "/about", label: "About Us" },
                   { href: "/careers", label: "Careers" },
@@ -49,10 +52,10 @@ export default function Footer() {
                   { href: "/acceptable-use", label: "Acceptable Use Policy" },
                   { href: "/privacy", label: "Privacy Policy" },
                 ].map(({ href, label }) => (
-                  <li key={href} className="flex-1 text-center">
+                  <li key={href} className="text-center border-t md:border-t-0 border-gray-500 md:flex-1">
                     <Link
                       to={href}
-                      className="hover:text-blue-400 transition-colors"
+                      className="hover:text-blue-400 transition-colors block py-2 md:py-0"
                     >
                       {label}
                     </Link>

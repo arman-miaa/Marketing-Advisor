@@ -88,21 +88,39 @@ export default function ClientSuccessSection() {
         {/* Swiper Container */}
         <div className="relative">
           <Swiper
-            slidesPerView={4}
-            centeredSlides={true}
+            breakpoints={{
+              0: {
+                slidesPerView: 1, // small device → 1 card
+                centeredSlides: false,
+              },
+              768: {
+                slidesPerView: 2, // tablet → 2 card
+                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 3, // laptop → 3 card
+                centeredSlides: true,
+              },
+              1280: {
+                slidesPerView: 4, // desktop → 4 card
+                centeredSlides: true,
+              },
+            }}
             spaceBetween={30}
-            grabCursor={true}
+          
+            grabCursor={false} 
+            allowTouchMove={false}
+            simulateTouch={false} 
             modules={[Navigation]}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
-            allowTouchMove={false}
-            simulateTouch={false}
+           
             className="mySwiper"
           >
             {clientData.map((client) => (
               <SwiperSlide key={client.id}>
-                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 h-[460px] flex flex-col border border-gray-100 group">
+                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 h-[460px] flex flex-col border border-gray-200 group">
                   {/* Logo */}
                   <div className="mb-20 h-16 flex items-center">
                     <img
@@ -137,7 +155,7 @@ export default function ClientSuccessSection() {
           </Swiper>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-center gap-2 mt-12 bg-white w-fit p-1 border border-gray-200  mx-auto mr-50">
+          <div className="flex justify-center gap-2 mt-12 bg-white w-fit p-1 border border-gray-200  mx-auto mr-10 md:mr-50">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="w-8 h-8 flex items-center justify-center cursor-pointer text-gray-900 hover:text-gray-600 transition-colors duration-200"

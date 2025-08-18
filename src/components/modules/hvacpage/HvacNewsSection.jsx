@@ -31,7 +31,7 @@ const HvacNewsSection = () => {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-18">
-          <p className="text-blue-500 text-sm font-semibold uppercase tracking-[0.35em] mb-14">
+          <p className="text-blue-500  font-semibold uppercase tracking-[0.35em] mb-8 md:mb-14">
             your competitive advantage
           </p>
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
@@ -40,7 +40,7 @@ const HvacNewsSection = () => {
             </span>
             news and insights
           </h2>
-          <h2 className="text-4xl  mt-10 text-gray-900">
+          <h2 className="text-3xl md:text-4xl mt-8 md:mt-10 text-gray-900">
             The information you need to maximize your revenue.
           </h2>
         </div>
@@ -48,7 +48,7 @@ const HvacNewsSection = () => {
         {/* Articles Grid */}
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Left Large Card */}
-          <div className="relative rounded-2xl overflow-hidden shadow-lg group  ">
+          <div className="relative rounded-2xl overflow-hidden shadow-lg group h-96 md:h-auto ">
             <img
               src={articles[0].image}
               alt={articles[0].title}
@@ -56,7 +56,7 @@ const HvacNewsSection = () => {
             />
             {/* Stronger & smoother gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-10 flex flex-col justify-end transition duration-500">
-              <span className="text-white text-xl mb-4">
+              <span className="text-white text-xl mb-4 ">
                 {articles[0].date}
               </span>
               <h3 className="text-white text-2xl md:text-4xl font-semibold leading-snug">
@@ -73,7 +73,7 @@ const HvacNewsSection = () => {
           </div>
 
           {/* Right Small Cards */}
-          <div className="grid gap-6">
+          <div className="md:grid gap-6 hidden">
             {articles.slice(1).map((article) => (
               <div
                 key={article.id}

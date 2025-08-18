@@ -149,7 +149,7 @@ const HvacSolutionsCarousel = () => {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={testimonial.id} className="!w-[80%] md:!w-[60%]">
               <div
-                className="relative rounded-4xl overflow-hidden shadow-lg group cursor-pointer h-[700px] flex flex-col"
+                className="relative rounded-4xl overflow-hidden shadow-lg group cursor-pointer h-[600px] md:h-[700px] flex flex-col"
                 onClick={() => handlePlay(index)}
               >
                 {/* Background Video */}
@@ -186,12 +186,12 @@ const HvacSolutionsCarousel = () => {
                   <h3 className="text-2xl md:text-4xl font-bold mb-3">
                     {testimonial.title}
                   </h3>
-                  <div className="flex justify-between items-center gap-8">
+                  <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                     <p className="text-lg md:text-xl opacity-90 mb-4 flex-1">
                       {testimonial.description}
                     </p>
                     {/* Button */}
-                    <div className="flex-shrink-0">
+                    <div className="  w-full md:w-auto flex-shrink-0">
                       <Button text={testimonial.buttonText} to="/" />
                     </div>
                   </div>
