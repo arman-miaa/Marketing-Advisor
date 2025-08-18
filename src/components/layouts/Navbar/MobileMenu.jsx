@@ -15,7 +15,7 @@ export default function MobileMenu({ isOpen, onClose, activeMobileSection, setAc
       <div className="flex flex-col h-full">
         {/* Mobile Header */}
         <div className="flex items-center justify-between p-4 border-b border-gray-700">
-          <span className="text-xl font-bold">SCORPION</span>
+          <span className="text-2xl font-bold">SCORPION</span>
           <button onClick={onClose} className="hover:text-blue-400 transition-colors">
             <X size={24} />
           </button>

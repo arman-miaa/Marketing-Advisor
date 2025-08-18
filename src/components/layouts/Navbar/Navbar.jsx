@@ -6,6 +6,7 @@ import MobileMenu from "./MobileMenu";
 import { IoNotifications } from "react-icons/io5";
 import { MdOutlineLogin } from "react-icons/md";
 import Button from "../../ui/Button";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,16 +34,18 @@ export default function Navbar() {
 
       {/* Desktop Header */}
       <header
-        className={`absolute ${isHomePage ? 'top-10': 'top-0'} left-0 py-4 right-0 w-full z-50 transition-colors duration-300 ${
+        className={`absolute ${
+          isHomePage ? "top-10" : "top-0"
+        } left-0 py-4 right-0 w-full z-50 transition-colors duration-300 ${
           activeDropdown ? "bg-black text-white" : "bg-transparent text-white"
         }`}
       >
-        <div className="px-12">
+        <div className=" px-6 md:px-12">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link
               to="/"
-              className="text-2xl md:text-3xl font-bold tracking-wider"
+              className="text-3xl md:text-3xl font-bold tracking-wider"
             >
               SCORPION
             </Link>
@@ -74,13 +77,13 @@ export default function Navbar() {
                 to="tel:8663448852"
                 className="hover:text-blue-400 transition-colors"
               >
-                <Phone size={20} />
+                <FaPhoneAlt size={28} />
               </Link>
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="hover:text-blue-400 transition-colors"
               >
-                <Menu size={24} />
+                <Menu size={38} />
               </button>
             </div>
           </div>
