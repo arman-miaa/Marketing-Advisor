@@ -92,8 +92,8 @@ const VideoTestimonialsSection = () => {
             el: ".custom-pagination",
           }}
           modules={[Pagination]}
-          allowTouchMove={false}
-          simulateTouch={false}
+          allowTouchMove={true}
+          simulateTouch={true}
           className="mySwiper pb-14"
         >
           {testimonials.map((testimonial) => (

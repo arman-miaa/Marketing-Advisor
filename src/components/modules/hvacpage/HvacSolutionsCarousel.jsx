@@ -142,8 +142,8 @@ const HvacSolutionsCarousel = () => {
           }}
           modules={[Pagination]}
          
-          allowTouchMove={false} 
-          simulateTouch={false}
+          allowTouchMove={true} 
+          simulateTouch={true}
           className="mySwiper pb-14"
         >
           {testimonials.map((testimonial, index) => (
