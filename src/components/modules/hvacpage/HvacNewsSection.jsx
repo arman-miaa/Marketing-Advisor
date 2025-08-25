@@ -105,7 +105,7 @@ const HvacNewsSection = () => {
 
         {/* More Insights Button */}
         <div className="text-left mt-16">
-          <Button text="More Insights" />
+          <Button text="More Insights" to="/hvac/insights/blog/" />
         </div>
       </div>
     </section>

@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router";
 
 export default function RevenueMaxSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -67,9 +68,11 @@ export default function RevenueMaxSection() {
                 jobs, and revenue for your HVAC business.
               </p>
               <div className="flex flex-wrap gap-4 items-center">
-                <button className="px-6 py-3 rounded-full border cursor-pointer text-lg border-blue-600 text-blue-600 font-semibold shadow-md transition">
-                  Learn More
-                </button>
+                <Link to="marketing-solutions">
+                  <button className="px-6 py-3 rounded-full border cursor-pointer text-lg border-blue-600 text-blue-600 font-semibold shadow-md transition">
+                    Learn More
+                  </button>
+                </Link>
                 <button
                   onClick={() => openVideoModal(boxVideo)}
                   className="bg-blue-600 px-6 py-3 cursor-pointer rounded-full text-lg text-white font-semibold shadow-md transition"
