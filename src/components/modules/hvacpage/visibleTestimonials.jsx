@@ -3,15 +3,10 @@ import img2 from "../../../assets/images/hvac/Hedricks-Group.jpg.2506040928374.w
 import img3 from "../../../assets/images/hvac/bill-gouty.jpg.2506111016246.webp";
 import img4 from "../../../assets/images/hvac/JC-Refrigeration.2006041556273.png";
 
-
-
 import video1 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (10) [hvac-10].mp4";
 import video2 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (11) [hvac-11].mp4";
 import video3 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (12) [hvac-12].mp4";
 import video4 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (13) [hvac-13].mp4";
-
-
-
 
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,14 +17,14 @@ import "swiper/css/pagination";
 import VideoModal from "../../../shared/VideoModel";
 
 const VideoTestimonialsSection = () => {
-   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentVideoUrl, setCurrentVideoUrl] = useState("");
 
   const testimonials = [
     {
       id: 1,
       quote:
-        "Just in the past few years since our partnership with Scorpion began, Hembree Heating & Air has grown by over 3x.",
+        "Just in the past few years since our partnership with Marketing Advisorn began, Hembree Heating & Air has grown by over 3x.",
       company: "Hembree Heating & Air Conditioning",
       backgroundImage: img1,
       videoUrl: video1,
@@ -44,7 +39,7 @@ const VideoTestimonialsSection = () => {
     {
       id: 3,
       quote:
-        "Our revenue has increased dramatically since working with Scorpion.",
+        "Our revenue has increased dramatically since working with Marketing Advisorn.",
       company: "Arctic Air Home Services",
       backgroundImage: img3,
       videoUrl: video3,
@@ -63,8 +58,6 @@ const VideoTestimonialsSection = () => {
     setCurrentVideoUrl(videoUrl);
     setIsModalOpen(true);
   };
-
-
 
   return (
     <section className="py-16 md:py-30 px-4 ">

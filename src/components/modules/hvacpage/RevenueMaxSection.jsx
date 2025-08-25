@@ -106,7 +106,7 @@ export default function RevenueMaxSection() {
           {/* Card 2 */}
           <Card
             title="Make every dollar count"
-            desc="Scorpion tracks what’s working, cuts what’s not, and puts your budget toward the jobs that bring in real revenue."
+            desc="Marketing Advisorn tracks what’s working, cuts what’s not, and puts your budget toward the jobs that bring in real revenue."
             img={img2}
           />
           {/* Card 3 */}
@@ -135,7 +135,7 @@ export default function RevenueMaxSection() {
             <SwiperSlide>
               <Card
                 title="Make every dollar count"
-                desc="Scorpion tracks what’s working, cuts what’s not, and puts your budget toward the jobs that bring in real revenue."
+                desc="Marketing Advisorn tracks what’s working, cuts what’s not, and puts your budget toward the jobs that bring in real revenue."
                 img={img2}
               />
             </SwiperSlide>

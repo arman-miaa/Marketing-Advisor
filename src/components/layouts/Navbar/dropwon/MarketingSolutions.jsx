@@ -1,4 +1,3 @@
-
 import { Link } from "react-router";
 
 const marketingSolutionsData = [
@@ -14,39 +13,45 @@ const marketingSolutionsData = [
   },
   {
     name: "Digital Advertising",
-    description: "AI-powered ads that get you everywhere customers search—driving performance and just leads.",
+    description:
+      "AI-powered ads that get you everywhere customers search—driving performance and just leads.",
   },
   {
     name: "Local Services Ads",
-    description: "Get seen first on Google, drive calls, build, and customers from day one with LSA.",
+    description:
+      "Get seen first on Google, drive calls, build, and customers from day one with LSA.",
   },
   {
     name: "Lead Generation",
-    description: "Know which leads matter—AI-powered scoring shows you what drives real value.",
+    description:
+      "Know which leads matter—AI-powered scoring shows you what drives real value.",
   },
   {
     name: "AI Chat & Online Scheduling",
-    description: "Never miss a lead—24/7 AI chat that books, answers, and converts clicks to customers.",
+    description:
+      "Never miss a lead—24/7 AI chat that books, answers, and converts clicks to customers.",
   },
   {
     name: "Video & Photography",
-    description: "Stand out and tell your story from our award-winning creative team.",
+    description:
+      "Stand out and tell your story from our award-winning creative team.",
   },
   {
-    name: "Scorpion Convert",
+    name: "Marketing Advisorn Convert",
     description:
       "AI Voice and Messaging Assistants built to instantly respond to all leads and convert them to revenue.",
   },
-]
-
-
+];
 
 export default function MarketingSolutions({ isMobile = false, onBack }) {
   if (isMobile) {
     return (
       <div className="p-4">
         {onBack && (
-          <button onClick={onBack} className="flex items-center space-x-2 mb-6 hover:text-blue-400 transition-colors">
+          <button
+            onClick={onBack}
+            className="flex items-center space-x-2 mb-6 hover:text-blue-400 transition-colors"
+          >
             <span>←</span>
             <span>Back</span>
           </button>
@@ -55,7 +60,10 @@ export default function MarketingSolutions({ isMobile = false, onBack }) {
         <div className="space-y-4">
           {marketingSolutionsData.map((item) => (
             <div key={item.name} className="bg-blue-900 p-4 rounded-lg">
-              <Link href="#" className="block hover:text-blue-400 transition-colors">
+              <Link
+                href="#"
+                className="block hover:text-blue-400 transition-colors"
+              >
                 <h4 className="font-semibold mb-2">{item.name}</h4>
                 <p className="text-sm text-gray-300">{item.description}</p>
               </Link>
@@ -63,7 +71,7 @@ export default function MarketingSolutions({ isMobile = false, onBack }) {
           ))}
         </div>
       </div>
-    )
+    );
   }
 
   return (

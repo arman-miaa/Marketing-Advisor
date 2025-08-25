@@ -24,8 +24,8 @@ export default function Navbar() {
           <span>
             <IoNotifications className="text-2xl" />
           </span>
-          30-50% of calls go unanswered. Scorpion Convert helps you answer them
-          all.
+          30-50% of calls go unanswered. Marketing Advisorn Convert helps you
+          answer them all.
           <Link to="#" className="ml-2 underline hover:text-[#ffffffb4]">
             Learn more
           </Link>
@@ -37,7 +37,7 @@ export default function Navbar() {
         <header className="md:hidden sticky top-0 left-0 right-0 bg-black text-white z-50">
           <div className="flex items-center justify-between h-14 px-4">
             <Link to="/" className="text-xl font-bold tracking-wider">
-              SCORPION
+              Marketing AdvisorN
             </Link>
             <div className="flex items-center space-x-4">
               <Link to="tel:8663448852" className="hover:text-blue-400">
@@ -54,7 +54,6 @@ export default function Navbar() {
         </header>
       )}
 
-    
       {/* 🔹 Main Navbar (for all pages) */}
       {!(isHomePage && window.innerWidth < 768) && (
         <header
@@ -68,7 +67,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
               <Link to="/" className="text-3xl font-bold tracking-wider">
-                SCORPION
+                Marketing AdvisorN
               </Link>
 
               {/* Desktop Navigation */}
@@ -89,7 +88,7 @@ export default function Navbar() {
                 <Link to="tel:8663448852" className="font-extrabold">
                   (866) 344-8852
                 </Link>
-                <Button text="Get Started" to="/get-started" />
+                <Button text="Get Started" to="/hvac/get-started" />
               </div>
 
               {/* Mobile Menu Button (other pages only) */}

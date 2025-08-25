@@ -3,6 +3,7 @@ import App from "../App";
 import HomePage from "../pages/HomePage";
 import HomeServices from "../pages/HomeServices";
 import HvacPage from "../pages/HvacPage";
+import GetStarted from "../pages/GetStarted";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       {
         path: "/hvac",
         Component: HvacPage,
+      },
+      {
+        path: "/hvac/get-started",
+        Component: GetStarted,
       },
       {
         path: "/home-services",

@@ -22,7 +22,7 @@ const clientData = [
     metric: "$4M",
     title: "Revenue increase",
     description:
-      "Just in the past few years since our partnership with Scorpion began, Hembree Heating & Air has grown by over 3x.",
+      "Just in the past few years since our partnership with Marketing Advisorn began, Hembree Heating & Air has grown by over 3x.",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const clientData = [
     metric: "25x",
     title: "Return on total investment",
     description:
-      "If I could give my past self any advice on marketing, I would say look to Scorpion sooner.",
+      "If I could give my past self any advice on marketing, I would say look to Marketing Advisorn sooner.",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const clientData = [
     metric: "9x",
     title: "Return on paid investment",
     description:
-      "With Scorpion's help and custom-tailored marketing solutions, Swift Services, a home services company in South Carolina, is experiencing meaningful growth.",
+      "With Marketing Advisorn's help and custom-tailored marketing solutions, Swift Services, a home services company in South Carolina, is experiencing meaningful growth.",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const clientData = [
     metric: "18x",
     title: "Attributed return on total investment",
     description:
-      "As a long-time Scorpion client, Arctic Air Home Services continues to see double-digit revenue growth and strong ROI powered by Scorpion's RevenueMAX.",
+      "As a long-time Marketing Advisorn client, Arctic Air Home Services continues to see double-digit revenue growth and strong ROI powered by Marketing Advisorn's RevenueMAX.",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const clientData = [
     metric: "35%",
     title: "Increase in average ticket value",
     description:
-      "Scorpion's AI technology drives in calls that are bookable jobs.",
+      "Marketing Advisorn's AI technology drives in calls that are bookable jobs.",
   },
 ];
 
@@ -107,15 +107,13 @@ export default function ClientSuccessSection() {
               },
             }}
             spaceBetween={30}
-          
-            grabCursor={false} 
+            grabCursor={false}
             allowTouchMove={false}
-            simulateTouch={false} 
+            simulateTouch={false}
             modules={[Navigation]}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
-           
             className="mySwiper"
           >
             {clientData.map((client) => (
