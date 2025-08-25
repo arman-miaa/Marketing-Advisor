@@ -1,18 +1,40 @@
+import { useState } from "react";
+
 export default function GetStarted() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    company: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    // console.log("Form Data:", formData); 
+  };
+
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className=" bg-gray-900 text-white pt-20">
       <div className="container mx-auto px-4 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-40 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <p className="text-blue-400 text-sm font-medium tracking-wider uppercase">
+              <p className="text-blue-400 text-sm font-medium tracking-[0.4em] uppercase">
                 GET STARTED
               </p>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl  font-bold leading-tight">
                 Maximize Your{" "}
-                <span className="inline-block bg-white text-gray-900 px-4 py-2 rounded-lg">
+                <span className="inline-block bg-white text-gray-900 px-4  rounded-lg">
                   Revenue
                 </span>
               </h1>
@@ -84,26 +106,32 @@ export default function GetStarted() {
           </div>
 
           {/* Right Form */}
-          <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-8 lg:p-10">
+          <div className="bg-gradient-to-br from-indigo-800 to-blue-900 rounded-2xl p-8 lg:p-10">
             <h2 className="text-2xl lg:text-3xl font-bold text-white mb-8">
               Book Your Free Demo Today
             </h2>
 
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
+            <form className="space-y-10" onSubmit={handleSubmit}>
+              <div className="grid md:grid-cols-2 gap-10">
                 <div>
                   <input
                     type="text"
+                    name="firstName"
                     placeholder="First Name*"
-                    className="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    className="w-full px-4 py-5 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
                     required
                   />
                 </div>
                 <div>
                   <input
                     type="text"
+                    name="lastName"
                     placeholder="Last Name*"
-                    className="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    className="w-full px-4 py-5 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
                     required
                   />
                 </div>
@@ -112,26 +140,35 @@ export default function GetStarted() {
               <div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email Address*"
-                  className="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-5 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
                   required
                 />
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-10">
                 <div>
                   <input
                     type="tel"
+                    name="phone"
                     placeholder="Phone Number*"
-                    className="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-5 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
                     required
                   />
                 </div>
                 <div>
                   <input
                     type="text"
+                    name="company"
                     placeholder="Company Name*"
-                    className="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full px-4 py-5 rounded-lg bg-white/90 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition-all"
                     required
                   />
                 </div>
@@ -139,7 +176,7 @@ export default function GetStarted() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-transparent"
+                className="w-full md:w-fit sm:w-auto bg-blue-500 hover:bg-blue-600 text-white px-10 py-4 rounded-full transition-colors block text-center cursor-pointer"
               >
                 Get Started
               </button>

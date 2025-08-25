@@ -24,6 +24,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      
 
       {/* Footer Content */}
       <div className=" border-gray-700">
