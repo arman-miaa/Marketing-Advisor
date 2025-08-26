@@ -1,10 +1,22 @@
+import AdvertisingSection from "../../components/modules/hvacpage/marketingSolutions/AdvertisingSection";
+import ExpertiseCarousel from "../../components/modules/hvacpage/marketingSolutions/ExpertiseCarousel";
 import HeroSection from "../../components/modules/hvacpage/marketingSolutions/HeroSection";
+import MarketingSolutionsCarousel from "../../components/modules/hvacpage/marketingSolutions/MarketingSolutionsCarousel";
+import TestimonialsSection from "../../components/modules/hvacpage/marketingSolutions/TestimonialsSection";
+import VideoTestimonialsSection from "../../components/modules/hvacpage/marketingSolutions/VideoTestimonialsSection";
+import WorkingWithTheBestSection from "../../components/modules/hvacpage/marketingSolutions/WorkingWithTheBestSection";
 
 
 export default function MarketingSolutions() {
   return (
     <div>
-      <HeroSection/>
+      <HeroSection />
+      <MarketingSolutionsCarousel />
+      <AdvertisingSection />
+      <TestimonialsSection />
+      <ExpertiseCarousel />
+      <WorkingWithTheBestSection />
+      <VideoTestimonialsSection/>
     </div>
   )
 }
