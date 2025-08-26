@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
         Component: MarketingSolutions,
       },
       {
-        path: "/hvac/insights/blog/",
+        path: "/hvac/insights/blog",
         Component: InsightsBlog,
       },
       {

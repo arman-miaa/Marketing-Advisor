@@ -1,7 +1,10 @@
+import HeroSection from "../../components/modules/hvacpage/marketingSolutions/HeroSection";
 
 
 export default function MarketingSolutions() {
   return (
-    <div>Marketing-solutions</div>
+    <div>
+      <HeroSection/>
+    </div>
   )
 }

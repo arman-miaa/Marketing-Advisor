@@ -67,7 +67,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
               <Link to="/" className="text-3xl font-bold tracking-wider">
-                Marketing AdvisorN
+                Marketing Advisor
               </Link>
 
               {/* Desktop Navigation */}
