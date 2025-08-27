@@ -14,6 +14,7 @@ import RankingAi from "../pages/hvac/Ranking-ai";
 import ReputationAi from "../pages/hvac/Reputation-ai";
 import InsightsBlog2 from "../pages/hvac/InsightsBlog2";
 import InsightsBlog3 from "../pages/hvac/InsightsBlog3";
+import InsightsBlog4 from "../pages/hvac/InsightsBlog4";
 
 export const router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ export const router = createBrowserRouter([
       {
         path: "/hvac/insights/blog3",
         Component: InsightsBlog3,
+      },
+      {
+        path: "/hvac/insights/blog4",
+        Component: InsightsBlog4,
       },
       {
         path: "/home-services",
