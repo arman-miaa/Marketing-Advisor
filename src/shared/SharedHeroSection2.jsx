@@ -1,0 +1,31 @@
+
+
+function SharedHeroSection2({ heading, subHeading, imageSrc, bgGradient }) {
+  return (
+    <div
+      className="w-full h-[70vh] flex justify-center items-center px-6 md:px-24"
+      style={{ background: bgGradient }}
+    >
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 mt-12">
+        {/* Left Side - Text */}
+        <div className="flex flex-col justify-center  text-center md:text-left max-w-xl">
+          <h1 className="text-5xl md:text-5xl  font-bold tracking-tight">
+            {heading}
+          </h1>
+          <p className="text-3xl md:text-xl mt-4">{subHeading}</p>
+        </div>
+
+        {/* Right Side - Image */}
+        <div className="flex justify-center items-center">
+          <img
+            src={imageSrc}
+            alt="Hero Image"
+            className="w-full max-w-lg rounded-4xl object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default SharedHeroSection2;

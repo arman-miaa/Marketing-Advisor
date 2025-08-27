@@ -2,6 +2,7 @@ import img1 from "../../../assets/images/hvac/woman.webp";
 import img2 from "../../../assets/images/hvac/group.webp";
 import img3 from "../../../assets/images/hvac/news.webp";
 import Button from "../../ui/Button";
+import { Link } from "react-router";
 
 const HvacNewsSection = () => {
   const articles = [
@@ -10,6 +11,7 @@ const HvacNewsSection = () => {
       date: "Jul 23, 2024",
       title: "Why SEO Marketing for HVAC Businesses Matters More Than Ever",
       image: img1,
+      link: "/hvac/Insights/blog",
     },
     {
       id: 2,
@@ -17,12 +19,14 @@ const HvacNewsSection = () => {
       title:
         "How HVAC and Plumbing Businesses Are Winning More Jobs in a Changing Market",
       image: img2,
+      link: "/hvac/Insights/blog2",
     },
     {
       id: 3,
       date: "Jul 3, 2024",
       title: "Your HVAC Website Should Work as Hard as You Do",
       image: img3,
+      link: "/hvac/Insights/blog3",
     },
   ];
 
@@ -66,9 +70,11 @@ const HvacNewsSection = () => {
               {/* HR before Learn More */}
               <hr className="border-white/30 my-4" />
 
-              <button className="mt-1 cursor-pointer text-white flex items-center gap-1 hover:text-blue-100">
-                Learn More →
-              </button>
+              <Link to="/hvac/insights/blog">
+                <button className="mt-1 cursor-pointer text-white flex items-center gap-1 hover:text-blue-100">
+                  Learn More →
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -94,9 +100,11 @@ const HvacNewsSection = () => {
 
                   <hr className="border-white/30 my-4" />
 
-                  <button className="mt-1 cursor-pointer text-white flex items-center gap-1 hover:text-blue-100">
-                    Learn More →
-                  </button>
+                  <Link to={article.link}>
+                    <button className="mt-1 cursor-pointer text-white flex items-center gap-1 hover:text-blue-100">
+                      Learn More →
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}
