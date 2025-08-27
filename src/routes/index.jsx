@@ -6,6 +6,7 @@ import HvacPage from "../pages/HvacPage";
 import GetStarted from "../pages/hvac/GetStarted";
 import MarketingSolutions from "../pages/hvac/Marketing-solutions";
 import InsightsBlog from "../pages/hvac/InsightsBlog";
+import AdvisorConnect from "../pages/hvac/AdvisorConnect";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "/hvac/get-started",
         Component: GetStarted,
+      },
+      {
+        path: "/hvac/advisor-connect",
+        Component: AdvisorConnect,
       },
       {
         path: "/hvac/marketing-solutions",
