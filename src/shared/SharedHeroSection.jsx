@@ -42,10 +42,10 @@ function SharedHeroSection({
 
       {/* Content Overlay */}
       <div className="relative z-20 flex flex-col justify-center items-center px-6 md:px-56 h-full text-white text-center">
-        <h1 className="text-5xl md:text-6xl lg:text-[125px] font-bold tracking-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-[105px] font-bold tracking-tight">
           {heading}
         </h1>
-        <p className="text-5xl md:text-6xl xl:text-[120px] font-bold mb-6 tracking-tight relative overflow-hidden text-blue-200">
+        <p className="text-5xl md:text-6xl xl:text-[100px] font-bold mb-6 tracking-tight relative overflow-hidden text-blue-200">
           {subHeading}
         </p>
         <p className="text-2xl lg:text-3xl mb-10 py-4 leading-relaxed">

@@ -33,7 +33,7 @@ const testimonials = [
     description:
       "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
     buttonText: "Learn More",
-    buttonLink: "/digital-advertising",
+    buttonLink: "/hvac/advertising-ai",
     backgroundVideo: video2,
     tag: "Digital Advertising",
     icon: "AI",
@@ -44,7 +44,7 @@ const testimonials = [
     description:
       "With Marketing Advisorn’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
     buttonText: "Learn More",
-    buttonLink: "/website",
+    buttonLink: "/hvac/website",
     backgroundVideo: video3,
     tag: "Website",
     icon: "",
@@ -55,7 +55,7 @@ const testimonials = [
     description:
       "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
     buttonText: "Learn More",
-    buttonLink: "/marketing-team",
+    buttonLink: "/hvac/team-of-experts",
     backgroundVideo: video4,
     tag: "Marketing Team",
     icon: "",
@@ -66,7 +66,7 @@ const testimonials = [
     description:
       "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
     buttonText: "Learn More",
-    buttonLink: "/ranking-ai",
+    buttonLink: "/hvac/ranking-ai",
     backgroundVideo: video5,
     tag: "Ranking",
     icon: "AI",
@@ -77,7 +77,7 @@ const testimonials = [
     description:
       "In a competitive industry like HVAC, a strong reputation can be your greatest asset. With Reputation AI, get more 5-star reviews and use them to get more customers.",
     buttonText: "Learn More",
-    buttonLink: "/reputation-ai",
+    buttonLink: "/hvac/reputation-ai",
     backgroundVideo: video6,
     tag: "Reputation",
     icon: "AI",
