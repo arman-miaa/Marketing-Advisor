@@ -2,6 +2,8 @@ import { X, ChevronRight } from "lucide-react";
 import WhoWeHelp from "./dropwon/WhoWeHelp";
 import MarketingSolutions from "./dropwon/MarketingSolutions";
 import About from "./dropwon/AboutUs";
+import { Link } from "react-router";
+import Insights from "./dropwon/Insights";
 
 export default function MobileMenu({
   isOpen,
@@ -29,13 +31,17 @@ export default function MobileMenu({
         <div className="flex-1 overflow-y-auto">
           {activeMobileSection === null && (
             <nav className="p-4 space-y-4">
-              <button
+              <button>
+                <Link to="/hvac">Home</Link>
+              </button>
+
+              {/* <button
                 onClick={() => setActiveMobileSection("whoWeHelp")}
                 className="flex items-center justify-between w-full text-left hover:text-blue-400 transition-colors"
               >
                 <span>Who We Help</span>
                 <ChevronRight size={20} />
-              </button>
+              </button> */}
               <button
                 onClick={() => setActiveMobileSection("marketingSolutions")}
                 className="flex items-center justify-between w-full text-left hover:text-blue-400 transition-colors"
@@ -43,11 +49,23 @@ export default function MobileMenu({
                 <span>Marketing Solutions</span>
                 <ChevronRight size={20} />
               </button>
-              <button
+
+              <button>
+                <Link to="/Partnerships">Partnerships</Link>
+              </button>
+
+              {/* <button
                 onClick={() => setActiveMobileSection("aboutUs")}
                 className="flex items-center justify-between w-full text-left hover:text-blue-400 transition-colors"
               >
                 <span>About Us</span>
+                <ChevronRight size={20} />
+              </button> */}
+              <button
+                onClick={() => setActiveMobileSection("Insights")}
+                className="flex items-center justify-between w-full text-left hover:text-blue-400 transition-colors"
+              >
+                <span>Insights</span>
                 <ChevronRight size={20} />
               </button>
             </nav>
@@ -64,8 +82,11 @@ export default function MobileMenu({
             />
           )}
 
-          {activeMobileSection === "aboutUs" && (
+          {/* {activeMobileSection === "aboutUs" && (
             <About isMobile onBack={() => setActiveMobileSection(null)} />
+          )} */}
+          {activeMobileSection === "Insights" && (
+            <Insights isMobile onBack={() => setActiveMobileSection(null)} />
           )}
         </div>
       </div>

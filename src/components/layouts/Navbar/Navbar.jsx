@@ -37,7 +37,7 @@ export default function Navbar() {
         <header className="md:hidden sticky top-0 left-0 right-0 bg-black text-white z-50">
           <div className="flex items-center justify-between h-14 px-4">
             <Link to="/" className="text-xl font-bold tracking-wider">
-              Marketing AdvisorN
+              Marketing Advisor
             </Link>
             <div className="flex items-center space-x-4">
               <Link to="tel:8663448852" className="hover:text-blue-400">
