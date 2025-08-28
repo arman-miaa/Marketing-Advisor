@@ -1,4 +1,5 @@
 
+import CallToActionSection from "../components/modules/hvacpage/CallToActionSection";
 import ClientSuccessSection from "../components/modules/hvacpage/ClientSuccessSection";
 import HeroSection from "../components/modules/hvacpage/HeroSection";
 import HvacNewsSection from "../components/modules/hvacpage/HvacNewsSection";
@@ -22,6 +23,7 @@ export default function HvacPage() {
       <KeepTechsBusySection />
       <ClientSuccessSection/>
       <HvacNewsSection />
+      <CallToActionSection/>
     </div>
   )
 }

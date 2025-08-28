@@ -6,12 +6,14 @@ import RevenueMAXSection from "../../components/modules/hvacpage/advisorConnect/
 import SeeConnectInAction from "../../components/modules/hvacpage/advisorConnect/SeeConnectInAction";
 import SuccessStoriesSection from "../../components/modules/hvacpage/advisorConnect/SuccessStoriesSection";
 import ContactFormSection from "../../shared/ContactFormSection";
+import NavigationMenu from "../../shared/NavigationMenu";
 
 
 export default function AdvisorConnect() {
   return (
     <div>
       <HeroSection />
+      <NavigationMenu/>
       <OpportunityHub />
       <FirstChoiceSection />
       <SeeConnectInAction />

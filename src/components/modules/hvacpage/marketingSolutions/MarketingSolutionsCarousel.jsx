@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Button from "../../../ui/Button";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
 
 const MarketingSolutionsCarousel = () => {
   const testimonials = [
@@ -86,14 +87,21 @@ const MarketingSolutionsCarousel = () => {
 
   // play / pause toggle
   const handlePlay = (index) => {
-    const video = videoRefs.current[index];
-    if (video) {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
+    videoRefs.current.forEach((video, i) => {
+      if (video) {
+        if (i === index) {
+       
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        } else {
+         
+          video.pause();
+        }
       }
-    }
+    });
   };
 
   // update progress bar
@@ -111,19 +119,14 @@ const MarketingSolutionsCarousel = () => {
   }, [activeIndex]);
 
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-blue-50 py-16 md:pt-30 px-4">
+    <section className="bg-gradient-to-b from-white to-blue-50 py-16 md:pt-30 px-4">
       <div>
-        {/* Header */}
-        <div className="text-left mb-12 container mx-auto">
-          <p className="text-blue-500 uppercase font-semibold tracking-wider mb-4">
-            Revenuemax Solutions
-          </p>
-          <h2 className="text-4xl md:text-6xl mt-12 font-bold text-white">
-            HVAC Marketing That Makes You the
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md text-black">
-              First Call
-            </span>{" "}
-          </h2>
+        <div className="container mx-auto md:px-10">
+          <SharedTitleSection
+            category="at the forefront"
+            title="Marketing and technology for HVAC companies that books more jobs."
+            highlightText="more jobs."
+          />
         </div>
 
         {/* Swiper Carousel */}
@@ -199,7 +202,7 @@ const MarketingSolutionsCarousel = () => {
 
         {/* Custom Pagination */}
 
-        <div className="container mx-auto">
+        <div className="container mx-auto md:px-10 md:pb-8 md:pt-4 ">
           <div className="mt-8 bg-white p-2 pl-4 pr-4 border border-gray-300 rounded-full inline-flex items-center gap-3">
             {/* Play/Pause Button – always left */}
             <button
@@ -229,7 +232,7 @@ const MarketingSolutionsCarousel = () => {
                     swiperRef.current?.slideTo(i);
                     handlePlay(i);
                   }}
-                  className="relative flex-shrink-0"
+                  className="relative flex-shrink-0 cursor-pointer"
                 >
                   {/* Inactive dot */}
                   {!isActive && (
