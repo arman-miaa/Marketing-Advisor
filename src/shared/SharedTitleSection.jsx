@@ -22,8 +22,8 @@ function SharedTitleSection({
       {category && (
         <p
           className={`${
-            theme === "dark" ? "text-blue-400" : "text-blue-500"
-          } uppercase text-sm font-medium tracking-[0.4em] mb-4`}
+            theme === "dark" ? "text-blue-400" : "text-blue-700"
+          } uppercase text-sm font-medium  tracking-[0.4em] mb-4`}
         >
           {category}
         </p>
@@ -38,7 +38,7 @@ function SharedTitleSection({
             <React.Fragment key={index}>
               {part}
               {index < arr.length - 1 && (
-                <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md text-black ">
+                <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3  rounded-md text-black ">
                   {highlightText}
                 </span>
               )}

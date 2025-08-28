@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SharedTitleSection from "./SharedTitleSection";
 
 export default function ContactFormSection() {
   const [formData, setFormData] = useState({
@@ -20,30 +21,20 @@ export default function ContactFormSection() {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-gray-50">
+    <section className="py-16 md:py-30 bg-gradient-to-b from-white to-blue-50 ">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <p className="text-sm font-semibold text-blue-600 tracking-wider uppercase">
-                CONTACT US
-              </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Let&apos;s Get Connected
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Tell us about your ultimate goal and we&apos;ll help you reach
-                it. Fill out a form or schedule a call.
-              </p>
-            </div>
-          </div>
+
+          <SharedTitleSection
+            category="CONTACT US"
+            title="Let's Get Connected"
+            description="Tell us about your ultimate goal and we'll help you reach it. Fill out a form or schedule a call."
+            descriptionSize="text-base md:text-xl mt-8"
+          />
 
           {/* Right Form */}
-          {/* Right Form */}
-          <div className="bg-gradient-to-br from-indigo-800 to-blue-900 rounded-2xl p-8 lg:p-10 shadow-xl">
-         
-
+          <div className="bg-gradient-to-br from-purple-100 to-blue-200 rounded-2xl p-8 md:p-14 shadow">
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Row 1 */}
               <div className="grid md:grid-cols-2 gap-6">
@@ -93,7 +84,6 @@ export default function ContactFormSection() {
                 />
               </div>
 
-            
               {/* Row 3 (Company + Industry same row) */}
               <div className="grid md:grid-cols-2 gap-6">
                 <input
@@ -136,7 +126,7 @@ export default function ContactFormSection() {
               </button>
 
               {/* Disclaimer */}
-              <p className="text-white/80 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 By providing a telephone number and submitting this form, you
                 are consenting to be contacted by SMS text message. Message &
                 data rates may apply. You can reply STOP to opt-out of further

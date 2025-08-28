@@ -9,7 +9,7 @@ export default function OpportunityHub() {
         title="One little window, so many opportunities."
         highlightText="opportunities."
         description="Scorpion Connect is your 24/7 AI customer service rep that can answer questions, book appointments, accept payments, and educate customers. When you maximize every opportunity to engage with website visitors, you’re able to turn those clicks into customers."
-        descriptionSize="text-base md:text-lg" 
+        descriptionSize="text-base md:text-lg  " 
           />
           <div>
               <img src={CardImg} alt="" />

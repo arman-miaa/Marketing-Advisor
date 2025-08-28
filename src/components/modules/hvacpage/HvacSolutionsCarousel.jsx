@@ -260,6 +260,7 @@ const testimonials = [
             })}
           </div>
         </div>
+        
       </div>
     </section>
   );
