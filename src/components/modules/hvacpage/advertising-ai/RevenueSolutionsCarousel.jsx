@@ -21,64 +21,65 @@ const RevenueSolutionsCarousel = () => {
   const slides = [
     {
       id: 1,
-      title: "Never miss an opportunity",
+      title: "Every lead, fully realized",
       description:
-        "Be there 24/7 with Marketing Advisor Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
+        "With Leads AI, you automatically know the value of every lead, get immediate summaries, and see the quality of every lead and intake.",
       buttonText: "Learn More",
       buttonLink: "/hvac/advisor-connect",
       image: slideImg1,
-      tag: "Marketing Advisor Connect",
-      icon: <BiSolidMessageRoundedDots />,
+      tag: "Leads",
+      icon: "AI",
     },
     {
       id: 2,
-      title: "Experience advertising that drives revenue",
+      title: "Grow your revenue",
       description:
-        "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
+        "Get full visibility into revenue attribution, geographic insights, and return on investment so we can invest where it matters most.",
       buttonText: "Learn More",
       buttonLink: "/digital-advertising",
       image: slideImg2,
-      tag: "Digital Advertising",
+      tag: "Revenue Intelligence",
     },
     {
       id: 3,
-      title: "First impressions that earn the job",
+      title: "Convert more with the right message",
       description:
-        "With Marketing Advisor’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
+        "Quickly turn visitors into leads with automated landing pages that give everything a potential customer needs to make you the obvious choice.",
       buttonText: "Learn More",
       buttonLink: "/website",
       image: slideImg3,
-      tag: "Website",
+      tag: "Landing Page",
+      icon: "AI",
     },
     {
       id: 4,
+      title: "Hold their attention",
+      description:
+        "Stand out with social media ads that make you the first thought when someone is faced with an HVAC problem.",
+      buttonText: "Learn More",
+      buttonLink: "/marketing-team",
+      image: slideImg4,
+      tag: "Social Advertising",
+    },
+    {
+      id: 5,
+      title: "Make yourself known",
+      description:
+        "With high-quality video ads that showcase your brand and what you offer to the customers you want.",
+      buttonText: "Learn More",
+      buttonLink: "/ranking-ai",
+      image: slideImg5,
+      tag: "Video Advertising",
+    },
+    {
+      id: 6,
       title: "Get a team that knows HVAC",
       description:
         "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
       buttonText: "Learn More",
-      buttonLink: "/marketing-team",
-      image: slideImg4,
-      tag: "Marketing Team",
-    },
-    {
-      id: 5,
-      title: "Get to the top and stay there",
-      description:
-        "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
-      buttonText: "Learn More",
-      buttonLink: "/ranking-ai",
-      image: slideImg5,
-      tag: "Ranking AI",
-    },
-    {
-      id: 6,
-      title: "Get to the top and stay there",
-      description:
-        "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
-      buttonText: "Learn More",
       buttonLink: "/ranking-ai",
       image: slideImg6,
-      tag: "Ranking AI",
+      tag: "Marketing Team",
     },
   ];
 
