@@ -1,57 +1,60 @@
+import { Link } from "react-router";
 import img1 from "../../../../assets/images/hvac/InsightsBlog/Dyess-Modern-HVAC-Website.jpg.2507150851227.webp"
 
 
 export default function SeoTipsSection() {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-16 md:py-32 px-4 bg-gradient-to-b from white to to-blue-50">
+      <div className="container mx-auto md:px-36">
         {/* Header */}
         <div className="mb-12">
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className=" mb-6 text-xl font-medium leading-relaxed">
             Search is used by about keywords. Today, it's about conversations.
             Thanks to{" "}
-            <span className="text-blue-600 underline">
+            <span className="text-blue-600 cursor-pointer">
               Google's shift to Conversational
             </span>
             , search results are serving more conversational and more
             personalized. That means:
           </p>
-          <ul className="space-y-2 text-gray-600 ml-6">
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Generic content won't cut it anymore
+          <ul className="space-y-6 text-xl font-medium ml-6">
+            <li className="flex items-center gap-2">
+              <span className="bg-blue-600 w-3 h-3 rounded-full flex-shrink-0"></span>
+              <span>Generic content won't cut it anymore</span>
             </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              The location pages won't rank
+            <li className="flex items-center gap-2">
+              <span className="bg-blue-600 w-3 h-3 rounded-full flex-shrink-0"></span>
+              <span>The location pages won't rank</span>
             </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Being "good enough" won't be good enough
+            <li className="flex items-center gap-2">
+              <span className="bg-blue-600 w-3 h-3 rounded-full flex-shrink-0"></span>
+              <span> Being "good enough" won't be good enough</span>
             </li>
           </ul>
-          <p className="text-gray-600 mt-6 leading-relaxed">
-            As Megan Devine, Scorpion's Product Owner for SEO & Ranking Strategy
-            puts it: "Conversational search has a big message, and that is that
-            SEO is no longer a commodity. For HVAC, it's very important to
-            understand that your customers are looking for solutions to
-            problems, not just services. They want to know that you understand
-            their specific needs."
+          <p className=" text-xl font-medium mt-6 leading-relaxed">
+            As Megan Ramirez, Scorpion's Product Owner for SEO & Ranking
+            Strategy, puts it: "AI Overviews might feel like a big change, and
+            it is, but this is where SEO has been heading for years. It's why we
+            have been hyper-focused on creating content that’s conversational,
+            educational, and genuinely helpful—because that’s what performs.
+            It's what will continue to perform."
           </p>
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mt-6">
-            <p className="text-gray-700">
-              <strong>If your HVAC business</strong> relies on local searches to
-              drive leads, now is the time to double down on SEO.
+          <div className="bg-gradient-to-r from bg-purple-200 to to-blue-200 rounded-2xl p-8 mt-6 text-center ">
+            <p className="text-2xl font-medium">
+              If your
+              <strong className="text-blue-600"> HVAC business</strong> relies
+              on local searches to drive leads, now is the time to double down
+              on SEO.
             </p>
           </div>
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-8 ">
           5 SEO Tips Every HVAC Business Should Use Today
         </h2>
 
-        <p className="text-gray-600 mb-12 text-center leading-relaxed">
+        <p className=" mb-8 text-xl font-medium leading-relaxed">
           There's no such thing as a "quick fix" because owners can build
           long-term value in any online in just a few days or weeks. They're
           strategies every HVAC business owners can use.
@@ -64,13 +67,13 @@ export default function SeoTipsSection() {
             <h3 className="text-xl font-bold text-gray-900 mb-4">
               1. Create Content That Speaks Like Your Customers
             </h3>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="text-xl mb-4 leading-relaxed">
               Your customers aren't using marketing keywords. They're asking
               full questions, describing symptoms, and explaining what they need
               in their own words.
             </p>
-            <div className="bg-gray-50 p-4 rounded-lg mb-4">
-              <p className="text-gray-700 italic">
+            <div className="bg-gray-50  rounded-lg mb-8">
+              <p className="text-xl">
                 "People aren't going to Google like a search engine anymore,
                 they're treating like a person," says Scorpion Megan Devine.
                 "Instead of searching for 'air conditioner' or 'furnace,'
@@ -79,11 +82,11 @@ export default function SeoTipsSection() {
                 is broken?'"
               </p>
             </div>
-            <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg">
-              <p className="text-gray-700">
-                <strong>Write like you talk.</strong> Focus on real questions
-                your customers ask ("Why is my AC blowing hot air?") and answer
-                them like a human, not a keyword-stuffed robot.
+            <div className="bg-gradient-to-r from bg-purple-200 to to-blue-200 rounded-2xl p-8 mt-6 text-center ">
+              <p className="text-2xl font-semibold">
+                Write like you talk. Focus on real questions your customers ask
+                ("Why is my AC blowing hot air?") and answer them like a human,
+                not a keyword-stuffed robot.
               </p>
             </div>
           </div>
@@ -93,38 +96,41 @@ export default function SeoTipsSection() {
             <h3 className="text-xl font-bold text-gray-900 mb-4">
               2. Description You Website With Content That Converts
             </h3>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="text-xl font-medium mb-4 leading-relaxed">
               Your website should be designed to do one thing: turn searches
               into customers.
             </p>
-            <ul className="space-y-2 text-gray-600 ml-6 mb-4">
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Add service pages for each city you serve and location
+            <ul className="space-y-6 text-xl ml-6 mb-4">
+              <li className="flex items-center gap-2">
+                <span className="bg-blue-600 w-3 h-3 rounded-full flex-shrink-0"></span>
+                <span>Add service pages for each job type and location</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Include FAQ sections in a clear, conversational tone
+              <li className="flex items-center gap-2">
+                <span className="bg-blue-600 w-3 h-3 rounded-full flex-shrink-0"></span>
+                <span>
+                  Include FAQs written in a clear, conversational tone
+                </span>
               </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Use internal links to guide visitors to your contact or
-                scheduling page
+              <li className="flex items-center gap-2">
+                <span className="bg-blue-600 w-3 h-3 rounded-full flex-shrink-0"></span>
+                <span>
+                  Use internal links to guide visitors to your contact or
+                  scheduling page
+                </span>
               </li>
             </ul>
-            <p className="text-gray-600 leading-relaxed">
-              Your site should be designed to do one thing: turn those
-              first-time visitors into booked jobs. Because your website isn't
-              just a digital brochure, it's your best conversion tool.
+            <p className="text-xl font-medium leading-relaxed">
+              Marketin Advisor builds{" "}
+              <span className="text-blue-600">HVAC websites</span> designed to
+              do one thing: turn visitors into booked jobs. Because your website
+              isn't just a digital brochure, it's your best conversion tool.
             </p>
           </div>
 
           {/* Website Mockup */}
           <div className="my-12">
-            <div className="bg-gray-100 rounded-lg p-6">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-     
-
+            <div className=" rounded-lg ">
+              <div className="bg-white rounded-lg shadow overflow-hidden">
                 {/* Website Content */}
                 <div className="relative">
                   <img
@@ -134,7 +140,6 @@ export default function SeoTipsSection() {
                   />
 
                   {/* Overlay Content */}
-                
                 </div>
               </div>
             </div>
@@ -143,73 +148,86 @@ export default function SeoTipsSection() {
           {/* Tip 3 */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              3. Use Business Like an SEO Priority
+              3. Treat Reviews Like an SEO Priority
             </h3>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="text-xl mb-4 leading-relaxed">
               Google doesn't just crawl your website, it reads your reviews.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              Every review you get is another opportunity to rank at least three
-              online ranking factors: recency, SEO, and reputation. If you
-              consider competitors who have than 4.5 star ratings.
+            <p className="text-xl mb-4 leading-relaxed">
+              According to the latest Pulse data, 67% of consumers check at
+              least three review sources before deciding, and 64% won’t consider
+              providers with less than a 4-star ratings.
+            </p>
+            <p className="text-xl mb-4 leading-relaxed">
+              Julie Kennedy, Product Owner of Reviews & Reputation at Scorpion,
+              breaks it down: "Ads and SEO get you found, but reviews close the
+              deal. Reputation, SEO, and listings aren’t siloed; they power each
+              other like gears in the same machine."
             </p>
           </div>
 
           {/* Tip 4 */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              4. Keep Your Site Load/Loading Fast Accurate
+              4.Make Sure Your Local Listings Are Accurate
             </h3>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Keep your business names, address, phone number, hours, and
-              services updated. Add fresh photos regularly. And respond to every
-              review you get.
+            <p className="text-xl mb-4 leading-relaxed">
+              Your Google Business Profile (GBP) is often the first thing
+              someone sees about your HVAC company. It’s also a key ranking
+              factor.
             </p>
-            <ul className="space-y-2 text-gray-600 ml-6">
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Keep all info as Part of a Bigger Business Strategy
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Remember that just get and marketing is just the right kind of
-                traffic that turns into real jobs.
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                The best HVAC marketing approaches all of about SEO,
-                advertising, website, email, CRM, and reputation all working in
-                sync to drive new business.
-              </li>
-            </ul>
+            <p className="text-xl mb-4 leading-relaxed">
+              Keep your business name, address, phone number, hours, and
+              services updated. Add fresh photos regularly. And respond to
+              reviews, yes, all of them.
+            </p>
+          </div>
+
+          {/* Tip 5 */}
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
+              5. Think of SEO as Part of a Bigger Revenue Strategy
+            </h3>
+            <p className="text-xl mb-4 leading-relaxed">
+              <span className="text-blue-700">Great SEO</span> doesn’t just get
+              you more traffic. It gets you the right kind of traffic that turns
+              into real jobs.
+            </p>
+            <p className="text-xl mb-4 leading-relaxed">
+              That’s what{" "}
+              <span className="text-blue-600">Advisor RevenueMAX</span> approach
+              is all about: SEO, advertising, website, chat, CRM, and reputation
+              all working in sync to drive one thing, revenue.
+            </p>
+          </div>
+          <div className="bg-gradient-to-r from bg-purple-200 to to-blue-200 rounded-2xl p-8 mt-6 text-center ">
+            <p className="text-2xl font-semibold">
+              With HVAC marketing getting more competitive, businesses that
+              treat SEO as part of an integrated system will see better results.
+            </p>
           </div>
 
           {/* Final Takeaways */}
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+          <div className="bg-blue-50  rounded-lg">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Final Takeaways
             </h3>
-            <div className="space-y-3 text-gray-700">
-              <p className="flex items-start">
-                <span className="text-blue-600 mr-2 mt-1">1.</span>
-                SEO isn't about keywords anymore, it's about conversations and
-                credibility.
+            <div className="space-y-6 ">
+              <p className="text-xl font-medium">
+                1. SEO isn't about keywords anymore, it's about conversations
+                and credibility.
               </p>
-              <p className="flex items-start">
-                <span className="text-blue-600 mr-2 mt-1">2.</span>
-                Google is Conversational so have to stay HVAC businesses that
-                answer SEO right.
+              <p className="text-xl font-medium">
+                2. SEO isn't about keywords anymore, it's about conversations
+                and credibility.
               </p>
-              <p className="flex items-start">
-                <span className="text-blue-600 mr-2 mt-1">3.</span>
-                Integrating SEO with your website, reviews, and listings is the
-                best way to turn visibility into revenue.
+              <p className="text-xl font-medium">
+                3. SEO isn't about keywords anymore, it's about conversations
+                and credibility.
               </p>
-              <p className="flex items-start">
-                <span className="text-blue-600 mr-2 mt-1">4.</span>
-                It's not how your SEO is performing or where your next
-                opportunity lies?{" "}
-                <span className="text-blue-600 underline">Let's talk</span>.
+              <p className="text-xl font-medium">
+                Want to see how your SEO is performing or where your next
+                opportunity lies? <Link to="/hvac/get-started" className="text-blue-700 hover:text-black" >Let’s talk.</Link>
               </p>
             </div>
           </div>
