@@ -4,12 +4,14 @@ import FinalCtaSection from "../../components/modules/hvacpage/website/FinalCtaS
 import HeroSection from "../../components/modules/hvacpage/website/HeroSection";
 import RevenueSolutionsCarousel from "../../components/modules/hvacpage/website/RevenueSolutionsCarousel";
 import WebImpact from "../../components/modules/hvacpage/website/WebImpact";
+import NavigationMenu from "../../shared/NavigationMenu";
 
 
 export default function Website() {
   return (
     <div>
       <HeroSection />
+      <NavigationMenu/>
       <WebImpact />
       <CreativeAdvantage />
       <BuiltToDoMore />

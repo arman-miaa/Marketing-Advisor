@@ -239,7 +239,7 @@ const testimonials = [
                     swiperRef.current?.slideTo(i);
                     handlePlay(i);
                   }}
-                  className="relative flex-shrink-0"
+                  className="relative flex-shrink-0 cursor-pointer"
                 >
                   {/* Inactive dot */}
                   {!isActive && (

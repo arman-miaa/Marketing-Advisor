@@ -1,113 +1,90 @@
 import rightImg from "../../../../assets/images/hvac/website/Leads-Ai-HS-10.jpg.2505091048353.webp"
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
+import Button from "../../../ui/Button";
 export default function BuiltToDoMore() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 md:py-30 px-4 bg-gray-50">
+      <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             {/* Header */}
-            <div className="space-y-4">
-              <p className="text-sm font-semibold text-blue-600 tracking-wider uppercase">
-                SMARTER SPEND. BIGGER IMPACT.
-              </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Ads that fill your{" "}
-                <span className="bg-purple-200 text-purple-900 px-3 py-1 rounded-lg inline-block">
-                  schedule
-                </span>
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                For years, digital advertising was judged by{" "}
-                <span className="text-blue-600 font-semibold">
-                  getting leads
-                </span>
-                . But leads aren't the goal—{" "}
-                <span className="text-orange-600 font-semibold">
-                  revenue is
-                </span>
-                .
-              </p>
-            </div>
 
+            <SharedTitleSection
+              category="More Than Just a Pretty Page "
+              title="Loaded with features"
+              highlightText="features"
+            />
             {/* Bullet Points */}
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+            <div className="space-y-6 -mt-4 ">
+              <div className="flex items-start gap-4 mt-2">
+                <div className="w-3 h-3 bg-blue-500 outline-blue-800 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Be where it matters.
+                  <h3 className="font-semibold text-xl text-gray-900 mb-2">
+                    Connect with more customers
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Turn pay-per-click (PPC) to social media to listings, all of
-                    your advertising works together to drive your business more
-                    revenue by putting you everywhere that matters when someone
-                    needs you.
+                  <p className="text-gray-900 text-lg leading-relaxed">
+                    With Scorpion Connect, you’ll get a 24/7 AI customer service
+                    rep that can answer questions, book services, accept
+                    payments, and never miss an opportunity.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Be one-choice strong.
+                  <h3 className="font-semibold text-xl text-gray-900 mb-2">
+                    Allow people to book online
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Turn <span className="text-blue-600">landing pages</span>{" "}
-                    that automatically serve up the answers people are looking
-                    for to <span className="text-blue-600">24/7 AI chat</span>,
-                    we make your business the clear choice— no matter the
-                    competition.
+                  <p className="text-gray-900 text-lg leading-relaxed">
+                    Your customers can easily book open time slots on your
+                    calendar or request a time that works for them.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Be in the know, always.
+                  <h3 className="font-semibold text-xl text-gray-900 mb-2">
+                    Track everything
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Scorpion goes beyond leads, showing you exactly which jobs
-                    and services are bringing you the best return on investment.
+                  <p className="text-gray-900 text-lg leading-relaxed">
+                    Running effective marketing campaigns requires countless
+                    tools: call recording, number pooling, source tracking, and
+                    more. With Scorpion, you’ll have them all.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Be certain of the results.
+                  <h3 className="font-semibold text-xl text-gray-900 mb-2">
+                    Understand every lead
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Scorpion's advertising AI learns what drives revenue, then
-                    trains the AI on your data (like Google, Microsoft, and
-                    Meta) to bring you more of the right customers,
-                    automatically.
+                  <p className="text-gray-900 text-lg leading-relaxed">
+                    With Leads AI, you’ll know exactly what happened with every
+                    single lead, automatically.
                   </p>
                 </div>
               </div>
             </div>
-
 
             {/* CTA Button */}
             <div>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-200">
-                Get Started
-              </button>
+              <Button text="Get More Jobs" to="/hvac/get-started" />
             </div>
           </div>
 
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full lg:w-[90%]">
+            <div className="relative w-full lg:w-[100%]">
               <img
                 src={rightImg}
                 alt="Advertising AI Preview"
-                className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+                className="w-full h-[750px] object-cover rounded-3xl shadow-2xl"
               />
               {/* Optional overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl pointer-events-none"></div>

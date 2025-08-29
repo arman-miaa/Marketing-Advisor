@@ -13,7 +13,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Button from "../../../ui/Button";
-import { BiSolidMessageRoundedDots } from "react-icons/bi";
+
 import SharedTitleSection from "../../../../shared/SharedTitleSection";
 import CarouselControls from "../../../../shared/CarouselControls";
 

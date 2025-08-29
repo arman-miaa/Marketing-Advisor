@@ -1,12 +1,20 @@
 import Button from "../components/ui/Button";
 
-export default function SharedFinalCtaSection({ title, highlight }) {
+export default function SharedFinalCtaSection({ title, highlight,category }) {
 
   const parts = title.split(highlight);
 
   return (
     <section className="py-16 md:py-52 px-4 bg-gradient-to-r from-purple-200 via-blue-100 to-blue-200">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="container mx-auto text-center">
+        {/* Category */}
+        {category && (
+          <p
+            className={` uppercase text-sm text-blue-700 font-semibold  tracking-[0.4em] mb-8`}
+          >
+            {category}
+          </p>
+        )}
         {/* Title */}
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8">
           {parts[0]}
@@ -27,7 +35,7 @@ export default function SharedFinalCtaSection({ title, highlight }) {
 
           <span className="text-gray-800 font-medium hidden sm:inline">OR</span>
 
-          <Button text="Schedule an Appointment" to='/hvac/get-started' />
+          <Button text="Schedule an Appointment" to="/hvac/get-started" />
         </div>
       </div>
     </section>

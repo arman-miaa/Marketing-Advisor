@@ -7,7 +7,11 @@ export default function OneSystemSection() {
       <div className="max-w-7xl mx-auto">
 
 
-        <SharedContentSection/>
+        <SharedContentSection  title = "One system."
+  subtitle = "Everything you need to win."
+  description = "Scorpion's technology feeds everything back to our advertising partners, meaning you get way more of what you want, and way less of what you don't."
+  buttonText = "Learn More"
+  buttonLink = "/hvac/get-started" />
 
         {/* Laptop Mockup */}
         <div className="relative max-w-5xl mx-auto">

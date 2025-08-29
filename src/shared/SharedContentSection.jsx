@@ -3,11 +3,12 @@ import Button from "../components/ui/Button";
 
 
 export default function SharedContentSection({
-  title = "One system.",
-  subtitle = "Everything you need to win.",
-  description = "Scorpion's technology feeds everything back to our advertising partners, meaning you get way more of what you want, and way less of what you don't.",
+  title,
+  subtitle,
+  description,
   buttonText = "Learn More",
   buttonLink = "/hvac/get-started",
+  descriptionSize = "text-lg md:text-2xl ",
 }) {
   return (
     <section className="relative bg-slate-900 py-20 px-4 sm:px-6 lg:px-8">
@@ -28,7 +29,9 @@ export default function SharedContentSection({
           >
             {subtitle}
           </h3>
-          <p className="text-lg md:text-2xl text-white max-w-4xl mx-auto mb-8 leading-relaxed">
+          <p
+            className={`${descriptionSize} text-white container mx-auto mb-8 leading-relaxed`}
+          >
             {description}
           </p>
           <div className="flex justify-center">
