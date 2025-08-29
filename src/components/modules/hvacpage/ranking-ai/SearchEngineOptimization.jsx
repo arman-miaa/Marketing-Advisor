@@ -1,83 +1,76 @@
-import img1 from "../../../../assets/images/hvac/website/HS-Website-1.jpg.2504221331114.webp"
-import img2 from "../../../../assets/images/hvac/website/HS-Website-2.jpg.2505051022371.webp"
-import img3 from "../../../../assets/images/hvac/website/HS-Website-3.jpg.2504221331120.webp"
+import img1 from "../../../../assets/images/hvac/ranking-ai/HVAC-Ranking-AI-1.jpg.2505231354592.webp"
+import img2 from "../../../../assets/images/hvac/ranking-ai/Ranking-AI-2.jpg.2504221521170.webp"
+import img3 from "../../../../assets/images/hvac/ranking-ai/Ranking-AI-3.jpg.2504221446093.webp"
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
+
+
 
 export default function SearchEngineOptimization() {
+  const cards = [
+    {
+      img: img1,
+      title: "Identify the gold",
+      desc: "We rank for the keywords that will drive real revenue, and you’ll know exactly what’s driving results across Google, Bing, and everywhere else.",
+    },
+    {
+      img: img2,
+      title: "Rank for the gold",
+      desc: "After identifying the terms that matter, our team of experts puts the strategy in place to take you to the top of the page.",
+    },
+    {
+      img: img3,
+      title: "Get more of the gold",
+      desc: "Ranking AI is constantly looking at which terms bring value to your business, immediately adjusting based on what’s driving you the right jobs.",
+    },
+  ];
   return (
-    <section className="py-16 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 md:py-36 px-4 bg-gray-50">
+      <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-blue-600 text-sm font-semibold tracking-wider uppercase mb-4">
-            MAXIMIZE YOUR REVENUE
+          <SharedTitleSection
+            category="Search Engine Optimization"
+            title="Own the top spot. Win the right jobs."
+            highlightText="right jobs."
+          />
+          <p className="text-lg md:text-3xl text-left -mt-10 ">
+            If your <span className="font-bold">HVAC business </span> isn’t
+            ranking when someone searches for you, you’re invisible. Our Search
+            Engine Optimization technology,{" "}
+            <span className="font-bold">Ranking AI,</span> helps you own your
+            <span className="font-bold"> local market</span>(and your
+            competition). 
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Know every dollar{" "}
-            <span className="bg-gray-900 text-white px-4 py-2 rounded-lg inline-block">
-              earned
-            </span>{" "}
-            for every dollar spent
-          </h2>
         </div>
 
-        {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Channel by Channel Card */}
-          <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-8 text-center">
-            <div className="mb-6">
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          {cards.map((card, idx) => (
+            <div
+              key={idx}
+              className="relative rounded-2xl overflow-hidden group"
+            >
+              {/* Image */}
               <img
-                src={img1}
-                alt="Channel analytics dashboard"
-                className="w-full h-48 object-cover rounded-lg"
+                src={card.img}
+                alt={card.title}
+                className="w-full h-100 object-cover"
               />
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Channel by Channel
-            </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Scorpion's AI shifts your budget to the channels that are driving
-              results, away from the ones that aren't. So you show up where it
-              matters, exactly when it matters.
-            </p>
-          </div>
 
-          {/* Conversion by Conversion Card */}
-          <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-8 text-center">
-            <div className="mb-6">
-              <img
-                src={img2}
-                alt="Conversion tracking dashboard"
-                className="w-full h-48 object-cover rounded-lg"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Conversion by Conversion
-            </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Not every call is a good one. We track which leads turn into real
-              jobs. We fine-tune everything from your ads to landing pages to
-              24/7 AI chat to get more of what actually fills your schedule.
-            </p>
-          </div>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/60  " />
 
-          {/* Customer by Customer Card */}
-          <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-8 text-center">
-            <div className="mb-6">
-              <img
-                src={img3}
-                alt="Customer analytics dashboard"
-                className="w-full h-48 object-cover rounded-lg"
-              />
+              {/* Text */}
+              <div className="absolute bottom-8 left-8 pr-4 text-left text-white">
+                <h3 className="text-xl md:text-3xl font-bold mb-2">
+                  {card.title}
+                </h3>
+                <p className=" font-medium text-lg leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Customer by Customer
-            </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              By integrating with your CRM, we see exactly what's turning into
-              closed business, then shift your budget toward the channels
-              bringing in the most revenue. No guesswork, just better results.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

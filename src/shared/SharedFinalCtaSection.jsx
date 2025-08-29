@@ -16,7 +16,7 @@ export default function SharedFinalCtaSection({ title, highlight,category }) {
           </p>
         )}
         {/* Title */}
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+        <h2 className="text-3xl md:text-6xl font-bold text-gray-900 mb-8">
           {parts[0]}
           <span className="text-blue-500 px-4 py-2 rounded-lg inline-block ">
             {highlight}
