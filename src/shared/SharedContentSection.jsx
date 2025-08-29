@@ -5,9 +5,10 @@ import Button from "../components/ui/Button";
 export default function SharedContentSection({
   title,
   subtitle,
+  category,
   description,
-  buttonText = "Learn More",
-  buttonLink = "/hvac/get-started",
+  buttonText ,
+  buttonLink ,
   descriptionSize = "text-lg md:text-2xl ",
 }) {
   return (
@@ -20,6 +21,14 @@ export default function SharedContentSection({
 
         {/* Header Content */}
         <div className="text-center relative z-10">
+          {/* Category */}
+          {category && (
+            <p
+              className={` uppercase text-sm text-blue-700 font-semibold  tracking-[0.4em] mb-8`}
+            >
+              {category}
+            </p>
+          )}
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
             {title}
           </h2>
@@ -34,9 +43,11 @@ export default function SharedContentSection({
           >
             {description}
           </p>
-          <div className="flex justify-center">
-            <Button text={buttonText} to={buttonLink} />
-          </div>
+          {buttonText && (
+            <div className="flex justify-center">
+              <Button text={buttonText} to={buttonLink} />
+            </div>
+          )}
         </div>
       </div>
     </section>
