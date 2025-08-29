@@ -1,11 +1,4 @@
-import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation"; 
-
-import { FaArrowUpLong } from "react-icons/fa6";
-
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination"; // dots css
@@ -58,7 +51,6 @@ const clientData = [
 ];
 
 export default function MoreStorieSlides() {
-   const swiperRef = useRef(null);
   return (
     <section className="py-20 md:py-38 bg-gradient-to-b from-blue-0 to-blue-50 relative overflow-hidden">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,47 +65,25 @@ export default function MoreStorieSlides() {
         <div className="relative">
           <Swiper
             breakpoints={{
-              0: {
-                slidesPerView: 1, // small device → 1 card
-                centeredSlides: false,
-              },
-              768: {
-                slidesPerView: 2, // tablet → 2 card
-                centeredSlides: false,
-              },
-              1024: {
-                slidesPerView: 3, // laptop → 3 card
-                centeredSlides: true,
-              },
-              1280: {
-                slidesPerView: 4, // desktop → 4 card
-                centeredSlides: true,
-              },
+              0: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 4 },
             }}
             spaceBetween={30}
-            grabCursor={false}
-            allowTouchMove={false}
-            simulateTouch={false}
             modules={[Pagination]}
             pagination={{
               clickable: true,
               el: ".custom-pagination",
               renderBullet: (index, className) => {
-                return `<span class="${className} w-4 h-4 bg-gray-400 rounded-full inline-block mx-2 cursor-pointer"></span>`;
+                return `<span class="${className} w-5 h-5 bg-gray-400 rounded-full inline-block mx-3 cursor-pointer"></span>`;
               },
             }}
             className="mySwiper"
           >
-            {(swiper) => {
-              swiperRef.current = swiper;
-            }}
-
             {clientData.map((client) => (
               <SwiperSlide key={client.id}>
-                <a
-                  href="#"
-                  className="group  bg-white rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200 overflow-hidden flex flex-col h-full relative"
-                >
+                <div className="bg-white rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200 overflow-hidden flex flex-col h-full relative">
                   {/* Image */}
                   <div className="h-98 w-full relative overflow-hidden">
                     <img
@@ -126,7 +96,7 @@ export default function MoreStorieSlides() {
                     <div className="absolute inset-0 bg-black/50"></div>
 
                     {/* HVAC Text on Top */}
-                    <span className="absolute top-4 left-4 text-white text-xs font-bold z-10 px-2 py-1 rounded">
+                    <span className="absolute top-4 left-4 text-white text-xs font-bold z-10  px-2 py-1 rounded">
                       HVAC
                     </span>
 
@@ -143,17 +113,23 @@ export default function MoreStorieSlides() {
 
                   {/* Read More link */}
                   <div className="p-6 flex flex-col flex-grow mt-auto">
-                    <span className="mt-auto font-semibold text-blue-600 group-hover:text-black transition-colors duration-300">
+                    <a
+                      href="#"
+                      className="mt-auto  font-semibold text-blue-600 hover:text-black"
+                    >
                       Read More →
-                    </span>
+                    </a>
                   </div>
-                </a>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
           {/* Custom Dots Pagination */}
-          <div className="custom-pagination md:ml-42 border-2 border-gray-300  rounded-full bg-white p-4  flex justify-center cursor-pointer mt-10"></div>
+                  <div className="custom-pagination md:ml-42 border-2 border-gray-300  rounded-full bg-white p-4  flex justify-center cursor-pointer mt-10"></div>
+                  
+
+                  
         </div>
       </div>
     </section>
