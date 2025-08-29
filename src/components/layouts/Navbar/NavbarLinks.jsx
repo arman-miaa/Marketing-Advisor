@@ -7,6 +7,7 @@ import { Link } from "react-router";
 
 export default function NavbarLinks({ activeDropdown, setActiveDropdown }) {
   const navRef = useRef(null);
+    const isInsightsPage = location.pathname.startsWith("/hvac/insights");
 
   // Outside click handler
   useEffect(() => {
@@ -34,7 +35,12 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown }) {
     ${activeDropdown === name ? "after:opacity-100" : ""}`;
 
   return (
-    <nav ref={navRef} className="hidden lg:flex items-center space-x-8">
+    <nav
+      ref={navRef}
+      className={`hidden lg:flex items-center space-x-8 ${
+        isInsightsPage ? "text-black" : "text-white"
+      } `}
+    >
       {/* Home */}
       <div>
         <Link to="/hvac" className={linkClass("home")}>

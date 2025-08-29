@@ -15,6 +15,7 @@ export default function Navbar() {
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const isInsightsPage = location.pathname.startsWith("/hvac/insights");
 
   return (
     <>
@@ -66,7 +67,13 @@ export default function Navbar() {
           <div className="px-6 md:px-12">
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
-              <Link to="/" className="text-3xl font-bold tracking-wider">
+
+              <Link
+                to="/"
+                className={`text-3xl font-bold tracking-wider ${
+                  isInsightsPage ? "text-black" : "text-white"
+                }`}
+              >
                 Marketing Advisor
               </Link>
 
@@ -80,12 +87,19 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center text-lg space-x-6">
                 <Link
                   to="/login"
-                  className="flex items-center text-xl font-medium space-x-1 hover:text-blue-400 transition-colors"
+                  className={`flex items-center text-xl font-medium space-x-1 hover:text-blue-400 transition-colors ${
+                    isInsightsPage ? "text-black" : "text-white"
+                  }`}
                 >
                   <MdOutlineLogin size={20} />
                   <span>Login</span>
                 </Link>
-                <Link to="tel:8663448852" className="font-extrabold">
+                <Link
+                  to="tel:8663448852"
+                  className={`font-extrabold ${
+                    isInsightsPage ? "text-black" : "text-white"
+                  }`}
+                >
                   (866) 344-8852
                 </Link>
                 <Button text="Get Started" to="/hvac/get-started" />
