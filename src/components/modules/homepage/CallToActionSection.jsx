@@ -11,7 +11,7 @@ export default function CallToActionSection() {
             className="text-4xl md:text-7xl  font-bold mb-4"
             style={{ textShadow: "4px 4px 8px #3b82f6" }}
           >
-            MAXIMIZE style={{ textShadow: "4px 4px 8px #3b82f6" }}
+            MAXIMIZE 
           </h2>
           <h3 className="text-3xl md:text-4xl lg:text-6xl font-light mb-20">
             Your Growth
