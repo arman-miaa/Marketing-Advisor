@@ -7,8 +7,19 @@ import logo5 from "../../../assets/images/hvac/Service-TitanLight.png.2505221507
 import logo6 from "../../../assets/images/hvac/ACCALight.png.2505221507084.webp";
 
 import Button from "../../ui/Button";
+import ResponsiveSlider from "../../../shared/ImageSlider";
 
 function HeroSection() {
+
+    const logos = [
+      { src: logo1, alt: "Microsoft Advertising" },
+      { src: logo2, alt: "Google Partner" },
+      { src: logo3, alt: "Meta Business Partner" },
+      { src: logo4, alt: "Meta Business Partner" },
+      { src: logo6, alt: "Meta Business Partner" },
+      { src: logo3, alt: "Meta Business Partner" },
+    ];
+
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Full Screen Video Background */}
@@ -47,39 +58,11 @@ function HeroSection() {
           <Button text="Get Started" to="/hvac/get-started" />
         </div>
 
-        {/* Partner Logos */}
-        <div className="grid grid-cols-2 sm:flex sm:flex-row gap-6 sm:gap-12 lg:gap-16 place-items-center">
-          <img
-            src={logo1}
-            alt="Google Partner"
-            className="w-40 sm:w-[210px] h-12 sm:h-16 object-contain"
-          />
-          <img
-            src={logo2}
-            alt="Microsoft Advertising"
-            className="w-40 sm:w-[210px] h-12 sm:h-16 object-contain"
-          />
-          <img
-            src={logo3}
-            alt="Meta Business Partner"
-            className="w-40 sm:w-[210px] h-14 sm:h-16 object-contain"
-          />
-          <img
-            src={logo4}
-            alt="Thumbtack"
-            className="w-40 sm:w-[210px] h-12 sm:h-16 object-contain"
-          />
-          <img
-            src={logo5}
-            alt="Service Titan"
-            className="w-40 sm:w-[210px] h-12 sm:h-16 object-contain ml-10 md:ml-0"
-          />
-          <img
-            src={logo6}
-            alt="ACCA"
-            className="w-40 sm:w-[210px] h-12 sm:h-16 object-contain"
-          />
-        </div>
+ 
+
+    {/* Partner Logos - now using reusable component */}
+        <ResponsiveSlider items={logos} slidesPerView={2} />
+
       </div>
     </div>
   );

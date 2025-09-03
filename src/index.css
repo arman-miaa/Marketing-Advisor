@@ -41,3 +41,21 @@
   justify-content: center;
 }
 
+/* সব dot */
+.swiper-pagination-bullet {
+  background: gray !important;
+  opacity: 1 !important;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* active dot */
+.swiper-pagination-bullet-active {
+  background: white !important;
+  transform: scale(1.3);
+}
+
+

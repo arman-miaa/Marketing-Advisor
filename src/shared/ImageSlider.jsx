@@ -2,38 +2,62 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useRef, useEffect, useState } from "react";
 
-export default function ImageSlider({ items, onClick }) {
+
+export default function ResponsiveSlider({ items, slidesPerView = 2 }) {
+  const paginationRef = useRef(null);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setReady(true);
+  }, []);
+
   return (
-    <Swiper
-      modules={[Pagination]}
-      pagination={{ clickable: true }}
-      spaceBetween={12}
-      breakpoints={{
-        0: { slidesPerView: 2 }, // ছোট device: 2
-        640: { slidesPerView: 3 }, // medium device: 3
-      }}
-      className="px-4 pb-10"
-    >
-      {items.map((item) => (
-        <SwiperSlide key={item.id}>
-          <div
-            className="relative h-40 rounded-lg overflow-hidden cursor-pointer group"
-            onClick={() => item.href && onClick?.(item.href)}
+    <>
+      {/* 🔹 Small devices: show slider */}
+      <div className="block md:hidden w-full">
+        {ready && (
+          <Swiper
+            modules={[Pagination]}
+            pagination={{
+              clickable: true,
+              el: paginationRef.current, // custom pagination container
+            }}
+            spaceBetween={20}
+            slidesPerView={slidesPerView}
+            className="pb-4"
           >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="absolute inset-0 w-full h-full object-cover transition-all duration-300 group-hover:brightness-110 group-hover:contrast-105 brightness-75 contrast-90"
-            />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300" />
-            <div className="absolute bottom-4 left-4 z-10">
-              <h3 className="text-white text-lg font-semibold">{item.name}</h3>
-            </div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 transition-all duration-300 rounded-lg" />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+            {items.map((item, i) => (
+              <SwiperSlide key={i}>
+                <img
+                  src={item.src}
+                  alt={item.alt || `slide-${i}`}
+                  className="w-24 sm:w-32 h-12 sm:h-14 mx-auto object-contain"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
+
+        {/* 🔹 Custom Pagination Box */}
+        <div
+          ref={paginationRef}
+          className=" border w-fit mx-auto gap-3 mt-8 rounded-full border-gray-400 p-3 flex justify-center cursor-pointer "
+        />
+      </div>
+
+      {/* 🔹 Medium+ devices: normal flex layout */}
+      <div className="hidden md:flex flex-row flex-wrap items-center justify-start gap-8 lg:gap-16">
+        {items.map((item, i) => (
+          <img
+            key={i}
+            src={item.src}
+            alt={item.alt || `slide-${i}`}
+            className="w-24 sm:w-40 md:w-[210px] h-10 sm:h-12 md:h-16 object-contain"
+          />
+        ))}
+      </div>
+    </>
   );
 }

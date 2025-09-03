@@ -4,6 +4,8 @@ import logo1 from "../../../assets/images/Home Page/microsoftlogo.webp";
 import logo2 from "../../../assets/images/Home Page/googlepartnerlogo.webp";
 import logo3 from "../../../assets/images/Home Page/meta.webp";
 import Button from "../../ui/Button";
+import ResponsiveSlider from "../../../shared/ImageSlider";
+
 
 const slogans = [
   "Your Time",
@@ -27,6 +29,12 @@ function HeroSection() {
     }
   }, [index]);
 
+  const logos = [
+    { src: logo1, alt: "Microsoft Advertising" },
+    { src: logo2, alt: "Google Partner" },
+    { src: logo3, alt: "Meta Business Partner" },
+  ];
+
   return (
     <div className="relative w-full h-[calc(100vh-200px)] md:h-screen overflow-hidden">
       {/* Full Screen Video Background */}
@@ -45,18 +53,17 @@ function HeroSection() {
       <div className="absolute inset-0 bg-black/30 bg-opacity-60 z-10"></div>
 
       {/* Content Overlay */}
-      <div className="relative z-20 flex flex-col md:justify-center px-6  md:px-56 h-full text-white text-center md:text-left">
+      <div className="relative z-20 flex flex-col md:justify-center px-6 md:px-56 h-full text-white text-center md:text-left">
         {/* Main Heading */}
-        <h1 className="text-5xl mt-6 md:mt-0  md:text-6xl lg:text-[125px] font-bold tracking-tight">
+        <h1 className="text-5xl mt-6 md:mt-0 md:text-6xl lg:text-[125px] font-bold tracking-tight">
           MAXIMIZE
         </h1>
 
         {/* Animated Slogan */}
-
         <p
-          className="text-blue-200 text-4xl  md:text-5xl lg:text-6xl xl:text-[120px] 
-   font-bold mb-6 tracking-tight h-16 sm:h-20 md:h-30 relative overflow-hidden 
-   flex items-center justify-center md:justify-start"
+          className="text-blue-200 text-4xl md:text-5xl lg:text-6xl xl:text-[120px] 
+          font-bold mb-6 tracking-tight h-16 sm:h-20 md:h-30 relative overflow-hidden 
+          flex items-center justify-center md:justify-start"
         >
           {slogans.map((text, i) => (
             <span
@@ -75,33 +82,17 @@ function HeroSection() {
         </p>
 
         {/* Subheading */}
-        <p className="text-3xl md:text-xl lg:text-2xl mb-8  py-2 sm:py-4 max-w-xl md:max-w-2xl leading-relaxed mx-auto md:mx-0">
+        <p className="text-3xl md:text-xl lg:text-2xl mb-8 py-2 sm:py-4 max-w-xl md:max-w-2xl leading-relaxed mx-auto md:mx-0">
           Digital marketing that brings you revenue, not just leads.
         </p>
 
         {/* CTA Button */}
-        <div className="mb-10  flex justify-center md:justify-start">
+        <div className="mb-10 flex justify-center md:justify-start">
           <Button text="Get Started" to="/get-started" />
         </div>
 
-        {/* Partner Logos */}
-        <div className="flex flex-row flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-12 lg:gap-16">
-          <img
-            src={logo1}
-            alt="Microsoft Advertising"
-            className="w-24 sm:w-40 md:w-[210px] h-10 sm:h-12 md:h-16 object-contain"
-          />
-          <img
-            src={logo2}
-            alt="Google Partner"
-            className="w-24 sm:w-40 md:w-[210px] h-10 sm:h-12 md:h-16 object-contain"
-          />
-          <img
-            src={logo3}
-            alt="Meta Business Partner"
-            className="w-24 sm:w-40 md:w-[210px] h-10 sm:h-12 md:h-16 object-contain"
-          />
-        </div>
+        {/* Partner Logos - now using reusable component */}
+        <ResponsiveSlider items={logos} slidesPerView={2} />
       </div>
     </div>
   );
