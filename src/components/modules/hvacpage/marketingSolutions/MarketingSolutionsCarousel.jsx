@@ -148,7 +148,7 @@ const MarketingSolutionsCarousel = () => {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={testimonial.id} className="!w-[80%] md:!w-[60%]">
               <div
-                className="relative rounded-4xl overflow-hidden shadow-lg group cursor-pointer h-[600px] md:h-[700px] flex flex-col"
+                className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer h-[600px] md:h-[700px] flex flex-col"
                 onClick={() => handlePlay(index)}
               >
                 {/* Background Video */}
@@ -164,7 +164,7 @@ const MarketingSolutionsCarousel = () => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40" />
 
-                {/* Content */}
+           
 
                 {/* top tag */}
 

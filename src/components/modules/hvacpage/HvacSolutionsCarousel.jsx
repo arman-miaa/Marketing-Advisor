@@ -24,7 +24,7 @@ const testimonials = [
     buttonText: "Learn More",
     buttonLink: "/hvac/advisor-connect",
     backgroundVideo: video1,
-    tag: "Marketing Advisorn Connect",
+    tag: " Advisorn Connect",
     icon: <BiSolidMessageRoundedDots />,
   },
   {
@@ -168,12 +168,11 @@ const testimonials = [
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40" />
 
-                {/* Content */}
 
                 {/* top tag */}
 
                 <div className="absolute top-0 left-0 right-0 p-8 text-white">
-                  <span className="flex items-center gap-2 border border-blue-700 font-medium w-fit px-4 py-2 rounded-md bg-black/30 backdrop-blur-sm">
+                  <span className="flex items-center gap-2 border border-blue-700 font-medium w-fit px-2 md:px-4 text-sm md:text-lg py-2 rounded-md bg-black/30 backdrop-blur-sm">
                     {testimonial.tag}
 
                     {testimonial.icon && (
@@ -190,7 +189,7 @@ const testimonials = [
                     {testimonial.title}
                   </h3>
                   <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-                    <p className="text-lg md:text-xl opacity-90 mb-4 flex-1">
+                    <p className=" md:text-xl opacity-90 mb-4 flex-1">
                       {testimonial.description}
                     </p>
                     {/* Button */}

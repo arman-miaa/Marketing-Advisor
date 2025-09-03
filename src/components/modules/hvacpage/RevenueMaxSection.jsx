@@ -54,7 +54,7 @@ export default function RevenueMaxSection() {
           {/* Overlay Content */}
           <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
-              Revenue<span className="">MAX</span>
+              Revenue<span className="text-blue-600"> MAX</span>
             </h1>
             <p className="text-lg md:hidden text-blue-100 mb-6">
               The digital marketing and technology solution that drives calls,
@@ -68,7 +68,7 @@ export default function RevenueMaxSection() {
                 jobs, and revenue for your HVAC business.
               </p>
               <div className="flex flex-wrap gap-4 items-center">
-                <Link to="marketing-solutions">
+                <Link to="/hvac/marketing-solutions">
                   <button className="px-6 py-3 rounded-full border cursor-pointer text-lg border-blue-600 text-blue-600 font-semibold shadow-md transition">
                     Learn More
                   </button>
@@ -83,9 +83,11 @@ export default function RevenueMaxSection() {
             </div>
             {/* sm এ আলাদা নিচে btn গুলো */}
             <div className="md:hidden flex flex-col gap-4 mb-10">
-              <button className="w-full px-6 py-3 rounded-full border cursor-pointer text-lg border-blue-600 text-blue-600 font-semibold shadow-md transition">
-                Learn More
-              </button>
+              <Link to="/hvac/marketing-solutions">
+                <button className="w-full px-6 py-3 rounded-full border cursor-pointer text-lg border-blue-600 text-blue-600 font-semibold shadow-md transition">
+                  Learn More
+                </button>
+              </Link>
 
               <button
                 onClick={() => openVideoModal(boxVideo)}

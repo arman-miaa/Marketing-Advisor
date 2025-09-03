@@ -1,4 +1,4 @@
-// src/shared/SharedTitleSection.jsx
+
 import React from "react";
 
 function SharedTitleSection({

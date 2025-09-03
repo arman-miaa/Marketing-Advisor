@@ -1,5 +1,6 @@
 import AdvertisingSection from "../../components/modules/hvacpage/marketingSolutions/AdvertisingSection";
 import ExpertiseCarousel from "../../components/modules/hvacpage/marketingSolutions/ExpertiseCarousel";
+import FinalSection from "../../components/modules/hvacpage/marketingSolutions/FinalSection";
 import HeroSection from "../../components/modules/hvacpage/marketingSolutions/HeroSection";
 import MarketingSolutionsCarousel from "../../components/modules/hvacpage/marketingSolutions/MarketingSolutionsCarousel";
 import TestimonialsSection from "../../components/modules/hvacpage/marketingSolutions/TestimonialsSection";
@@ -16,7 +17,8 @@ export default function MarketingSolutions() {
       <TestimonialsSection />
       <ExpertiseCarousel />
       <WorkingWithTheBestSection />
-      <VideoTestimonialsSection/>
+      <VideoTestimonialsSection />
+      <FinalSection/>
     </div>
   )
 }

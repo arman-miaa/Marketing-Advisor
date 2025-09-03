@@ -33,20 +33,20 @@ function HeroSection() {
         </div>
 
         {/* Bottom Stats (Fixed at Bottom) */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:justify-items-center pb-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:justify-items-center pb-10">
           {[
             { value: "20k+", label: "Businesses", extra: "helped succeed" },
             { value: "$100B+", label: "Revenue", extra: "generated" },
             { value: "200M+", label: "Leads", extra: "driven for clients" },
             { value: "Countless", label: "Records", extra: "broken" },
           ].map((stat, i) => (
-            <div key={i}>
-              <h3 className="text-5xl md:text-5xl font-meduim mb-4">
+            <div key={i} className="text-center">
+              <h3 className="text-4xl md:text-5xl font-medium mb-3">
                 {stat.value}
               </h3>
-              <span className="text-lg">
+              <span className="text-sm sm:text-base">
                 {stat.label}{" "}
-                <span className="text-white ml-2">{stat.extra}</span>
+                <span className="text-white ml-1 sm:ml-2">{stat.extra}</span>
               </span>
             </div>
           ))}
