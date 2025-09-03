@@ -15,26 +15,18 @@ const aboutUsData = [
   },
 ];
 
-export default function Insights({ isMobile = false, onBack }) {
+export default function Insights({ isMobile = false,  }) {
   if (isMobile) {
     return (
       <div className="p-4 text-white">
-        {onBack && (
-          <button
-            onClick={onBack}
-            className="flex items-center space-x-2 mb-6 hover:text-blue-400 transition-colors"
-          >
-            <span>←</span>
-            <span>Back</span>
-          </button>
-        )}
-        <h3 className="text-xl font-bold mb-6">Insights</h3>
+
+        <h3 className="text-xl font-bold mt-6 mb-6">Insights</h3>
         <div className="space-y-4">
           {aboutUsData.map((item) => (
             <Link
               key={item.name}
               to={item.link}
-              className="flex items-center gap-3 p-3 rounded-lg border border-gray-700 hover:bg-blue-900 hover:text-blue-300 transition"
+              className="flex items-center gap-3 p-3 rounded-lg border-b border-gray-700  "
             >
               <span>{item.logo}</span>
               <span className="font-medium">{item.name}</span>

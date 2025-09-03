@@ -1,6 +1,7 @@
-"use client";
+
 
 import { Link } from "react-router";
+import { ChevronRight } from "lucide-react";
 
 const marketingSolutionsData = {
   advertising: [
@@ -54,66 +55,102 @@ const marketingSolutionsData = {
   ],
 };
 
-export default function MarketingSolutions({ isMobile = false, onBack }) {
+export default function MarketingSolutions({
+  isMobile = false,
+  showCategory,
+  setShowCategory,
+}) {
   if (isMobile) {
     return (
       <div className="p-4">
-        {onBack && (
-          <button
-            onClick={onBack}
-            className="flex items-center space-x-2 mb-6 hover:text-blue-400 transition-colors"
-          >
-            <span>←</span>
-            <span>Back</span>
-          </button>
-        )}
-        <h3 className="text-xl font-bold mb-6 text-white">
-          Marketing Solutions
-        </h3>
-        <div className="space-y-6">
-          {Object.entries(marketingSolutionsData).map(([category, items]) => (
-            <div key={category}>
-              <h4 className="text-lg font-semibold mb-3 text-white capitalize">
-                {category}
-              </h4>
-              <div className="space-y-2">
-                {items.map((item) => (
-                  <div
-                    key={item.name}
-                    className="bg-gray-800 p-3 rounded-lg hover:border hover:border-blue-400 transition-all duration-200"
-                  >
-                    <Link
-                      href="#"
-                      className="block hover:text-blue-400 transition-colors"
-                    >
-                      <div className="flex items-center justify-between mb-1">
-                        <h5 className="font-semibold text-white">
-                          {item.name}
-                        </h5>
-                        {item.badge && (
-                          <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                            {item.badge}
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-sm text-gray-300">
-                        {item.description}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
-              </div>
+        {/* Category select না করা থাকলে */}
+        {!showCategory && (
+          <>
+            <h3 className="text-xl font-bold mb-6 mt-6 text-white">
+              Marketing Solutions
+            </h3>
+
+            {/* Categories */}
+            <div className="space-y-4 mb-8">
+              {Object.keys(marketingSolutionsData).map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setShowCategory(category)}
+                  className="flex items-center justify-between w-full text-left p-3 rounded-lg border-b border-gray-500 cursor-pointer transition-all duration-200"
+                >
+                  <span className="capitalize font-semibold">{category}</span>
+                  <ChevronRight size={28} />
+                </button>
+              ))}
             </div>
-          ))}
-        </div>
+
+            {/* Sidebar নিচে */}
+            <div className=" p-6 rounded-lg text-center">
+              <h2 className="text-2xl font-bold mb-2">
+                Revenue<span className="text-blue-400">MAX</span>
+              </h2>
+              <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                Your marketing should drive revenue. Now it will.
+              </p>
+              <Link
+                to="#"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors"
+              >
+                Learn More
+              </Link>
+            </div>
+          </>
+        )}
+
+        {/* Category select করলে */}
+        {showCategory && (
+          <>
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-xl font-bold capitalize text-white">
+                {showCategory}
+              </h3>
+              <button
+                onClick={() => setShowCategory(null)}
+                className="text-sm text-blue-400 hover:underline"
+              >
+                ← Back
+              </button>
+            </div>
+
+            <div className="space-y-3">
+              {marketingSolutionsData[showCategory].map((item) => (
+                <div
+                  key={item.name}
+                  className="border-b border-gray-500 cursor-pointer p-3 rounded-lg transition-all duration-200"
+                >
+                  <Link
+                    to="#"
+                    className="block hover:text-blue-400 transition-colors"
+                  >
+                    <div className="flex items-center justify-between mb-1">
+                      <h5 className="font-semibold text-white">{item.name}</h5>
+                      {item.badge && (
+                        <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                          {item.badge}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-gray-300">{item.description}</p>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     );
   }
 
+  // 🔹 Desktop view
   return (
     <div className="absolute top-full left-1/2 -translate-x-1/2 text-white w-screen max-w-6xl bg-black border border-gray-700 rounded-lg shadow-xl z-50">
-      {/* Left sidebar with RevenueMAX branding */}
       <div className="flex">
+        {/* Sidebar */}
         <div className="bg-gradient-to-br from-blue-900 to-purple-900 p-8 rounded-l-lg w-80 flex flex-col justify-center">
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-2">
@@ -123,7 +160,7 @@ export default function MarketingSolutions({ isMobile = false, onBack }) {
               Your marketing should drive revenue. Now it will.
             </p>
             <Link
-              href="#"
+              to="#"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors"
             >
               Learn More
@@ -131,103 +168,41 @@ export default function MarketingSolutions({ isMobile = false, onBack }) {
           </div>
         </div>
 
-        {/* Main content area */}
+        {/* Main content */}
         <div className="flex-1 p-8">
           <h3 className="text-2xl font-bold mb-8">Marketing Solutions</h3>
-
           <div className="grid grid-cols-3 gap-8">
-            {/* Advertising Column */}
-            <div>
-              <h4 className="text-lg font-semibold mb-6 pb-2 border-b border-gray-700">
-                Advertising
-              </h4>
-              <div className="space-y-4">
-                {marketingSolutionsData.advertising.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group hover:border hover:border-blue-400 rounded-lg p-3 transition-all duration-200 cursor-pointer"
-                  >
-                    <Link href="#" className="block">
-                      <div className="flex items-center justify-between mb-2">
-                        <h5 className="font-semibold text-white group-hover:text-blue-400 transition-colors">
-                          {item.name}
-                        </h5>
-                        {item.badge && (
-                          <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded font-medium">
-                            {item.badge}
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
-                        {item.description}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
+            {Object.entries(marketingSolutionsData).map(([category, items]) => (
+              <div key={category}>
+                <h4 className="text-lg font-semibold mb-6 pb-2 border-b border-gray-700 capitalize">
+                  {category}
+                </h4>
+                <div className="space-y-4">
+                  {items.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group hover:border hover:border-blue-400 rounded-lg p-3 transition-all duration-200 cursor-pointer"
+                    >
+                      <Link to="#" className="block">
+                        <div className="flex items-center justify-between mb-2">
+                          <h5 className="font-semibold text-white group-hover:text-blue-400 transition-colors">
+                            {item.name}
+                          </h5>
+                          {item.badge && (
+                            <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded font-medium">
+                              {item.badge}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
+                          {item.description}
+                        </p>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            {/* Marketing Column */}
-            <div>
-              <h4 className="text-lg font-semibold mb-6 pb-2 border-b border-gray-700">
-                Marketing
-              </h4>
-              <div className="space-y-4">
-                {marketingSolutionsData.marketing.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group hover:border hover:border-blue-400 rounded-lg p-3 transition-all duration-200 cursor-pointer"
-                  >
-                    <Link href="#" className="block">
-                      <div className="flex items-center justify-between mb-2">
-                        <h5 className="font-semibold text-white group-hover:text-blue-400 transition-colors">
-                          {item.name}
-                        </h5>
-                        {item.badge && (
-                          <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded font-medium">
-                            {item.badge}
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
-                        {item.description}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Technology Column */}
-            <div>
-              <h4 className="text-lg font-semibold mb-6 pb-2 border-b border-gray-700">
-                Technology
-              </h4>
-              <div className="space-y-4">
-                {marketingSolutionsData.technology.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group hover:border hover:border-blue-400 rounded-lg p-3 transition-all duration-200 cursor-pointer"
-                  >
-                    <Link href="#" className="block">
-                      <div className="flex items-center justify-between mb-2">
-                        <h5 className="font-semibold text-white group-hover:text-blue-400 transition-colors">
-                          {item.name}
-                        </h5>
-                        {item.badge && (
-                          <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded font-medium">
-                            {item.badge}
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
-                        {item.description}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
