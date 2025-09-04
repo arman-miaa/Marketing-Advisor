@@ -5,7 +5,7 @@ import Button from "../../../ui/Button";
 
 export default function SeeConnectInAction() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 px-4 md:px-0">
       <div className="md:pl-60 ml-auto  py-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left Content */}
@@ -22,7 +22,7 @@ export default function SeeConnectInAction() {
           </div>
 
           {/* Right Image */}
-          <div className="w-full h-ful">
+          <div className="w-full h-ful hidden md:flex ">
             <img
               src={demoImg}
               alt="Scorpion Connect Demo"

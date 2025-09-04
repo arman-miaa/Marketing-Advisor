@@ -75,7 +75,7 @@ export default function LoadedWithFeatures() {
 
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full lg:w-[100%]">
+            <div className="relative w-full lg:w-[100%] hidden md:flex">
               <img
                 src={rightImg}
                 alt="Advertising AI Preview"

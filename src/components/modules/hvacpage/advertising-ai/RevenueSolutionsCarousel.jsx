@@ -146,42 +146,46 @@ const RevenueSolutionsCarousel = () => {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id} className="!w-[80%] md:!w-[60%]">
-              <div className="relative rounded-4xl overflow-hidden shadow-lg h-[600px] md:h-[700px] flex bg-gradient-to-r from-gray-900 to-gray-900">
-                {/* Background Gradient Effect */}
+              <div className="relative rounded-4xl overflow-hidden shadow-lg h-[600px] md:h-[700px] flex flex-col md:flex-row bg-gradient-to-r from-gray-900 to-gray-900">
+                {/* Background Gradient */}
                 <div className="absolute inset-0 z-0 opacity-50">
                   <div className="absolute -inset-x-20 top-1/2 -translate-y-1/2 h-66 w-1/2 mx-auto blur-3xl bg-gradient-to-r from-[#3b83f67c] via-[#3b83f6c0] to-[#3b83f648] animate-pulse-slow"></div>
                 </div>
 
-                {/* Left Content (centered vertically) */}
-                <div className="relative z-10 w-1/2 h-full flex flex-col justify-center items-start p-8 md:p-16 text-white">
-                  {/* Top Tag */}
-                  <span className="flex items-center gap-2 border border-blue-700 font-medium w-fit px-4 py-2 rounded-md bg-black/30 backdrop-blur-sm mb-6">
-                    {slide.tag}
-                    {slide.icon && (
-                      <span className="bg-blue-600 px-2 py-1 rounded-lg flex items-center justify-center">
-                        {slide.icon}
-                      </span>
-                    )}
-                  </span>
+                {/* Text Content */}
+                <div className="relative z-10 w-full md:w-1/2 flex flex-col justify-between p-6 md:p-16 text-white order-1">
+                  <div>
+                    {/* Top Tag */}
+                    <span className="flex items-center gap-2 border border-blue-700 font-medium w-fit px-4 py-2 rounded-md bg-black/30 backdrop-blur-sm mb-4 md:mb-6">
+                      {slide.tag}
+                      {slide.icon && (
+                        <span className="bg-blue-600 px-2 py-1 rounded-lg flex items-center justify-center">
+                          {slide.icon}
+                        </span>
+                      )}
+                    </span>
 
-                  {/* Title + Description */}
-                  <h3 className="text-2xl md:text-6xl font-bold mb-3 mt-8">
-                    {slide.title}
-                  </h3>
-                  <p className="text-lg md:text-xl opacity-90 mb-12 mt-8">
-                    {slide.description}
-                  </p>
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-6xl font-bold mb-2 md:mb-3">
+                      {slide.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-base md:text-xl opacity-90 mb-4 md:mb-12">
+                      {slide.description}
+                    </p>
+                  </div>
 
                   {/* Button */}
                   <Button text={slide.buttonText} to={slide.buttonLink} />
                 </div>
 
-                {/* Right Image */}
-                <div className="relative z-10 w-1/2 flex items-center justify-center">
+                {/* Image */}
+                <div className="relative z-10 w-full md:w-1/2 flex items-center justify-center mt-6 md:mt-0 order-2">
                   <img
                     src={slide.image}
                     alt="slide"
-                    className="h-full object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>

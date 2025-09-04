@@ -1,7 +1,11 @@
-import img1 from "../../../../assets/images/hvac/team-of-experts/Team-of-Experts-1.jpg.2506092133408.webp"
-import img2 from "../../../../assets/images/hvac/team-of-experts/Team-of-Experts-2.jpg.2506092148275.webp"
-import img3 from "../../../../assets/images/hvac/team-of-experts/Team-of-Experts-3.jpg.2506092151515.webp"
+import img1 from "../../../../assets/images/hvac/team-of-experts/Team-of-Experts-1.jpg.2506092133408.webp";
+import img2 from "../../../../assets/images/hvac/team-of-experts/Team-of-Experts-2.jpg.2506092148275.webp";
+import img3 from "../../../../assets/images/hvac/team-of-experts/Team-of-Experts-3.jpg.2506092151515.webp";
 import SharedTitleSection from "../../../../shared/SharedTitleSection";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function MarketingTeam() {
   const cards = [
@@ -21,6 +25,7 @@ export default function MarketingTeam() {
       desc: "We run your website, your ads, your SEO, and your reputation like it’s our business–because it is. Everything works together to keep your schedule full.",
     },
   ];
+
   return (
     <section className="py-16 md:py-36 px-4 bg-gray-50">
       <div className="container mx-auto">
@@ -31,7 +36,7 @@ export default function MarketingTeam() {
             title="You deliver comfort. We deliver the jobs."
             highlightText="jobs."
           />
-          <p className="text-lg md:text-3xl text-left -mt-10 ">
+          <p className="text-lg md:text-3xl text-left -mt-10">
             A great HVAC business starts with a{" "}
             <span className="font-bold">great team.</span> The same goes for
             your marketing. That’s why we’ve built a team that{" "}
@@ -40,8 +45,43 @@ export default function MarketingTeam() {
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        {/* Mobile Swiper Carousel */}
+        <div className="md:hidden mt-12">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={20}
+            pagination={{ clickable: true, el: ".custom-pagination" }}
+            modules={[Pagination]}
+          >
+            {cards.map((card, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="relative rounded-2xl overflow-hidden group">
+                  {/* Image */}
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    className="w-full h-80 object-cover"
+                  />
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/60" />
+
+                  {/* Text */}
+                  <div className="absolute bottom-4 left-4 pr-4 text-left text-white">
+                    <h3 className="text-lg font-bold mb-1">{card.title}</h3>
+                    <p className="text-sm font-medium leading-relaxed">
+                      {card.desc}
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+            <div className="custom-pagination mt-4 text-center border border-gray-300 p-4 rounded-full bg-gray-300 cursor-pointer"></div>
+          </Swiper>
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-3 gap-6 mt-12">
           {cards.map((card, idx) => (
             <div
               key={idx}
@@ -55,14 +95,16 @@ export default function MarketingTeam() {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/60  " />
+              <div className="absolute inset-0 bg-black/60" />
 
               {/* Text */}
               <div className="absolute bottom-8 left-8 pr-4 text-left text-white">
                 <h3 className="text-xl md:text-3xl font-bold mb-2">
                   {card.title}
                 </h3>
-                <p className=" font-medium text-lg leading-relaxed">{card.desc}</p>
+                <p className="font-medium text-lg leading-relaxed">
+                  {card.desc}
+                </p>
               </div>
             </div>
           ))}

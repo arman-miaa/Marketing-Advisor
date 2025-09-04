@@ -37,7 +37,7 @@ export default function SuccessStoriesSection() {
             <img
               src={img1}
               alt="Hedrick's Service Now team"
-              className="w-full rounded-xl object-cover h-[950px] "
+              className="w-full rounded-xl object-cover h-[400px] md:h-[950px] "
             />
 
             {/* Logo / overlay image */}
@@ -74,7 +74,7 @@ export default function SuccessStoriesSection() {
             <hr className="border-t border-gray-400 mt-10 mb-10" />
 
             {/* Statistics row */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-gradient-to-b bg-purple-200 to-blue-200 rounded-lg p-8 ">
                 <div className="text-2xl md:text-4xl font-bold  mb-1">25x</div>
                 <div className="text-lg mt-2">Return on total investment</div>

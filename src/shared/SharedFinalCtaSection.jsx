@@ -33,7 +33,7 @@ export default function SharedFinalCtaSection({ title, highlight,category }) {
             (866) 344-8852
           </a>
 
-          <span className="text-gray-800 font-medium hidden sm:inline">OR</span>
+          <span className="text-gray-800 font-medium  ">OR</span>
 
           <Button text="Schedule an Appointment" to="/hvac/get-started" />
         </div>

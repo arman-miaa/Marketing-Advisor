@@ -95,8 +95,8 @@ export default function AdvertisingBenefitsSection() {
           </div>
 
           {/* Right Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full lg:w-[100%]">
+          <div className="flex justify-center lg:justify-end ">
+            <div className="relative w-full lg:w-[100%] hidden md:flex">
               <img
                 src={rightImg}
                 alt="Advertising AI Preview"

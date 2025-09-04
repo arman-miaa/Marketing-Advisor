@@ -23,7 +23,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <h4 className="text-2xl hidden md:flex font-bold tracking-wider cursor-pointer ">
-                <Link>Marketing AdvisorN</Link>
+                <Link>Marketing Advisor</Link>
               </h4>
             </div>
 

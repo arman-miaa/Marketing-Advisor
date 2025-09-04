@@ -26,12 +26,14 @@ export default function ContactFormSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
 
-          <SharedTitleSection
-            category="CONTACT US"
-            title="Let's Get Connected"
-            description="Tell us about your ultimate goal and we'll help you reach it. Fill out a form or schedule a call."
-            descriptionSize="text-base md:text-xl mt-8"
-          />
+          <div className="text-center">
+            <SharedTitleSection
+              category="CONTACT US"
+              title="Let's Get Connected"
+              description="Tell us about your ultimate goal and we'll help you reach it. Fill out a form or schedule a call."
+              descriptionSize="text-base md:text-xl mt-8"
+            />
+          </div>
 
           {/* Right Form */}
           <div className="bg-gradient-to-br from-purple-100 to-blue-200 rounded-2xl p-8 md:p-14 shadow">

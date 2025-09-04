@@ -132,9 +132,9 @@ const ConnectCarousel = () => {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id} className="!w-[80%] md:!w-[60%]">
-              <div className="relative rounded-4xl overflow-hidden shadow-lg h-[600px] md:h-[700px] flex flex-col md:flex-row bg-gradient-to-r from-purple-200 to-blue-200">
+              <div className="relative rounded-4xl overflow-hidden shadow-lg  md:h-[700px] flex flex-col md:flex-row bg-gradient-to-r from-purple-200 to-blue-200">
                 {/* Left Side */}
-                <div className="w-full pl-20 md:w-1/2 p-8 flex flex-col justify-end">
+                <div className="w-full md:pl-20 md:w-1/2 p-8 flex flex-col justify-end">
                   <p className="text-2xl md:text-4xl text-white bg-blue-700 w-fit p-1 rounded-full pt-2 px-2 font-bold mb-5">
                     {slide.icon}
                   </p>
@@ -147,7 +147,7 @@ const ConnectCarousel = () => {
                 </div>
 
                 {/* Right Side */}
-                <div className="w-full  md:w-1/2 pr-8 ">
+                <div className="w-full  md:w-1/2 pr-8 hidden md:flex ">
                   <img
                     src={slide.image}
                     alt="slide"
