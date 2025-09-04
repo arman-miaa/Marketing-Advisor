@@ -37,7 +37,7 @@ const marketingSolutionsData = [
       "Stand out and tell your story from our award-winning creative team.",
   },
   {
-    name: "Marketing Advisorn Convert",
+    name: "Marketing Advisor Convert",
     description:
       "AI Voice and Messaging Assistants built to instantly respond to all leads and convert them to revenue.",
   },

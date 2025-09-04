@@ -25,7 +25,7 @@ export default function Navbar() {
           <span>
             <IoNotifications className="text-2xl" />
           </span>
-          30-50% of calls go unanswered. Marketing Advisorn Convert helps you
+          30-50% of calls go unanswered. Marketing Advisor Convert helps you
           answer them all.
           <Link to="#" className="ml-2 underline hover:text-[#ffffffb4]">
             Learn more

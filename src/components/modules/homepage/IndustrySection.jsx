@@ -88,7 +88,7 @@ export default function IndustrySection() {
         {/* Header */}
         <div className="text-left mb-8">
           <p className="text-blue-600 text-sm font-semibold uppercase mb-6 tracking-[0.35em]">
-            The Marketing Advisorn Difference
+            The Marketing Advisor Difference
           </p>
           <h2 className="text-4xl md:text-6xl font-bold mb-4 md:leading-20">
             The solutions, commitment, and expertise to deliver{" "}

@@ -11,9 +11,9 @@ const aboutUsData = [
       "Join a team that's driving real growth—for businesses and for your career.",
   },
   {
-    name: "Marketing Advisorn Cares",
+    name: "Marketing Advisor Cares",
     description:
-      "At Marketing Advisorn, we're dedicated to making a positive impact in the communities where we live and work.",
+      "At Marketing Advisor, we're dedicated to making a positive impact in the communities where we live and work.",
   },
   {
     name: "Partnerships",
@@ -21,12 +21,12 @@ const aboutUsData = [
       "Strong partnerships with top providers to maximize your marketing revenue and impact.",
   },
   {
-    name: "Marketing Advisorn News",
+    name: "Marketing Advisor News",
     description:
       "Get the latest news on marketing and technology to keep your business ahead of the game.",
   },
   {
-    name: "Marketing Advisorn Blog",
+    name: "Marketing Advisor Blog",
     description: "Marketing tips and tricks just for you.",
   },
 ];

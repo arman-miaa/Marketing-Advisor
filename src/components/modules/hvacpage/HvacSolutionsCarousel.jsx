@@ -20,7 +20,7 @@ const testimonials = [
     id: 1,
     title: "Never miss an opportunity",
     description:
-      "Be there 24/7 with Marketing Advisorn Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
+      "Be there 24/7 with Marketing Advisor Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
     buttonText: "Learn More",
     buttonLink: "/hvac/advisor-connect",
     backgroundVideo: video1,
@@ -42,7 +42,7 @@ const testimonials = [
     id: 3,
     title: "First impressions that earn the job",
     description:
-      "With Marketing Advisorn’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
+      "With Marketing Advisor’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
     buttonText: "Learn More",
     buttonLink: "/hvac/website",
     backgroundVideo: video3,

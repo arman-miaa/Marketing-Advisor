@@ -30,7 +30,7 @@ export default function Footer() {
             {/* Navigation Links */}
             <nav className="flex-1">
               <h4 className="text-2xl md:hidden text-center  font-bold tracking-wider cursor-pointer ">
-                <Link>Marketing AdvisorN</Link>
+                <Link>Marketing Advisor</Link>
               </h4>
               <ul className="flex flex-col md:flex-row justify-between w-full md:text-base  border-gray-700 md:border-0 pt-4 md:pt-0 gap-2 md:gap-0">
                 {[
