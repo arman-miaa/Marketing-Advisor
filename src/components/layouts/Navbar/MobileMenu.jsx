@@ -77,7 +77,7 @@ export default function MobileMenu({
               </button>
               <hr className="border-t border-gray-500" />
 
-              <Link to="/Partnerships" className="block cursor-pointer">
+              <Link to="/hvac/partnerships" className="block cursor-pointer">
                 Partnerships
               </Link>
               <hr className="border-t border-gray-500" />

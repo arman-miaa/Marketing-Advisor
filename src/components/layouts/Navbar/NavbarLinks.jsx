@@ -61,7 +61,7 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown }) {
 
       {/* Partnerships */}
       <div>
-        <Link to="/Partnerships" className={linkClass("partnerships")}>
+        <Link to="/hvac/partnerships" className={linkClass("partnerships")}>
           Partnerships
         </Link>
       </div>
