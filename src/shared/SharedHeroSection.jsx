@@ -3,6 +3,7 @@ import Button from "../components/ui/Button";
 
 function SharedHeroSection({
   videoSrc,
+  imageSrc,
   heading,
   subHeading,
   description,
@@ -25,17 +26,24 @@ function SharedHeroSection({
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Video Background */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Background Video or Image */}
+      {videoSrc ? (
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+      ) : (
+        <img
+          src={imageSrc}
+          alt="Background"
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        />
+      )}
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/30 bg-opacity-60 z-10"></div>
