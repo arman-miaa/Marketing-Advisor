@@ -1,7 +1,10 @@
+import ContactFormSection from "../../../../shared/ContactFormSection";
 
 
 export default function ContactSection() {
   return (
-    <div>ContactSection</div>
+    <div>
+      <ContactFormSection/>
+    </div>
   )
 }

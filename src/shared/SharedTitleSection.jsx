@@ -7,7 +7,8 @@ function SharedTitleSection({
   highlightText,
   description,
   descriptionSize = "text-lg md:text-xl",
-  theme = "light", // default white background
+  theme = "light",
+  align = "left",
 }) {
   // Split title by highlight text
   const titleParts = highlightText ? title.split(highlightText) : [title];
@@ -16,8 +17,11 @@ function SharedTitleSection({
   const titleColor = theme === "dark" ? "text-white" : "text-gray-900";
   const descColor = theme === "dark" ? "text-gray-300" : "text-gray-700";
 
+  // Alignment class
+  const alignClass = align === "center" ? "text-center" : "text-left";
+
   return (
-    <div className="text-left mb-16">
+    <div className={`${alignClass} mb-16`}>
       {/* Category */}
       {category && (
         <p
