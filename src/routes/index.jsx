@@ -16,6 +16,7 @@ import InsightsBlog2 from "../pages/hvac/InsightsBlog2";
 import InsightsBlog3 from "../pages/hvac/InsightsBlog3";
 import InsightsBlog4 from "../pages/hvac/InsightsBlog4";
 import Partnerships from "../pages/Partnerships";
+import FaqPage from "../pages/hvac/FaqPage";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/hvac",
         Component: HvacPage,
+      },
+      {
+        path: "/hvac/insights/faq",
+        Component: FaqPage,
       },
       {
         path: "/hvac/partnerships",

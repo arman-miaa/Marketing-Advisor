@@ -6,12 +6,12 @@ const aboutUsData = [
   {
     name: "Blogs",
     logo: <CgNotes className="text-2xl" />,
-    link: "/blogs",
+    link: "/hvac/insights/blog4",
   },
   {
     name: "FAQ",
     logo: <FaQuestionCircle className="text-2xl" />,
-    link: "/faq",
+    link: "/hvac/insights/faq",
   },
 ];
 

@@ -58,4 +58,15 @@
   transform: scale(1.3);
 }
 
+/* global.css */
+.collapse-plus > .collapse-title::after {
+  color: blue; 
+  font-size: 2rem;
+  
+}
+.collapse-plus > input:checked ~ .collapse-title::after {
+  color: blue; 
+   font-size: 2rem;
+}
+
 
