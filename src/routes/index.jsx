@@ -17,6 +17,16 @@ import InsightsBlog3 from "../pages/hvac/InsightsBlog3";
 import InsightsBlog4 from "../pages/hvac/InsightsBlog4";
 import Partnerships from "../pages/Partnerships";
 import FaqPage from "../pages/hvac/FaqPage";
+import BudgetsAi from "../pages/hvac/marketing-solutions/Budgets-ai";
+import LandingPageAi from "../pages/hvac/marketing-solutions/LandingPageAi";
+import SocialAdvertising from "../pages/hvac/marketing-solutions/SocialAdvertising";
+import VideoAdvertising from "../pages/hvac/marketing-solutions/VideoAdvertising";
+import BrandStorytelling from "../pages/hvac/marketing-solutions/BrandStorytelling";
+import SocialMediaContent from "../pages/hvac/marketing-solutions/SocialMediaContent";
+import CapacityMarketingEngine from "../pages/hvac/marketing-solutions/CapacityMarketingEngine";
+import LeadsAi from "../pages/hvac/marketing-solutions/LeadsAi";
+import RevenueIntelligence from "../pages/hvac/marketing-solutions/RevenueIntelligence";
+import PlatformAndReporting from "../pages/hvac/marketing-solutions/PlatformAndReporting";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +40,10 @@ export const router = createBrowserRouter([
       {
         path: "/hvac",
         Component: HvacPage,
+      },
+      {
+        path: "/hvac/budgets-ai",
+        Component: BudgetsAi,
       },
       {
         path: "/hvac/insights/faq",
@@ -50,6 +64,42 @@ export const router = createBrowserRouter([
       {
         path: "/hvac/advertising-ai",
         Component: AdvertisingAi,
+      },
+      {
+        path: "/hvac/landing-page-ai",
+        Component: LandingPageAi,
+      },
+      {
+        path: "/hvac/social-advertising",
+        Component: SocialAdvertising,
+      },
+      {
+        path: "/hvac/video-advertising",
+        Component: VideoAdvertising,
+      },
+      {
+        path: "/hvac/brand-storytelling",
+        Component: BrandStorytelling,
+      },
+      {
+        path: "/hvac/social-media-content",
+        Component: SocialMediaContent,
+      },
+      {
+        path: "/hvac/capacity-marketing-engine",
+        Component: CapacityMarketingEngine,
+      },
+      {
+        path: "/hvac/leads-ai",
+        Component: LeadsAi,
+      },
+      {
+        path: "/hvac/revenue-intelligence",
+        Component: RevenueIntelligence,
+      },
+      {
+        path: "/hvac/platform-and-reporting",
+        Component: PlatformAndReporting,
       },
       {
         path: "/hvac/website",

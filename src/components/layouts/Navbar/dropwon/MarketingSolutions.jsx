@@ -1,56 +1,99 @@
-
-
 import { Link } from "react-router";
 import { ChevronRight } from "lucide-react";
 
 const marketingSolutionsData = {
   advertising: [
-    { name: "Budgets", description: "See better returns", badge: "AI" },
+    {
+      name: "Budgets",
+      description: "See better returns",
+      badge: "AI",
+      slug: "budgets-ai",
+    },
     {
       name: "Digital Advertising",
       description: "Experience advertising that drives revenue",
       badge: "AI",
+      slug: "advertising-ai",
     },
     {
       name: "Landing Page",
       description: "Convert more with the right message",
       badge: "AI",
+      slug: "landing-page-ai",
     },
-    { name: "Social Advertising", description: "Hold their attention" },
-    { name: "Video Advertising", description: "Make yourself known" },
+    {
+      name: "Social Advertising",
+      description: "Hold their attention",
+      slug: "social-advertising",
+    },
+    {
+      name: "Video Advertising",
+      description: "Make yourself known",
+      slug: "video-advertising",
+    },
   ],
   marketing: [
-    { name: "Brand Storytelling", description: "Showcase your expertise" },
-    { name: "Marketing Team", description: "Get a team that knows HVAC" },
+    {
+      name: "Brand Storytelling",
+      description: "Showcase your expertise",
+      slug: "brand-storytelling",
+    },
+    {
+      name: "Marketing Team",
+      description: "Get a team that knows HVAC",
+      slug: "team-of-experts",
+    },
     {
       name: "Ranking",
       description: "Get to the top and stay there",
       badge: "AI",
+      slug: "ranking-ai",
     },
     {
       name: "Reputation",
       description: "Create a reputation for results",
       badge: "AI",
+      slug: "reputation-ai",
     },
-    { name: "Social Media Content", description: "Stay top of mind" },
-    { name: "Website", description: "First impressions that earn the job" },
+    {
+      name: "Social Media Content",
+      description: "Stay top of mind",
+      slug: "social-media-content",
+    },
+    {
+      name: "Website",
+      description: "First impressions that earn the job",
+      slug: "website",
+    },
   ],
   technology: [
     {
       name: "Capacity Marketing Engine",
       description: "Keep your schedule full",
+      slug: "capacity-marketing-engine",
     },
-    { name: "Leads", description: "Every lead, fully realized", badge: "AI" },
-    { name: "Revenue Intelligence", description: "Grow your revenue" },
+    {
+      name: "Leads",
+      description: "Every lead, fully realized",
+      badge: "AI",
+      slug: "leads-ai",
+    },
+    {
+      name: "Revenue Intelligence",
+      description: "Grow your revenue",
+      slug: "revenue-intelligence",
+    },
     {
       name: "Scorpion Connect",
       description: "Never miss an opportunity",
       badge: "AI",
+      slug: "advisor-connect",
     },
     {
       name: "Scorpion Platform",
       description: "See everything in one place",
       badge: "AI",
+      slug: "scorpion-platform",
     },
   ],
 };
@@ -93,7 +136,7 @@ export default function MarketingSolutions({
                 Your marketing should drive revenue. Now it will.
               </p>
               <Link
-                to="#"
+                to="/solutions/learn-more"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors"
               >
                 Learn More
@@ -112,9 +155,7 @@ export default function MarketingSolutions({
               <button
                 onClick={() => setShowCategory(null)}
                 className="text-sm text-blue-400 hover:underline"
-              >
-                ← Back
-              </button>
+              ></button>
             </div>
 
             <div className="space-y-3">
@@ -124,7 +165,7 @@ export default function MarketingSolutions({
                   className="border-b border-gray-500 cursor-pointer p-3 rounded-lg transition-all duration-200"
                 >
                   <Link
-                    to="#"
+                    to={`/hvac/${item.slug}`}
                     className="block hover:text-blue-400 transition-colors"
                   >
                     <div className="flex items-center justify-between mb-1">
@@ -160,7 +201,7 @@ export default function MarketingSolutions({
               Your marketing should drive revenue. Now it will.
             </p>
             <Link
-              to="#"
+              to="/solutions/learn-more"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors"
             >
               Learn More
@@ -183,7 +224,10 @@ export default function MarketingSolutions({
                       key={item.name}
                       className="group hover:border hover:border-blue-400 rounded-lg p-3 transition-all duration-200 cursor-pointer"
                     >
-                      <Link to="#" className="block">
+                      <Link
+                        to={`/hvac/${item.slug}`}
+                        className="block"
+                      >
                         <div className="flex items-center justify-between mb-2">
                           <h5 className="font-semibold text-white group-hover:text-blue-400 transition-colors">
                             {item.name}
