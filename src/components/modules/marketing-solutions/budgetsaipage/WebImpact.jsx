@@ -1,12 +1,12 @@
-import img1 from "../../../assets/images/marketing-solutions/budgets-ai/HS-Budgets-AI-1.jpg.2504221302268.webp";
-import img2 from "../../../assets/images/marketing-solutions/budgets-ai/HS-Budgets-AI-2.jpg.2504221302273.webp";
-import img3 from "../../../assets/images/marketing-solutions/budgets-ai/HS-Budgets-AI-3.jpg.2504221302276.webp";
+import img1 from "../../../../assets/images/marketing-solutions/budgets-ai/HS-Budgets-AI-1.jpg.2504221302268.webp";
+import img2 from "../../../../assets/images/marketing-solutions/budgets-ai/HS-Budgets-AI-2.jpg.2504221302273.webp";
+import img3 from "../../../../assets/images/marketing-solutions/budgets-ai/HS-Budgets-AI-3.jpg.2504221302276.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import SharedTitleSection from "../../../shared/SharedTitleSection";
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
 
 const cards = [
   {

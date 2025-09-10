@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import slideImg1 from "../../../../assets/images/hvac/advertising-ai/HS-Understand-Every-Lead.png.2505011209519.webp";
-import slideImg2 from "../../../../assets/images/hvac/website/HS-See-Everything-in-One-Place.2505301013550.png";
-import slideImg3 from "../../../../assets/images/hvac/website/HVAC-Experience-Smart-Advertising.png.2506031143343.webp";
-import slideImg4 from "../../../../assets/images/hvac/website/HVAC-Deliver-The-Right-Message.png.2506031140329.webp";
-import slideImg5 from "../../../../assets/images/hvac/website/HVAC-Rank-Better.png.2506031155098.webp";
+import slideImg2 from "../../../../assets/images/hvac/advertising-ai/HS-Grow-Your-Revenue.jpg.2504301330408.webp";
+import slideImg3 from "../../../../assets/images/marketing-solutions/landing-page-ai/HVAC-Experience-Smart-Advertising.png.2506031143343.webp";
+import slideImg4 from "../../../../assets/images/marketing-solutions/landing-page-ai/HVAC-Have-More-People-Choose-You.png.2506031145308.webp";
+import slideImg5 from "../../../../assets/images/marketing-solutions/landing-page-ai/HVAC-Tell-Your-Story.png.2506031157380.webp";
 
 
 import { useRef, useState, useEffect } from "react";
@@ -32,13 +32,13 @@ const RevenueSolutionsCarousel = () => {
     },
     {
       id: 2,
-      title: "See everything in one place",
+      title: "Grow your revenue",
       description:
-        "One platform to rule them all, from the office to your most valuable neighborhoods. Know exactly how your marketing is driving revenue, all from the palm of your hand.",
+        "Get full visibility into revenue attribution, geographic insights, and return on investment so we can invest where it matters most.",
       buttonText: "Learn More",
       buttonLink: "/digital-advertising",
       image: slideImg2,
-      tag: "Advisor Platform",
+      tag: "Revenue Intelligence",
     },
     {
       id: 3,
@@ -53,25 +53,23 @@ const RevenueSolutionsCarousel = () => {
     },
     {
       id: 4,
-      title: "Convert more with the right message",
+      title: "First impressions that earn the job",
       description:
-        "Quickly turn visitors into leads with automated landing pages that give everything a potential customer needs to make you the obvious choice.",
+        "With Scorpion’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
       buttonText: "Learn More",
       buttonLink: "/marketing-team",
       image: slideImg4,
-      tag: "Landing Page",
-      icon: "AI",
+      tag: "Website",
     },
     {
       id: 5,
-      title: "Get to the top and stay there",
+      title: "Showcase your expertise",
       description:
-        "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
+        "See your HVAC company come to life with professionally produced videos and photography that show why you’re the best in your space.",
       buttonText: "Learn More",
       buttonLink: "/ranking-ai",
       image: slideImg5,
-      tag: "Ranking",
-      icon: "AI",
+      tag: "Brand Storytelling",
     },
   ];
 
@@ -79,6 +77,7 @@ const RevenueSolutionsCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+
 
   // auto slide + progress logic
   useEffect(() => {

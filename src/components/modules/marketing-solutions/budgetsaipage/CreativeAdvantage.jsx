@@ -1,4 +1,4 @@
-import SharedContentSection from "../../../shared/SharedContentSection";
+import SharedContentSection from "../../../../shared/SharedContentSection";
 
 export default function CreativeAdvantage() {
   return (

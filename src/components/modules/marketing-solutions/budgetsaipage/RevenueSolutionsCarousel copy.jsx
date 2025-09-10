@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import slideImg1 from "../../../assets/images/marketing-solutions/budgets-ai/HVAC-Experience-Smart-Advertising.png.2506031143343.webp";
-import slideImg2 from "../../../assets/images/marketing-solutions/budgets-ai/HVAC-Deliver-The-Right-Message.png.2506031140329.webp";
-import slideImg3 from "../../../assets/images/marketing-solutions/budgets-ai/HS-Have-Your-Own-Team-of-Experts.png.2505011639137.webp";
+import slideImg1 from "../../../../assets/images/marketing-solutions/budgets-ai/HVAC-Experience-Smart-Advertising.png.2506031143343.webp";
+import slideImg2 from "../../../../assets/images/marketing-solutions/budgets-ai/HVAC-Deliver-The-Right-Message.png.2506031140329.webp";
+import slideImg3 from "../../../../assets/images/marketing-solutions/budgets-ai/HS-Have-Your-Own-Team-of-Experts.png.2505011639137.webp";
 
 
 
@@ -11,10 +11,10 @@ import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import Button from "../../ui/Button";
+import Button from "../../../ui/Button";
 
-import SharedTitleSection from "../../../shared/SharedTitleSection";
-import CarouselControls from "../../../shared/CarouselControls";
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
+import CarouselControls from "../../../../shared/CarouselControls";
 
 const RevenueSolutionsCarousel = () => {
   const slides = [

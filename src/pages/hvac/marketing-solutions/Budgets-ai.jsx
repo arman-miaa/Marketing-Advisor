@@ -1,10 +1,13 @@
-import BuiltToDoMore from "../../../components/modules/marketing-solutions/BuiltToDoMore";
-import CreativeAdvantage from "../../../components/modules/marketing-solutions/CreativeAdvantage";
-import FinalCtaSection from "../../../components/modules/marketing-solutions/FinalCtaSection";
-import HeroSection from "../../../components/modules/marketing-solutions/HeroSection";
-import RevenueSolutionsCarousel from "../../../components/modules/marketing-solutions/RevenueSolutionsCarousel copy";
-import WebImpact from "../../../components/modules/marketing-solutions/WebImpact";
+
+
+import HeroSection from "../../../components/modules/marketing-solutions/budgetsaipage/HeroSection";
+import BuiltToDoMore from "../../../components/modules/marketing-solutions/budgetsaipage/BuiltToDoMore";
+import CreativeAdvantage from "../../../components/modules/marketing-solutions/budgetsaipage/CreativeAdvantage";
+import FinalCtaSection from "../../../components/modules/marketing-solutions/budgetsaipage/FinalCtaSection";
+import RevenueSolutionsCarousel from "../../../components/modules/marketing-solutions/budgetsaipage/RevenueSolutionsCarousel copy";
+import WebImpact from "../../../components/modules/marketing-solutions/budgetsaipage/WebImpact";
 import NavigationMenu from "../../../shared/NavigationMenu";
+
 
 
 export default function BudgetsAi() {

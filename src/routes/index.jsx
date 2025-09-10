@@ -17,7 +17,7 @@ import InsightsBlog3 from "../pages/hvac/InsightsBlog3";
 import InsightsBlog4 from "../pages/hvac/InsightsBlog4";
 import Partnerships from "../pages/Partnerships";
 import FaqPage from "../pages/hvac/FaqPage";
-import BudgetsAi from "../pages/hvac/marketing-solutions/Budgets-ai";
+
 import LandingPageAi from "../pages/hvac/marketing-solutions/LandingPageAi";
 import SocialAdvertising from "../pages/hvac/marketing-solutions/SocialAdvertising";
 import VideoAdvertising from "../pages/hvac/marketing-solutions/VideoAdvertising";
@@ -27,6 +27,7 @@ import CapacityMarketingEngine from "../pages/hvac/marketing-solutions/CapacityM
 import LeadsAi from "../pages/hvac/marketing-solutions/LeadsAi";
 import RevenueIntelligence from "../pages/hvac/marketing-solutions/RevenueIntelligence";
 import PlatformAndReporting from "../pages/hvac/marketing-solutions/PlatformAndReporting";
+import BudgetsAi from "../pages/hvac/marketing-solutions/Budgets-ai";
 
 export const router = createBrowserRouter([
   {

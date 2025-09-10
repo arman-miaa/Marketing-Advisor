@@ -1,6 +1,7 @@
 
-import HeroVideo from "../../../assets/images/marketing-solutions/budgets-ai/output.mp4";
-import SharedHeroSection from "../../../shared/SharedHeroSection";
+import HeroVideo from "../../../../assets/images/marketing-solutions/budgets-ai/output.mp4";
+
+import SharedHeroSection from "../../../../shared/SharedHeroSection";
 export default function HeroSection() {
   return (
     <SharedHeroSection

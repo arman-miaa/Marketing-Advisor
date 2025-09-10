@@ -1,4 +1,4 @@
-import SharedFinalCtaSection from "../../../shared/SharedFinalCtaSection";
+import SharedFinalCtaSection from "../../../../shared/SharedFinalCtaSection";
 
 export default function FinalCtaSection() {
   return (

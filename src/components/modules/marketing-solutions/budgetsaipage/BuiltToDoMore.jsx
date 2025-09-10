@@ -1,6 +1,6 @@
-import rightImg from "../../../assets/images/marketing-solutions/budgets-ai/HS_Solo-34.2505122129550.jpg"
-import SharedTitleSection from "../../../shared/SharedTitleSection";
-import Button from "../../ui/Button";
+import rightImg from "../../../../assets/images/marketing-solutions/budgets-ai/HS_Solo-34.2505122129550.jpg"
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
+import Button from "../../../ui/Button";
 
 export default function BuiltToDoMore() {
   return (
