@@ -1,6 +1,6 @@
 import { CgNotes } from "react-icons/cg";
 import { FaQuestionCircle } from "react-icons/fa";
-import { Link } from "react-router"; 
+import { Link } from "react-router";
 
 const aboutUsData = [
   {
@@ -15,18 +15,24 @@ const aboutUsData = [
   },
 ];
 
-export default function Insights({ isMobile = false,  }) {
+export default function Insights({ isMobile = false, onLinkClick, onClose }) {
+  const handleClick = () => {
+    if (onLinkClick) onLinkClick(); // desktop dropdown close
+    if (onClose) onClose(); // mobile menu close
+  };
+
   if (isMobile) {
     return (
       <div className="p-4 text-white">
-
         <h3 className="text-xl font-bold mt-6 mb-6">Insights</h3>
         <div className="space-y-4">
           {aboutUsData.map((item) => (
             <Link
               key={item.name}
               to={item.link}
-              className="flex items-center gap-3 p-3 rounded-lg border-b border-gray-700  "
+             
+              onClick={handleClick}
+              className="flex items-center gap-3 p-3 rounded-lg border-b border-gray-700"
             >
               <span>{item.logo}</span>
               <span className="font-medium">{item.name}</span>
@@ -46,6 +52,7 @@ export default function Insights({ isMobile = false,  }) {
           <Link
             key={item.name}
             to={item.link}
+            onClick={onLinkClick} // ✅ dropdown close
             className="flex items-center gap-3 bg-blue-900 p-4 rounded-lg hover:bg-blue-800 hover:text-blue-300 transition"
           >
             <span>{item.logo}</span>

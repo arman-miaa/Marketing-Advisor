@@ -11,6 +11,7 @@ export default function MobileMenu({
   onClose,
   activeMobileSection,
   setActiveMobileSection,
+  onLinkClick,
 }) {
   const [showCategory, setShowCategory] = useState(null);
 
@@ -60,7 +61,11 @@ export default function MobileMenu({
         <div className="flex-1 overflow-y-auto text-2xl ml-4 mr-4">
           {activeMobileSection === null && (
             <nav className="p-4 space-y-4">
-              <Link to="/hvac" className="block cursor-pointer">
+              <Link
+                to="/hvac"
+                className="block cursor-pointer"
+                onClick={onClose} // ✅ menu close on click
+              >
                 Home
               </Link>
               <hr className="border-t border-gray-500" />
@@ -77,7 +82,11 @@ export default function MobileMenu({
               </button>
               <hr className="border-t border-gray-500" />
 
-              <Link to="/hvac/partnerships" className="block cursor-pointer">
+              <Link
+                to="/hvac/partnerships"
+                className="block cursor-pointer"
+                onClick={onClose} // ✅ menu close on click
+              >
                 Partnerships
               </Link>
               <hr className="border-t border-gray-500" />
@@ -93,19 +102,38 @@ export default function MobileMenu({
             </nav>
           )}
 
-          {/* 🔹 Nested Menus */}
           {activeMobileSection === "marketingSolutions" && (
             <MarketingSolutions
               isMobile
-              onBack={() => setActiveMobileSection(null)}
               showCategory={showCategory}
               setShowCategory={setShowCategory}
+              onBack={() => {
+                if (showCategory) {
+                  setShowCategory(null); // nested back
+                } else {
+                  setActiveMobileSection(null); // top-level back
+                }
+              }}
+              onLinkClick={() => {
+                onLinkClick?.(); // dropdown close
+                setActiveMobileSection(null); // mobile menu close
+              }}
+              onClose={onClose}
             />
           )}
 
           {activeMobileSection === "Insights" && (
-            <Insights isMobile onBack={() => setActiveMobileSection(null)} />
+            <Insights
+              isMobile
+              onBack={() => setActiveMobileSection(null)}
+              onLinkClick={() => {
+                onLinkClick?.();
+                setActiveMobileSection(null);
+              }}
+              onClose={onClose}
+            />
           )}
+
           {activeMobileSection === "whoWeHelp" && (
             <WhoWeHelp isMobile onBack={() => setActiveMobileSection(null)} />
           )}

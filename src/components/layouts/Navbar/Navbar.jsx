@@ -81,6 +81,7 @@ export default function Navbar() {
               <NavbarLinks
                 activeDropdown={activeDropdown}
                 setActiveDropdown={setActiveDropdown}
+                onLinkClick={() => setActiveDropdown(null)}
               />
 
               {/* Desktop Right Side */}

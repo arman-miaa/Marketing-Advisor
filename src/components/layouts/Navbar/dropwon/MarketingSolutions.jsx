@@ -102,7 +102,13 @@ export default function MarketingSolutions({
   isMobile = false,
   showCategory,
   setShowCategory,
+  onLinkClick,
+  onClose
 }) {
+    const handleClick = () => {
+      if (onLinkClick) onLinkClick(); // desktop dropdown close
+      if (onClose) onClose(); // mobile menu close
+    };
   if (isMobile) {
     return (
       <div className="p-4">
@@ -136,6 +142,7 @@ export default function MarketingSolutions({
                 Your marketing should drive revenue. Now it will.
               </p>
               <Link
+                onClick={handleClick}
                 to="/solutions/learn-more"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors"
               >
@@ -165,6 +172,7 @@ export default function MarketingSolutions({
                   className="border-b border-gray-500 cursor-pointer p-3 rounded-lg transition-all duration-200"
                 >
                   <Link
+                    onClick={handleClick}
                     to={`/hvac/${item.slug}`}
                     className="block hover:text-blue-400 transition-colors"
                   >
@@ -201,6 +209,7 @@ export default function MarketingSolutions({
               Your marketing should drive revenue. Now it will.
             </p>
             <Link
+              onClick={onLinkClick}
               to="/solutions/learn-more"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors"
             >
@@ -225,6 +234,7 @@ export default function MarketingSolutions({
                       className="group hover:border hover:border-blue-400 rounded-lg p-3 transition-all duration-200 cursor-pointer"
                     >
                       <Link
+                        onClick={onLinkClick}
                         to={`/hvac/${item.slug}`}
                         className="block"
                       >
