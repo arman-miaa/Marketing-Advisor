@@ -93,7 +93,7 @@ const marketingSolutionsData = {
       name: "Scorpion Platform",
       description: "See everything in one place",
       badge: "AI",
-      slug: "scorpion-platform",
+      slug: "platform-and-reporting",
     },
   ],
 };
