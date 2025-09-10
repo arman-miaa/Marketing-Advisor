@@ -15,8 +15,6 @@ export default function SocialAdvertising() {
           <CreativeAdvantage />
           <BuiltToDoMore />
           <RevenueSolutionsCarousel />
-      <FinalCtaSection />
-    
-    </div>
+          <FinalCtaSection/></div>
   )
 }
