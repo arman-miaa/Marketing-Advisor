@@ -11,9 +11,6 @@ import { Link } from "react-router";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-slate-900 via-slate-900 to-black text-white">
-
-      
-
       {/* Footer Content */}
       <div className=" border-gray-700">
         <div className="max-w-7xl  mx-auto px-4 py-8">
@@ -36,7 +33,7 @@ export default function Footer() {
                 {[
                   { href: "/about", label: "About Us" },
                   { href: "/careers", label: "Careers" },
-                  { href: "/faq", label: "FAQ" },
+                  { href: "/hvac/insights/faq", label: "FAQ" },
                   { href: "/accommodations", label: "Accommodations" },
                   { href: "/acceptable-use", label: "Acceptable Use Policy" },
                   { href: "/privacy", label: "Privacy Policy" },
