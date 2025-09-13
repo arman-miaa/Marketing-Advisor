@@ -14,7 +14,7 @@ export default function SharedContentSection({
   return (
     <section className="relative bg-slate-900 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Background Gradient Effect */}
+        Background Gradient Effect
         <div className="absolute inset-0 z-0 opacity-50">
           <div className="absolute -inset-x-20 top-2/8 -translate-y-1/2 h-36 w-3/5 mx-auto blur-3xl bg-gradient-to-r from-[#3b83f648] via-[#3b83f677] to-[#3b83f648] animate-pulse-slow"></div>
         </div>

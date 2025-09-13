@@ -28,6 +28,12 @@ import LeadsAi from "../pages/hvac/marketing-solutions/LeadsAi";
 import RevenueIntelligence from "../pages/hvac/marketing-solutions/RevenueIntelligence";
 import PlatformAndReporting from "../pages/hvac/marketing-solutions/PlatformAndReporting";
 import BudgetsAi from "../pages/hvac/marketing-solutions/Budgets-ai";
+import AboutUs from "../pages/footer/AboutUs";
+import Careers from "../pages/footer/Careers";
+import Accommodations from "../pages/footer/Accommodations";
+import AcceptableUsePolicy from "../pages/footer/AcceptableUsePolicy";
+import PrivacyPolicy from "../pages/footer/PrivacyPolicy";
+import LeadershipDetail from "../components/modules/footer/about/LeadershipDetail";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +43,30 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: HomePage,
+      },
+      {
+        path: "/about-us",
+        Component: AboutUs,
+      },
+      {
+        path: "/about-us/:id",
+        Component: LeadershipDetail,
+      },
+      {
+        path: "/about-us/careers",
+        Component: Careers,
+      },
+      {
+        path: "/accommodations",
+        Component: Accommodations,
+      },
+      {
+        path: "/acceptable-use-policy",
+        Component: AcceptableUsePolicy,
+      },
+      {
+        path: "/privacy-policy",
+        Component: PrivacyPolicy,
       },
       {
         path: "/hvac",

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "slug": "rustin-kretz",
+    "image": "Rustin-Kretz.jpg.2505291708028.webp",
+    "name": "Rustin Kretz",
+    "subtitle": "Founder & Chief Executive Officer",
+    "description": "Rustin Kretz is the Founder, Chief Product Officer, and Chairman of the Board at Scorpion.\n\nScorpion is the product of Rustin's vision. His dedication and leadership have been the driving force behind Scorpion and the foundation for its unprecedented growth and innovative approach to digital marketing for local businesses since 2001.\n\nOver the years, he has consulted for multi-million dollar corporations in the healthcare, legal, and other professional industries. Before founding Scorpion, Rustin was intimately involved in an SBC-funded venture (now part of AT&T) to build online scheduling software for small to medium-sized businesses.\n\nRustin is married to his wonderful wife Samantha, has two sons, and is a lifelong Lakers, 49ers & USC Trojans fan."
+  },
+  {
+    "id": 2,
+    "slug": "michael-kline",
+    "image": "michael-kline.jpg.2505291708055.webp",
+    "name": "Michael Kline",
+    "subtitle": "President",
+    "description": "Michael is Scorpion’s President, leading various aspects of Scorpion’s day-to-day operations, including Scorpion’s finance, business intelligence, and corporate development efforts.\n\nMichael is also a member of Scorpion’s Board of Directors. Over the past 30 years, he has founded and held senior management positions at various digital media and SaaS software companies, including ReachLocal (previously NASDAQ: RLOC), which he co-founded and took public. Michael graduated summa cum laude with a Bachelor’s degree in literature from Harvard University.\n\nWhen he is not working, he loves spending time with his wife and two children, playing tennis, skiing, and solving the occasional puzzle."
+  },
+  {
+    "id": 3,
+    "slug": "jamie-adams",
+    "image": "Jamie-Adams.jpg.2505291708025.webp",
+    "name": "Jamie Adams",
+    "subtitle": "Chief Revenue Officer",
+    "description": "Jamie Adams and his team are responsible for strategic accounts and channel partnerships. For 17 years, Jamie has been helping companies leverage technology and digital marketing to grow their revenue.\n\nJamie is passionate about small businesses, something he attributes to having grown up in a town of 2,500 people where most of the economy was driven by local entrepreneurs. He has a bachelor's degree in Computer Information Systems from Louisiana Tech University.\n\nHis hobbies include tennis, watching football, running, playing the drums, and spending quality time with family and friends. He loves to read about leadership and religion. He also loves rock n' roll. If it rocks, you can pretty much assume he's into it."
+  },
+  {
+    "id": 4,
+    "slug": "alexandra-taylor",
+    "image": "alexandra-taylor.jpg.2505291708031.webp",
+    "name": "Alexandra Taylor",
+    "subtitle": "Chief Marketing Officer",
+    "description": "As Chief Marketing Officer at Scorpion, Alex brings more than 15 years of experience leading marketing strategy and driving growth across technology and service-driven organizations. With a deep passion for empowering local businesses, Alex leads brand, demand generation, product marketing, and vertical marketing efforts that connect Scorpion's innovative solutions with the clients who need them most.\n\nBefore joining Scorpion, Alex held senior marketing and growth leadership roles at companies including Walgreens, Kraft Heinz, Rise Interactive, and Schedule Engine (acquired by ServiceTitan). Her career spans both startup and enterprise environments, where she has built and scaled marketing functions, led cross-functional teams, and delivered measurable results in revenue and brand equity.\n\nAlexandra earned her Bachelor of Science in Economics from the University of Illinois at Urbana-Champaign, graduating with honors. A Chicago native, she now lives in the suburbs with her family. She’s most likely to be found exploring new coffee shops, cheering from the sidelines of a youth sports game, or finding ways to paddleboard."
+  },
+  {
+    "id": 5,
+    "slug": "saurabh-goyal",
+    "image": "Saurabh-Goyal.jpg.2505291708030.webp",
+    "name": "Saurabh Goyal",
+    "subtitle": "Chief Operating Officer",
+    "description": "Saurabh Goyal leads SMB business growth at Scorpion. This includes Customer Success, Tech-Enabled Services and Customer Experience groups, with an aim to continuously drive revenue and unlock future growth.\n\nSaurabh spent 17 years at Google, most recently leading a large global product and service operations team as the Global Head of Product Strategy and Sales Enablement for SMBs. Saurabh has worked across multiple countries and in multiple functions such as GTM, Product Strategy, Sales and Customer Success. He brings not only a wealth of knowledge and experience to Scorpion but also a “dream-big” attitude. He is passionate about building high performing teams and developing the next generation of leaders.\n\nSaurabh studied Computer Science and has an MBA from IBS Hyderabad. In his free time, Saurabh enjoys a good wine, fine dining (he’ll tell you he can live on sushi and tandoori chicken!), his passion project early stage VC fund for India, and of course, spending time with his wife Purva and daughters Aria and Gia."
+  },
+  {
+    "id": 6,
+    "slug": "matt-bentley",
+    "image": "Matt-Bentley.jpg.2505291708054.webp",
+    "name": "Matt Bentley",
+    "subtitle": "Chief Data Scientist",
+    "description": "Matt Bentley leads a team of data scientists and engineers developing the machine learning technology powering Scorpion’s growth marketing platform.\n\nInspired by the belief that machine learning can tame marketing data overload so SMEs can compete on a level playing field with large corporations, Matt launched three SaaS products: AI-enabled SEO software CanIRank, intelligent growth engine Growth AI, and lead scoring software Pretarget.\n\nPreviously, Matt was CEO of Sedo.com, an early leader in contextual advertising that he helped grow to a nine-figure revenue and lead to a successful exit via reverse IPO. He is a contributor at Entrepreneur.com, regularly speaks at martech conferences such as InternetWorld, Predictive Analytics World, and Search Engine Strategies, and has been featured in the WSJ, NY Times, Forbes, and elsewhere.\n\nMatt holds an engineering degree from Stanford, studied product development at MIT, and obtained a Master of International Business degree from a French grande école. In his free time, he enjoys exploring the natural beauty of the Pacific Northwest with his family."
+  },
+  {
+    "id": 7,
+    "slug": "amy-lindhom",
+    "image": "amy-lindhom.jpg.2505291708052.webp",
+    "name": "Amy Lindhom",
+    "subtitle": "Chief People Officer",
+    "description": "Amy leads Scorpion's people strategy and experience - and is dedicated to creating a culture that inspires our people to thrive, grow, and belong at Scorpion. Her team is responsible for attracting, retaining, and developing our incredibly talented employees. Amy brings more than ten years of diverse experience in people-focused roles across multiple industries, including insurance, consulting, and advertising.\n\nAmy holds a Bachelor of Arts degree from the University of Illinois at Urbana-Champaign and a Master of Business Administration from DePaul University in Chicago.\n\nIn her free time, Amy enjoys Chicago summers on Lake Michigan, going to country music concerts, and spending time with family & friends."
+  },
+  {
+    "id": 8,
+    "slug": "dan-bedell",
+    "image": "dan-bedell.jpg.2505291708030.webp",
+    "name": "Dan Bedell",
+    "subtitle": "President of Enterprise",
+    "description": "Dan is the President of Enterprise at Scorpion, overseeing the company’s franchise, healthcare, medical and multi-location businesses. Before Scorpion, Dan spent ten years in technical project management before running a small business for five years. He moved into the digital marketing space in 2013 and became Scorpion’s Chief Operating Officer in 2015. He’s since held numerous roles within Scorpion, including President of Healthcare, EVP of Partnerships, and EVP of Innovation.\n\nAs President of Enterprise, he oversees all the employees responsible for delivering exceptional service and measurable results to Scorpion’s large franchise brands, healthcare organizations, and multi-location businesses. His passion is finding new and creative ways to deliver growth to the clients his team oversees and the employees he serves.\n\nDan holds a BBA in Economics from the University of North Texas. When he’s not working, Dan can be found traveling as much as possible and if he’s lucky, playing an acoustic set with his son at a brewery around the DFW area."
+  }
+]

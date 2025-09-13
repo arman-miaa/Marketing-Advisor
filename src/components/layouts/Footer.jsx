@@ -31,12 +31,15 @@ export default function Footer() {
               </h4>
               <ul className="flex flex-col md:flex-row justify-between w-full md:text-base  border-gray-700 md:border-0 pt-4 md:pt-0 gap-2 md:gap-0">
                 {[
-                  { href: "/about", label: "About Us" },
-                  { href: "/careers", label: "Careers" },
+                  { href: "/about-us", label: "About Us" },
+                  { href: "/about-us/careers", label: "Careers" },
                   { href: "/hvac/insights/faq", label: "FAQ" },
                   { href: "/accommodations", label: "Accommodations" },
-                  { href: "/acceptable-use", label: "Acceptable Use Policy" },
-                  { href: "/privacy", label: "Privacy Policy" },
+                  {
+                    href: "/acceptable-use-policy",
+                    label: "Acceptable Use Policy",
+                  },
+                  { href: "/privacy-policy", label: "Privacy Policy" },
                 ].map(({ href, label }) => (
                   <li
                     key={href}
