@@ -53,7 +53,7 @@ export const router = createBrowserRouter([
         Component: LeadershipDetail,
       },
       {
-        path: "/about-us/careers",
+        path: "/about/careers",
         Component: Careers,
       },
       {
