@@ -7,6 +7,11 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkC
   const navRef = useRef(null);
   const location = useLocation();
   const isInsightsPage = location.pathname.startsWith("/hvac/insights");
+  // ✅ নতুন চেক: /about/:id page এর জন্য
+  const isAboutDetailPage = location.pathname.startsWith("/about-us/");
+
+  // common condition
+  const isDarkTextPage = isInsightsPage || isAboutDetailPage;
 
   useEffect(() => {
     function handleClickOutside(e) {
@@ -19,7 +24,7 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkC
   }, [setActiveDropdown]);
 
   const toggleDropdown = (name) => {
-    setActiveDropdown(prev => (prev === name ? null : name));
+    setActiveDropdown((prev) => (prev === name ? null : name));
   };
 
   const linkClass = (name) =>
@@ -33,7 +38,9 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkC
   return (
     <nav
       ref={navRef}
-      className={`hidden lg:flex items-center space-x-8 ${isInsightsPage ? "text-black" : "text-white"}`}
+      className={`hidden lg:flex items-center space-x-8 ${
+        isDarkTextPage ? "text-black" : "text-white"
+      }`}
     >
       {/* Home */}
       <div>
@@ -44,27 +51,40 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkC
 
       {/* Marketing Solutions */}
       <div>
-        <button onClick={() => toggleDropdown("marketingSolutions")} className={linkClass("marketingSolutions")}>
+        <button
+          onClick={() => toggleDropdown("marketingSolutions")}
+          className={linkClass("marketingSolutions")}
+        >
           Marketing Solutions
         </button>
         {activeDropdown === "marketingSolutions" && (
-          <MarketingSolutions onLinkClick={onLinkClick} /> 
+          <MarketingSolutions onLinkClick={onLinkClick} />
         )}
       </div>
 
       {/* Partnerships */}
       <div>
-        <Link to="/hvac/partnerships" className={linkClass("partnerships")} onClick={onLinkClick}>
+        <Link
+          to="/hvac/partnerships"
+          className={linkClass("partnerships")}
+          onClick={onLinkClick}
+        >
           Partnerships
         </Link>
       </div>
 
       {/* Insights */}
       <div>
-        <button onClick={() => toggleDropdown("insights")} className={linkClass("insights")}>
+        <button
+          onClick={() => toggleDropdown("insights")}
+          className={linkClass("insights")}
+        >
           Insights
         </button>
-        {activeDropdown === "insights" && <Insights onLinkClick={onLinkClick} />} {/* ✅ pass onLinkClick */}
+        {activeDropdown === "insights" && (
+          <Insights onLinkClick={onLinkClick} />
+        )}{" "}
+        {/* ✅ pass onLinkClick */}
       </div>
     </nav>
   );

@@ -17,6 +17,12 @@ export default function Navbar() {
   const isHomePage = location.pathname === "/";
   const isInsightsPage = location.pathname.startsWith("/hvac/insights");
 
+  // ✅ নতুন চেক: /about/:id page এর জন্য
+  const isAboutDetailPage = location.pathname.startsWith("/about-us/");
+
+  // common condition
+  const isDarkTextPage = isInsightsPage || isAboutDetailPage;
+
   return (
     <>
       {/* Blue notification bar - only on home page */}
@@ -67,11 +73,10 @@ export default function Navbar() {
           <div className="px-6 md:px-12">
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
-
               <Link
                 to="/"
                 className={`text-3xl font-bold tracking-wider ${
-                  isInsightsPage ? "text-black" : "text-white"
+                  isDarkTextPage ? "text-black" : "text-white"
                 }`}
               >
                 Marketing Advisor
@@ -89,7 +94,7 @@ export default function Navbar() {
                 <Link
                   to="/login"
                   className={`flex items-center text-xl font-medium space-x-1 hover:text-blue-400 transition-colors ${
-                    isInsightsPage ? "text-black" : "text-white"
+                    isDarkTextPage ? "text-black" : "text-white"
                   }`}
                 >
                   <MdOutlineLogin size={20} />
@@ -98,7 +103,7 @@ export default function Navbar() {
                 <Link
                   to="tel:8663448852"
                   className={`font-extrabold ${
-                    isInsightsPage ? "text-black" : "text-white"
+                    isDarkTextPage ? "text-black" : "text-white"
                   }`}
                 >
                   (866) 344-8852

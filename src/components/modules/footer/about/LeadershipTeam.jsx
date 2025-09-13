@@ -30,7 +30,7 @@ export default function LeadershipTeam() {
         <SharedTitleSection
           category="Leadership"
           title="Meet the team leading the way"
-          highlightText="opportunities."
+          highlightText="leading"
           description="Experienced leadership focused on real progress."
           descriptionSize="text-base md:text-2xl"
         />
@@ -51,7 +51,9 @@ export default function LeadershipTeam() {
 
             <div className="absolute bottom-0 left-0 w-full bg-blue-600/40 bg-opacity-70 backdrop-blur-md text-white p-4 rounded-b-xl flex justify-between items-center">
               <div>
-                <h3 className="text-lg md:text-xl font-semibold">{leader.name}</h3>
+                <h3 className="text-lg md:text-xl font-semibold">
+                  {leader.name}
+                </h3>
                 <p className="text-sm md:text-lg">{leader.subtitle}</p>
               </div>
               <span className="bg-blue-700 p-2 rounded-xl">
