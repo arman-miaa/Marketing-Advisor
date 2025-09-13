@@ -16,8 +16,8 @@ export default function CareerSection() {
             back, and growth is part of the job. If you're ready to take on
             meaningful work with people who care, you're in the right place.
           </p>
-     
-          <Button text={` See Open Positions`} to={`/hvac/get-started`} />
+
+          <Button text={` See Open Positions`} to={`/about/careers`} />
         </div>
 
         {/* Right Image (hidden on mobile) */}

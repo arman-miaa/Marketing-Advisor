@@ -7,8 +7,11 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkC
   const navRef = useRef(null);
   const location = useLocation();
   const isInsightsPage = location.pathname.startsWith("/hvac/insights");
-  // ✅ নতুন চেক: /about/:id page এর জন্য
-  const isAboutDetailPage = location.pathname.startsWith("/about-us/");
+ const isAboutDetailPage =
+   location.pathname.startsWith("/about-us/") ||
+   location.pathname.startsWith("/accommodations") ||
+   location.pathname.startsWith("/privacy-policy") ||
+   location.pathname.startsWith("/acceptable-use-policy");
 
   // common condition
   const isDarkTextPage = isInsightsPage || isAboutDetailPage;
