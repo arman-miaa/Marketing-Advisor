@@ -23,7 +23,7 @@ const RevenueCarousel = () => {
       description:
         "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/hvac/advertising-ai",
       image: slideImg1,
       tag: "Digital Advertising",
       icon: "AI",
@@ -34,7 +34,7 @@ const RevenueCarousel = () => {
       description:
         "With Scorpion’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
       buttonText: "Learn More",
-      buttonLink: "/digital-advertising",
+      buttonLink: "/hvac/website",
       image: slideImg2,
       tag: "Website",
     },
@@ -44,7 +44,7 @@ const RevenueCarousel = () => {
       description:
         "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
       buttonText: "Learn More",
-      buttonLink: "/website",
+      buttonLink: "/hvac/ranking-ai",
       image: slideImg3,
       tag: "Ranking",
       icon: "AI",

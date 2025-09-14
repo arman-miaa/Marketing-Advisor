@@ -25,7 +25,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Leads AI, you automatically know the value of every lead, get immediate summaries, and see the quality of every lead and intake.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/hvac/leads-ai",
       image: slideImg1,
       tag: "Leads",
       icon: "AI",
@@ -36,7 +36,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Get full visibility into revenue attribution, geographic insights, and return on investment so we can invest where it matters most.",
       buttonText: "Learn More",
-      buttonLink: "/digital-advertising",
+      buttonLink: "/hvac/revenue-intelligence",
       image: slideImg2,
       tag: "Revenue Intelligence",
     },
@@ -46,7 +46,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Quickly turn visitors into leads with automated landing pages that give everything a potential customer needs to make you the obvious choice.",
       buttonText: "Learn More",
-      buttonLink: "/website",
+      buttonLink: "/hvac/landing-page-ai",
       image: slideImg3,
       tag: "Landing Page",
       icon: "AI",
@@ -57,7 +57,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Stand out with social media ads that make you the first thought when someone is faced with an HVAC problem.",
       buttonText: "Learn More",
-      buttonLink: "/marketing-team",
+      buttonLink: "/hvac/social-advertising",
       image: slideImg4,
       tag: "Social Advertising",
     },
@@ -67,7 +67,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With high-quality video ads that showcase your brand and what you offer to the customers you want.",
       buttonText: "Learn More",
-      buttonLink: "/ranking-ai",
+      buttonLink: "/hvac/video-advertising",
       image: slideImg5,
       tag: "Video Advertising",
     },
@@ -77,7 +77,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
       buttonText: "Learn More",
-      buttonLink: "/ranking-ai",
+      buttonLink: "/hvac/team-of-experts",
       image: slideImg6,
       tag: "Marketing Team",
     },

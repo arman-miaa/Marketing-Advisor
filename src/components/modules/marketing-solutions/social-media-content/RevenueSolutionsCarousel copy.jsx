@@ -24,7 +24,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Get full visibility into revenue attribution, geographic insights, and return on investment so we can invest where it matters most.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/hvac/revenue-intelligence",
       image: slideImg1,
       tag: "Revenue Intelligence",
       icon: "",
@@ -35,7 +35,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Stand out with social media ads that make you the first thought when someone is faced with an HVAC problem.",
       buttonText: "Learn More",
-      buttonLink: "/digital-advertising",
+      buttonLink: "/hvac/social-advertising",
       image: slideImg4,
       tag: "Social Advertising",
     },
@@ -45,7 +45,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With high-quality video ads that showcase your brand and what you offer to the customers you want.",
       buttonText: "Learn More",
-      buttonLink: "/website",
+      buttonLink: "/hvac/video-advertising",
       image: slideImg3,
       tag: "Video Advertising",
       icon: "",
@@ -56,7 +56,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Scorpion’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
       buttonText: "Learn More",
-      buttonLink: "/marketing-team",
+      buttonLink: "/hvac/website",
       image: slideImg2,
       tag: "Website",
     },

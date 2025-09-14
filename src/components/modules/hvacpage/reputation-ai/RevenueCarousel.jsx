@@ -25,7 +25,7 @@ const RevenueCarousel = () => {
       description:
         "Get full visibility into revenue attribution, geographic insights, and return on investment so we can invest where it matters most.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/hvac/revenue-intelligence",
       image: slideImg1,
       tag: "Revenue Intelligence",
     },
@@ -35,7 +35,7 @@ const RevenueCarousel = () => {
       description:
         "One platform to rule them all, from the office to your most valuable neighborhoods. Know exactly how your marketing is driving revenue, all from the palm of your hand.",
       buttonText: "Learn More",
-      buttonLink: "/digital-advertising",
+      buttonLink: "/hvac/platform-and-reporting",
       image: slideImg2,
       tag: "Scorpion Platform",
       icon: "AI",
@@ -46,7 +46,7 @@ const RevenueCarousel = () => {
       description:
         "With Scorpion’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
       buttonText: "Learn More",
-      buttonLink: "/website",
+      buttonLink: "/hvac/website",
       image: slideImg3,
       tag: "Website",
     },
@@ -56,7 +56,7 @@ const RevenueCarousel = () => {
       description:
         "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
       buttonText: "Learn More",
-      buttonLink: "/marketing-team",
+      buttonLink: "/hvac/team-of-experts",
       image: slideImg4,
       tag: "Marketing Team",
     },
@@ -66,10 +66,10 @@ const RevenueCarousel = () => {
       description:
         "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
       buttonText: "Learn More",
-      buttonLink: "/ranking-ai",
+      buttonLink: "/hvac/ranking-ai",
       image: slideImg5,
-        tag: "Ranking",
-      icon: "AI"
+      tag: "Ranking",
+      icon: "AI",
     },
   ];
 

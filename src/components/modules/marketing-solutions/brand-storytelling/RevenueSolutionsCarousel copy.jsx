@@ -24,7 +24,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Quickly turn visitors into leads with automated landing pages that give everything a potential customer needs to make you the obvious choice.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/hvac/landing-page-ai",
       image: slideImg1,
       tag: "Landing Page",
       icon: "AI",
@@ -35,7 +35,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Stand out with social media ads that make you the first thought when someone is faced with an HVAC problem.",
       buttonText: "Learn More",
-      buttonLink: "/digital-advertising",
+      buttonLink: "/hvac/social-advertising",
       image: slideImg4,
       tag: "Social Advertising",
     },
@@ -45,7 +45,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
       buttonText: "Learn More",
-      buttonLink: "/website",
+      buttonLink: "/hvac/video-advertising",
       image: slideImg3,
       tag: "Digital Advertising",
       icon: "AI",
@@ -56,7 +56,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Scorpion’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
       buttonText: "Learn More",
-      buttonLink: "/marketing-team",
+      buttonLink: "/hvac/website",
       image: slideImg2,
       tag: "Website",
     },

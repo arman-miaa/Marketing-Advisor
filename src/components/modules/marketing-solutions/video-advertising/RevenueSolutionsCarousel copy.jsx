@@ -24,7 +24,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Leads AI, you automatically know the value of every lead, get immediate summaries, and see the quality of every lead and intake.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/hvac/leads-ai",
       image: slideImg1,
       tag: "Leads",
       icon: "AI",
@@ -35,7 +35,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "One platform to rule them all, from the office to your most valuable neighborhoods. Know exactly how your marketing is driving revenue, all from the palm of your hand.",
       buttonText: "Learn More",
-      buttonLink: "/digital-advertising",
+      buttonLink: "/hvac/platform-and-reporting",
       image: slideImg2,
       tag: "Advisor Platform",
     },
@@ -45,20 +45,20 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
       buttonText: "Learn More",
-      buttonLink: "/website",
+      buttonLink: "/hvac/advertising-ai",
       image: slideImg3,
       tag: "Digital Advertising",
       icon: "AI",
     },
     {
       id: 4,
-      title: "First impressions that earn the job",
+      title: "Hold their attention",
       description:
-        "With Scorpion’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
+        "Stand out with social media ads that make you the first thought when someone is faced with an HVAC problem.",
       buttonText: "Learn More",
-      buttonLink: "/marketing-team",
+      buttonLink: "/hvac/social-advertising",
       image: slideImg4,
-      tag: "Website",
+      tag: "Social Advertising",
     },
     {
       id: 5,
@@ -66,7 +66,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "See your HVAC company come to life with professionally produced videos and photography that show why you’re the best in your space.",
       buttonText: "Learn More",
-      buttonLink: "/ranking-ai",
+      buttonLink: "/hvac/brand-storytelling",
       image: slideImg5,
       tag: "Brand Storytelling",
     },

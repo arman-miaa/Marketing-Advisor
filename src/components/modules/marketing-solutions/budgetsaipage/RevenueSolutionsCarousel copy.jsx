@@ -24,7 +24,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/hvac/advertising-ai",
       image: slideImg1,
       tag: "Digital Advertising",
       icon: "AI",
@@ -35,7 +35,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Quickly turn visitors into leads with automated landing pages that give everything a potential customer needs to make you the obvious choice.",
       buttonText: "Learn More",
-      buttonLink: "/digital-advertising",
+      buttonLink: "/hvac/landing-page-ai",
       image: slideImg2,
       tag: "Landing Page",
       icon: "AI",
@@ -46,7 +46,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
       buttonText: "Learn More",
-      buttonLink: "/website",
+      buttonLink: "/hvac/team-of-experts",
       image: slideImg3,
       tag: "Marketing Team",
       icon: "",
