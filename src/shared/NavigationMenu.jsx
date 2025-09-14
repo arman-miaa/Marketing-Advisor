@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import bgImg from "../../public/blue.png"
 
 export default function NavigationMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +12,18 @@ export default function NavigationMenu() {
       name: "Technology",
       icon: "⚙️",
       items: [
-        "Leads AI",
-        "Revenue Intelligence",
-        "Scorpion Connect",
-        "Capacity Marketing Engine",
-        "Scorpion Platform",
-        "Convert",
+        { label: "Leads AI", path: "/hvac/leads-ai" },
+        {
+          label: "Revenue Intelligence",
+          path: "/hvac/revenue-intelligence",
+        },
+        { label: "Scorpion Connect", path: "/hvac/advisor-connect" },
+        {
+          label: "Capacity Marketing Engine",
+          path: "/hvac/capacity-marketing-engine",
+        },
+        { label: "Scorpion Platform", path: "/hvac/platform-and-reporting" },
+        { label: "Convert", path: "/hvac/website" },
       ],
     },
     {
@@ -24,12 +31,12 @@ export default function NavigationMenu() {
       name: "Marketing",
       icon: "📊",
       items: [
-        "Brand Storytelling",
-        "Marketing Team",
-        "Ranking",
-        "Reputation",
-        "Social Media Content",
-        "Website",
+        { label: "Website", path: "/hvac/website" },
+        { label: "Marketing Team", path: "/hvac/team-of-experts" },
+        { label: "Ranking", path: "/hvac/ranking-ai" },
+        { label: "Reputation", path: "/hvac/reputation-ai" },
+        { label: "Brand Storytelling", path: "/hvac/brand-storytelling" },
+        { label: "Social Media Content", path: "/hvac/social-media-content" },
       ],
     },
     {
@@ -37,22 +44,22 @@ export default function NavigationMenu() {
       name: "Advertising",
       icon: "📢",
       items: [
-        "Budgets",
-        "Digital Advertising",
-        "Landing Page",
-        "Social Advertising",
-        "Video Advertising",
+        { label: "Digital Advertising", path: "/hvac/advertising-ai" },
+        { label: "Video Advertising", path: "/hvac/video-advertising" },
+        { label: "Social Advertising", path: "/hvac/social-advertising" },
+        { label: "Budgets", path: "/hvac/budgets-ai" },
+        { label: "Landing Page", path: "/hvac/landing-page-ai" },
       ],
     },
     {
       id: "integrations",
       name: "Integrations",
-      icon: "🔗",
+      icon: "",
       items: [
-        "CRM Integration",
-        "Analytics Tools",
-        "Third-party APIs",
-        "Custom Solutions",
+        { label: "CRM Integration", path: "/integrations/crm" },
+        { label: "Analytics Tools", path: "/integrations/analytics" },
+        { label: "Third-party APIs", path: "/integrations/apis" },
+        { label: "Custom Solutions", path: "/integrations/custom" },
       ],
     },
   ];
@@ -68,13 +75,17 @@ export default function NavigationMenu() {
         </div>
         <div className="flex items-center gap-4">
           <div className="hidden md:block text-white/70 font-medium text-sm">
-            <button className="hover:text-blue-400">
-              <Link to="/hvac">HVAC</Link>
-            </button>{" "}
+            <Link to="/hvac" className="hover:text-blue-400">
+              HVAC
+            </Link>{" "}
             /
-            <button className="hover:text-blue-400">
-              <Link to="/hvac/marketing-solutions"> Marketing Solutions </Link>
-            </button>
+            <Link
+              to="/hvac/marketing-solutions"
+              className="hover:text-blue-400"
+            >
+              {" "}
+              Marketing Solutions{" "}
+            </Link>
             / Scorpion Connect
           </div>
           <button
@@ -95,11 +106,6 @@ export default function NavigationMenu() {
         <div className="relative bg-black px-4">
           {/* Mobile Layout */}
           <div className="md:hidden flex flex-col gap-6">
-            {/* Branding */}
-            <div className="text-center text-white text-4xl font-bold">
-            
-            </div>
-
             {/* Categories */}
             <div className="flex flex-col gap-4">
               {categories.map((category) => (
@@ -123,13 +129,14 @@ export default function NavigationMenu() {
                   {activeCategory === category.id && (
                     <div className="mt-4 bg-blue-600 rounded-xl p-4 border border-white/10 space-y-3">
                       {category.items.map((item, index) => (
-                        <div
+                        <Link
                           key={index}
+                          to={item.path}
                           className="flex items-center justify-between p-3 rounded-lg bg-gray-800 hover:bg-white/10 cursor-pointer transition"
                         >
-                          <span className="text-white">{item}</span>
+                          <span className="text-white">{item.label}</span>
                           <span className="text-white/50">→</span>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   )}
@@ -139,8 +146,13 @@ export default function NavigationMenu() {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden md:flex items-center justify-center h-full">
-            <div className="flex items-center justify-center w-full max-w-6xl mx-auto px-8">
+          <div
+      
+            className="hidden md:flex items-center justify-center h-full"
+          >
+
+            <div  className="flex items-center justify-center w-full max-w-6xl mx-auto px-8">
+              
               {/* Left Branding */}
               <div className="flex-1">
                 <div className="text-white text-5xl font-bold">
@@ -179,7 +191,7 @@ export default function NavigationMenu() {
               {/* Right - Items */}
               <div className="flex-1 flex justify-end">
                 {activeCategory && (
-                  <div className="bg-blue-600 backdrop-blur-sm rounded-2xl p-6 w-80 border border-white/10">
+                  <div className="bg-blue-600 backdrop-blur-sm rounded-2xl p-6 w-80 border border-white/10 flex flex-col items-center justify-center text-center">
                     <div className="flex items-center gap-3 mb-6">
                       <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                         <span className="text-white text-sm">
@@ -196,23 +208,33 @@ export default function NavigationMenu() {
                         }
                       </h3>
                     </div>
-                    <div className="space-y-3">
-                      {categories
-                        .find((cat) => cat.id === activeCategory)
-                        ?.items.map((item, index) => (
-                          <div
-                            key={index}
-                            className="flex items-center justify-between p-3 rounded-lg bg-gray-800 hover:bg-white/10 transition-colors cursor-pointer group"
-                          >
-                            <span className="text-white font-medium">
-                              {item}
-                            </span>
-                            <div className="text-white/50 group-hover:text-white transition-colors">
-                              →
-                            </div>
-                          </div>
-                        ))}
-                    </div>
+
+                    {/* শর্ত চেক */}
+                    {activeCategory === "integrations" ? (
+                      <div className="text-white text-lg py-30 font-medium">
+                        Partnered with top providers to maximize your revenue
+                        and impact.
+                      </div>
+                    ) : (
+                      <div className="space-y-3">
+                        {categories
+                          .find((cat) => cat.id === activeCategory)
+                          ?.items.map((item, index) => (
+                            <Link
+                              key={index}
+                              to={item.path}
+                              className="flex items-center justify-between p-3 rounded-lg bg-gray-800 hover:bg-white/10 transition-colors cursor-pointer group"
+                            >
+                              <span className="text-white font-medium">
+                                {item.label}
+                              </span>
+                              <div className="text-white/50 group-hover:text-white transition-colors">
+                                →
+                              </div>
+                            </Link>
+                          ))}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
