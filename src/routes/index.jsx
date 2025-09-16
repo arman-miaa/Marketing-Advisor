@@ -34,6 +34,7 @@ import Accommodations from "../pages/footer/Accommodations";
 import AcceptableUsePolicy from "../pages/footer/AcceptableUsePolicy";
 import PrivacyPolicy from "../pages/footer/PrivacyPolicy";
 import LeadershipDetail from "../components/modules/footer/about/LeadershipDetail";
+import Electrical from "../pages/electrical/Electrical";
 
 export const router = createBrowserRouter([
   {
@@ -68,6 +69,14 @@ export const router = createBrowserRouter([
         path: "/privacy-policy",
         Component: PrivacyPolicy,
       },
+
+      // electrical page
+      {
+        path: "/electrical",
+        Component: Electrical,
+      },
+
+      // hvac page
       {
         path: "/hvac",
         Component: HvacPage,
