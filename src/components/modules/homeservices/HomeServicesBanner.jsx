@@ -12,23 +12,23 @@ const services = [
     id: "electrical",
     name: "Electrical",
     image: img1,
-    href: "/services/electrical",
+    href: "/electrical",
   },
-  { id: "hvac", name: "HVAC", image: img2, href: "/services/hvac" },
+  { id: "hvac", name: "HVAC", image: img2, href: "/hvac" },
   {
     id: "pest-control",
     name: "Pest Control",
     image: img3,
-    href: "/services/pest-control",
+    href: "/pest-control",
   },
-  { id: "plumbing", name: "Plumbing", image: img4, href: "/services/plumbing" },
+  { id: "plumbing", name: "Plumbing", image: img4, href: "/plumbing" },
   {
     id: "landscaping",
     name: "Landscaping",
     image: img5,
-    href: "/services/landscaping",
+    href: "/landscaping",
   },
-  { id: "roofing", name: "Roofing", image: img6, href: "/services/roofing" },
+  { id: "roofing", name: "Roofing", image: img6, href: "/roofing" },
 ];
 
 export default function HomeServicesBanner() {

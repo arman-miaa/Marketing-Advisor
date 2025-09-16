@@ -47,7 +47,11 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkC
     >
       {/* Home */}
       <div>
-        <Link to="/hvac" className={linkClass("home")} onClick={onLinkClick}>
+        <Link
+          to="/home-services"
+          className={linkClass("home")}
+          onClick={onLinkClick}
+        >
           Home
         </Link>
       </div>

@@ -35,6 +35,10 @@ import AcceptableUsePolicy from "../pages/footer/AcceptableUsePolicy";
 import PrivacyPolicy from "../pages/footer/PrivacyPolicy";
 import LeadershipDetail from "../components/modules/footer/about/LeadershipDetail";
 import Electrical from "../pages/electrical/Electrical";
+import Landscaping from "../pages/landscaping/Landscaping";
+import PestControl from "../pages/pest-control/PestControl";
+import Plumbing from "../pages/plumbing/Plumbing";
+import Roofing from "../pages/roofing/Roofing";
 
 export const router = createBrowserRouter([
   {
@@ -180,6 +184,30 @@ export const router = createBrowserRouter([
       {
         path: "/home-services",
         Component: HomeServices,
+      },
+
+      // landscaping page
+      {
+        path: "/landscaping",
+        Component: Landscaping,
+      },
+
+      // pest-control
+      {
+        path: "/pest-control",
+        Component: PestControl,
+      },
+
+      // plumbing page
+      {
+        path: "/plumbing",
+        Component: Plumbing,
+      },
+
+      // roofing page
+      {
+        path: "/roofing",
+        Component: Roofing,
       },
     ],
   },

@@ -62,7 +62,7 @@ export default function MobileMenu({
           {activeMobileSection === null && (
             <nav className="p-4 space-y-4">
               <Link
-                to="/hvac"
+                to="/home-services"
                 className="block cursor-pointer"
                 onClick={onClose} // ✅ menu close on click
               >
