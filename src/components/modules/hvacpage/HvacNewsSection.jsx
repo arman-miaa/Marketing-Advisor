@@ -3,6 +3,7 @@ import img2 from "../../../assets/images/hvac/group.webp";
 import img3 from "../../../assets/images/hvac/news.webp";
 import Button from "../../ui/Button";
 import { Link } from "react-router";
+import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 const HvacNewsSection = () => {
   const articles = [
@@ -35,18 +36,14 @@ const HvacNewsSection = () => {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-18">
-          <p className="text-blue-500  font-semibold uppercase tracking-[0.35em] mb-8 md:mb-14">
-            your competitive advantage
-          </p>
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
-              HVAC
-            </span>
-            news and insights
-          </h2>
-          <h2 className="text-3xl md:text-4xl mt-8 md:mt-10 text-gray-900">
-            The information you need to maximize your revenue.
-          </h2>
+          <SharedTitleSection
+            category="your competitive advantage"
+            title="HVAC news and insights"
+            highlightText="HVAC"
+            description="The information you need to maximize your revenue."
+            descriptionSize="text-base md:text-4xl"
+            align="center"
+          />
         </div>
 
         {/* Articles Grid */}

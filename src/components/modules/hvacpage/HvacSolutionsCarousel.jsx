@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Button from "../../ui/Button";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
+import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 const HvacSolutionsCarousel = () => {
 const testimonials = [
@@ -122,15 +123,12 @@ const testimonials = [
       <div>
         {/* Header */}
         <div className="text-left mb-12 container mx-auto">
-          <p className="text-blue-500 uppercase font-semibold tracking-wider mb-4">
-            Revenuemax Solutions
-          </p>
-          <h2 className="text-4xl md:text-6xl mt-12 font-bold text-white">
-            HVAC Marketing That Makes You the
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md text-black">
-              First Call
-            </span>{" "}
-          </h2>
+          <SharedTitleSection
+            category="Revenuemax Solutions"
+            title="HVAC Marketing That Makes You the First Call"
+            highlightText="First Call"
+            theme="dark"
+          />
         </div>
 
         {/* Swiper Carousel */}
@@ -167,7 +165,6 @@ const testimonials = [
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40" />
-
 
                 {/* top tag */}
 
@@ -259,7 +256,6 @@ const testimonials = [
             })}
           </div>
         </div>
-        
       </div>
     </section>
   );

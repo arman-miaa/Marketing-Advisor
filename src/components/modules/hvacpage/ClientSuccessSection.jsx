@@ -14,6 +14,7 @@ import slideImg3 from "../../../assets/images/hvac/logo1.webp";
 import slideImg4 from "../../../assets/images/hvac/arctic-air-home-services.png";
 import slideImg5 from "../../../assets/images/hvac/serviceone.2311291526178.png";
 import slideImg6 from "../../../assets/images/hvac/logo4.png";
+import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 const clientData = [
   {
@@ -73,16 +74,12 @@ export default function ClientSuccessSection() {
     <section className="py-20 md:py-38 bg-gradient-to-b from-blue-0 to-blue-50 relative overflow-hidden">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="container mx-auto text-left mb-16">
-          <p className="text-blue-500 uppercase text-sm font-semibold tracking-wider mb-4">
-            CLIENT SUCCESS
-          </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Results that make a{" "}
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
-              difference
-            </span>
-          </h2>
+        <div className="container mx-auto ">
+          <SharedTitleSection
+            category="Client Success"
+            title="Results that make a difference"
+            highlightText="difference"
+          />
         </div>
 
         {/* Swiper Container */}

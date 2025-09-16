@@ -15,6 +15,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import VideoModal from "../../../shared/VideoModel";
+import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 const VideoTestimonialsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -63,16 +64,12 @@ const VideoTestimonialsSection = () => {
     <section className="py-16 md:py-30 px-4 ">
       <div className="">
         {/* Header */}
-        <div className="text-left px-4 md:px-0 mb-12 container mx-auto ">
-          <p className="text-blue-500 uppercase  font-semibold tracking-wider mb-4">
-            FEATURED TESTIMONIALS
-          </p>
-          <h2 className="text-4xl md:text-6xl mt-8 md:mt-12 font-bold text-gray-900">
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md">
-              Spotlight
-            </span>{" "}
-            stories for HVAC companies
-          </h2>
+        <div className=" container mx-auto ">
+          <SharedTitleSection
+            category="Featured Testimonials"
+            title="Spotlight stories for HVAC companies"
+            highlightText="Spotlight"
+          />
         </div>
 
         {/* Swiper Carousel */}

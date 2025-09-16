@@ -12,6 +12,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router";
+import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 export default function RevenueMaxSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,18 +28,13 @@ export default function RevenueMaxSection() {
       <div className="container mx-auto px-4 ">
         {/* Header */}
         <div className="text-left mb-8 lg:mb-12">
-          <p className="text-blue-600 font-semibold uppercase mb-6 tracking-[0.35em]">
-            OUR SOLUTION
-          </p>
-          <h1 className=" container mx-auto mt-3 text-4xl md:text-6xl font-semibold md:leading-18">
-            Your marketing should drive predictable <br />
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md text-black ">
-              Revenue
-            </span>{" "}
-          </h1>
-          <p className=" container mx-auto mt-3 text-4xl md:text-6xl font-semibold md:leading-18">
-            Now it does with RevenueMAX.
-          </p>
+          <SharedTitleSection
+            category="One solution"
+            title="Your marketing should drive predictable revenue.
+Now it does with RevenueMAX."
+            highlightText="revenue."
+            theme="dark"
+          />
         </div>
 
         {/* Full Box Video */}
