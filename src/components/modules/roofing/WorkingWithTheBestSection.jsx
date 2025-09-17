@@ -1,4 +1,4 @@
-import sampleImage from "../../../assets/images/hvac/HVAC-Logos.png.webp";
+import sampleImage from "../../../assets/images/roofing/Roofing-Logos.png.webp";
 import SectionWithTitleImage from "../../../shared/SectionWithTitleImage";
 
 export default function WorkingWithTheBestSection() {

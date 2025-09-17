@@ -1,5 +1,5 @@
 import video from "../../../assets/images/hvac/video2.mp4";
-import img1 from "../../../assets/images/hvac/img1.webp";
+import img1 from "../../../assets/images/roofing/Never-miss-an-opportunity-Roofing.png.2506022308534.webp";
 import img2 from "../../../assets/images/hvac/img2.webp";
 import img3 from "../../../assets/images/hvac/img3.webp";
 import boxVideo from "../../../assets/images/hvac/box1.mp4";
@@ -106,16 +106,16 @@ Now it does with RevenueMAX."
           />
           {/* Card 2 */}
           <Card
+            title="Get more profitable calls"
+            desc="Fill your calendar with high-margin installs, system replacements,  and service  agreements."
+            img={img3}
+          />
+          <Card
             title="Make every dollar count"
             desc="Marketing Advisor tracks what’s working, cuts what’s not, and puts your budget toward the jobs that bring in real revenue."
             img={img2}
           />
           {/* Card 3 */}
-          <Card
-            title="Get more profitable calls"
-            desc="Fill your calendar with high-margin installs, system replacements,  and service  agreements."
-            img={img3}
-          />
         </div>
 
         {/* sm এ Swiper */}

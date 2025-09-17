@@ -8,63 +8,38 @@ import "swiper/css/navigation"; // only navigation css
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
-import slideImg1 from "../../../assets/images/hvac/hembree-logo.png";
-import slideImg2 from "../../../assets/images/hvac/logo2.webp";
-import slideImg3 from "../../../assets/images/hvac/logo1.webp";
-import slideImg4 from "../../../assets/images/hvac/arctic-air-home-services.png";
-import slideImg5 from "../../../assets/images/hvac/serviceone.2311291526178.png";
-import slideImg6 from "../../../assets/images/hvac/logo4.png";
+import slideImg1 from "../../../assets/images/roofing/QuailtyRoofinglogo-dark.2504181127333.png";
+import slideImg2 from "../../../assets/images/roofing/JoeDarkpng.2504181223115.png";
+import slideImg3 from "../../../assets/images/roofing/Onit-Roofing-dark.2504181259346.png";
+
 import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 const clientData = [
   {
     id: 1,
     logo: slideImg1,
-    metric: "$4M",
-    title: "Revenue increase",
+    metric: "28x",
+    title: "Return on total Investment",
     description:
-      "Just in the past few years since our partnership with Marketing Advisor began, Hembree Heating & Air has grown by over 3x.",
+      "This Florida-based roofing company knew it needed the right partner to help it achieve its marketing goals. With Scorpion, it's seen a 28x return on total investment.",
   },
   {
     id: 2,
     logo: slideImg2,
-    metric: "25x",
+    metric: "16x",
     title: "Return on total investment",
     description:
-      "If I could give my past self any advice on marketing, I would say look to Marketing Advisor sooner.",
+      "This family-owned and operated roofing company partnered with Scorpion to help focus their marketing efforts and goals to drive real results.",
   },
   {
     id: 3,
     logo: slideImg3,
-    metric: "9x",
-    title: "Return on paid investment",
+    metric: "113%",
+    title: "Increase in leads",
     description:
-      "With Marketing Advisor's help and custom-tailored marketing solutions, Swift Services, a home services company in South Carolina, is experiencing meaningful growth.",
+      "“We’re small. This is our livelihood. We want to know what’s being said in our ads, where our leads are coming from, and what’s working. Scorpion helped us get visibility and control and made our budget work harder.”",
   },
-  {
-    id: 4,
-    logo: slideImg4,
-    metric: "18x",
-    title: "Attributed return on total investment",
-    description:
-      "As a long-time Marketing Advisor client, Arctic Air Home Services continues to see double-digit revenue growth and strong ROI powered by Marketing Advisor's RevenueMAX.",
-  },
-  {
-    id: 5,
-    logo: slideImg5,
-    metric: "2x",
-    title: "Increase in revenue growth",
-    description:
-      "Our cost per lead is going down, and our organic search rankings are going up. It's been a really great experience.",
-  },
-  {
-    id: 6,
-    logo: slideImg6,
-    metric: "35%",
-    title: "Increase in average ticket value",
-    description:
-      "Marketing Advisor's AI technology drives in calls that are bookable jobs.",
-  },
+ 
 ];
 
 export default function ClientSuccessSection() {
@@ -78,7 +53,7 @@ export default function ClientSuccessSection() {
           <SharedTitleSection
             category="Client Success"
             title="Results that make a difference"
-            highlightText="difference"
+            highlightText="Results"
           />
         </div>
 

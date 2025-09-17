@@ -16,74 +16,75 @@ import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 const HvacSolutionsCarousel = () => {
-const testimonials = [
-  {
-    id: 1,
-    title: "Never miss an opportunity",
-    description:
-      "Be there 24/7 with Marketing Advisor Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
-    buttonText: "Learn More",
-    buttonLink: "/hvac/advisor-connect",
-    backgroundVideo: video1,
-    tag: " Advisorn Connect",
-    icon: <BiSolidMessageRoundedDots />,
-  },
-  {
-    id: 2,
-    title: "Experience advertising that drives revenue",
-    description:
-      "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
-    buttonText: "Learn More",
-    buttonLink: "/hvac/advertising-ai",
-    backgroundVideo: video2,
-    tag: "Digital Advertising",
-    icon: "AI",
-  },
-  {
-    id: 3,
-    title: "First impressions that earn the job",
-    description:
-      "With Marketing Advisor’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
-    buttonText: "Learn More",
-    buttonLink: "/hvac/website",
-    backgroundVideo: video3,
-    tag: "Website",
-    icon: "",
-  },
-  {
-    id: 4,
-    title: "Get a team that knows HVAC",
-    description:
-      "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
-    buttonText: "Learn More",
-    buttonLink: "/hvac/team-of-experts",
-    backgroundVideo: video4,
-    tag: "Marketing Team",
-    icon: "",
-  },
-  {
-    id: 5,
-    title: "Get to the top and stay there",
-    description:
-      "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
-    buttonText: "Learn More",
-    buttonLink: "/hvac/ranking-ai",
-    backgroundVideo: video5,
-    tag: "Ranking",
-    icon: "AI",
-  },
-  {
-    id: 6,
-    title: "Create a reputation for results",
-    description:
-      "In a competitive industry like HVAC, a strong reputation can be your greatest asset. With Reputation AI, get more 5-star reviews and use them to get more customers.",
-    buttonText: "Learn More",
-    buttonLink: "/hvac/reputation-ai",
-    backgroundVideo: video6,
-    tag: "Reputation",
-    icon: "AI",
-  },
-];
+  const testimonials = [
+    {
+      id: 1,
+      title: "Experience advertising that drives revenue",
+      description:
+        "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
+      buttonText: "Learn More",
+      buttonLink: "/hvac/advertising-ai",
+      backgroundVideo: video2,
+      tag: "Digital Advertising",
+      icon: "AI",
+    },
+    {
+      id: 2,
+      title: "Never miss an opportunity",
+      description:
+        "Be there 24/7 with Marketing Advisor Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
+      buttonText: "Learn More",
+      buttonLink: "/hvac/advisor-connect",
+      backgroundVideo: video1,
+      tag: " Advisorn Connect",
+      icon: <BiSolidMessageRoundedDots />,
+    },
+
+    {
+      id: 3,
+      title: "First impressions that earn the job",
+      description:
+        "With Marketing Advisor’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
+      buttonText: "Learn More",
+      buttonLink: "/hvac/website",
+      backgroundVideo: video3,
+      tag: "Website",
+      icon: "",
+    },
+    {
+      id: 4,
+      title: "Get a team that knows HVAC",
+      description:
+        "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
+      buttonText: "Learn More",
+      buttonLink: "/hvac/team-of-experts",
+      backgroundVideo: video4,
+      tag: "Marketing Team",
+      icon: "",
+    },
+    {
+      id: 5,
+      title: "Get to the top and stay there",
+      description:
+        "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
+      buttonText: "Learn More",
+      buttonLink: "/hvac/ranking-ai",
+      backgroundVideo: video5,
+      tag: "Ranking",
+      icon: "AI",
+    },
+    {
+      id: 6,
+      title: "Create a reputation for results",
+      description:
+        "In a competitive industry like HVAC, a strong reputation can be your greatest asset. With Reputation AI, get more 5-star reviews and use them to get more customers.",
+      buttonText: "Learn More",
+      buttonLink: "/hvac/reputation-ai",
+      backgroundVideo: video6,
+      tag: "Reputation",
+      icon: "AI",
+    },
+  ];
 
 
   //  refs & states
@@ -124,9 +125,9 @@ const testimonials = [
         {/* Header */}
         <div className="text-left mb-12 container mx-auto">
           <SharedTitleSection
-            category="Revenuemax Solutions"
-            title="HVAC Marketing That Makes You the First Call"
-            highlightText="First Call"
+            category="Everything you need"
+            title="Roofing marketing that makes you the first call"
+            highlightText="the first call"
             theme="dark"
           />
         </div>

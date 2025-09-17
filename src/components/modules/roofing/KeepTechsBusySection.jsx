@@ -1,4 +1,4 @@
-import img from "../../../assets/images/hvac/hvac-houses.png.2506041957058.webp";
+import img from "../../../assets/images/roofing/roofing-houses.2506041957550.png";
 import Button from "../../ui/Button";
 
 const KeepTechsBusySection = () => {
@@ -14,10 +14,10 @@ const KeepTechsBusySection = () => {
       <div className="relative z-10 flex items-center justify-center min-h-[400px] sm:min-h-[500px] md:min-h-[700px] lg:min-h-[800px] px-4">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            Keep Your Techs Busy
+            More roofs. More neighborhoods. Less slow days.
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            And your job board full.
+            More jobs on the books.
           </p>
 
           {/* Button Center Fix */}

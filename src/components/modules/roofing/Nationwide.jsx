@@ -29,11 +29,10 @@ const row3 = [logo15, logo16, logo17, logo18, logo19, logo20, logo21];
 export default function Nationwide() {
   return (
     <div className="bg-gradient-to-b from-blue-50 to-white py-20 md:py-36 overflow-hidden ">
- 
       <SharedTitleSection
         category=""
-        title="Trusted by HVAC companies nationwide"
-        highlightText="HVAC companies"
+        title="Trusted by roofing companies nationwide"
+        highlightText="roofing companies"
         align="center"
       />
 

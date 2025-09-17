@@ -1,6 +1,6 @@
-import img1 from "../../../assets/images/hvac/woman.webp";
-import img2 from "../../../assets/images/hvac/group.webp";
-import img3 from "../../../assets/images/hvac/news.webp";
+import img1 from "../../../assets/images/roofing/RoofingSEO.jpg.2507231248215.webp";
+import img2 from "../../../assets/images/roofing/unnamed.3).0000000000000.jpg";
+import img3 from "../../../assets/images/roofing/roofer-social-media.2303230739550.jpg";
 import Button from "../../ui/Button";
 import { Link } from "react-router";
 import SharedTitleSection from "../../../shared/SharedTitleSection";
@@ -10,22 +10,21 @@ const HvacNewsSection = () => {
     {
       id: 1,
       date: "Jul 23, 2024",
-      title: "Why SEO Marketing for HVAC Businesses Matters More Than Ever",
+      title: "Roofing SEO Marketing: What AI Search Means for Your Business",
       image: img1,
       link: "/hvac/Insights/blog",
     },
     {
       id: 2,
       date: "Jul 10, 2024",
-      title:
-        "How HVAC and Plumbing Businesses Are Winning More Jobs in a Changing Market",
+      title: "Build Your Strategy: A Roofer's Guide to Social Media",
       image: img2,
       link: "/hvac/Insights/blog2",
     },
     {
       id: 3,
       date: "Jul 3, 2024",
-      title: "Your HVAC Website Should Work as Hard as You Do",
+      title: "A Roofer's Guide to Personalized Marketing",
       image: img3,
       link: "/hvac/Insights/blog3",
     },
@@ -38,10 +37,9 @@ const HvacNewsSection = () => {
         <div className="text-center mb-18">
           <SharedTitleSection
             category="your competitive advantage"
-            title="HVAC news and insights"
-            highlightText="HVAC"
-            description="The information you need to maximize your revenue."
-            descriptionSize="text-base md:text-4xl"
+            title="Roofing news and insights"
+            highlightText="Roofing"
+          
             align="center"
           />
         </div>
