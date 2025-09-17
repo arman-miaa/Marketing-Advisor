@@ -1,6 +1,6 @@
-import img1 from "../../../assets/images/hvac/woman.webp";
-import img2 from "../../../assets/images/hvac/group.webp";
-import img3 from "../../../assets/images/hvac/news.webp";
+import img1 from "../../../assets/images/plumbing/PlumbingSEO.jpg.2507231250371.webp";
+import img2 from "../../../assets/images/plumbing/plumbermarketingideas3.jpg.2506041520599.webp";
+import img3 from "../../../assets/images/plumbing/shutterstock_1741950797.2309111330550.jpg";
 import Button from "../../ui/Button";
 import { Link } from "react-router";
 import SharedTitleSection from "../../../shared/SharedTitleSection";
@@ -10,22 +10,23 @@ const HvacNewsSection = () => {
     {
       id: 1,
       date: "Jul 23, 2024",
-      title: "Why SEO Marketing for HVAC Businesses Matters More Than Ever",
+      title:
+        "Is Your Plumbing Business Ready for AI Search? Here’s What SEO Success Looks Like Now",
       image: img1,
       link: "/hvac/Insights/blog",
     },
     {
       id: 2,
       date: "Jul 10, 2024",
-      title:
-        "How HVAC and Plumbing Businesses Are Winning More Jobs in a Changing Market",
+      title: "15 of the Best Plumbing Marketing Strategies for Your Business",
       image: img2,
       link: "/hvac/Insights/blog2",
     },
     {
       id: 3,
       date: "Jul 3, 2024",
-      title: "Your HVAC Website Should Work as Hard as You Do",
+      title:
+        "10 Creative Video Marketing Examples to Improve Your Plumbing Business",
       image: img3,
       link: "/hvac/Insights/blog3",
     },
@@ -38,8 +39,8 @@ const HvacNewsSection = () => {
         <div className="text-center mb-18">
           <SharedTitleSection
             category="your competitive advantage"
-            title="HVAC news and insights"
-            highlightText="HVAC"
+            title="News and insights for plumbers"
+            highlightText="plumbers"
             description="The information you need to maximize your revenue."
             descriptionSize="text-base md:text-4xl"
             align="center"

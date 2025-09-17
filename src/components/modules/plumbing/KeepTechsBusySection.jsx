@@ -1,4 +1,4 @@
-import img from "../../../assets/images/hvac/hvac-houses.png.2506041957058.webp";
+import img from "../../../assets/images/plumbing/plumbing-houses.png.2506042000456.webp";
 import Button from "../../ui/Button";
 
 const KeepTechsBusySection = () => {

@@ -1,7 +1,8 @@
-import img1 from "../../../assets/images/hvac/hembree-vans.jpg";
-import img2 from "../../../assets/images/hvac/Hedricks-Group.jpg.2506040928374.webp";
-import img3 from "../../../assets/images/hvac/bill-gouty.jpg.2506111016246.webp";
-import img4 from "../../../assets/images/hvac/JC-Refrigeration.2006041556273.png";
+import img1 from "../../../assets/images/plumbing/ez-flow-plumbing-mainstage.jpg";
+import img2 from "../../../assets/images/plumbing/frame_145.jpg.2507221053168.webp";
+import img3 from "../../../assets/images/plumbing/frame_36.jpg.2506111342200.webp";
+import img4 from "../../../assets/images/plumbing/frame_1021243.1.jpg.2506111341090.webp";
+import img5 from "../../../assets/images/plumbing/Main-Image.2004021616186.jpg";
 
 import video1 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (10) [hvac-10].mp4";
 import video2 from "../../../assets/images/hvac/HVAC Marketing & Advertising Services (11) [hvac-11].mp4";
@@ -25,31 +26,40 @@ const VideoTestimonialsSection = () => {
     {
       id: 1,
       quote:
-        "Just in the past few years since our partnership with Marketing Advisor began, Hembree Heating & Air has grown by over 3x.",
-      company: "Hembree Heating & Air Conditioning",
+        "My team at Scorpion makes sure to get me set up with the best strategy for reaching my long-term business goals.",
+      company: "EZ Flow Plumbing",
       backgroundImage: img1,
       videoUrl: video1,
     },
     {
       id: 2,
-      quote: "If I could give my past self any advice...",
-      company: "Hedrick's Service Now",
+      quote:
+        "I feel very confident about our business’s future now that Scorpion is on our team. Scorpion will get you what you need.”",
+      company: "The Rooter Company",
       backgroundImage: img2,
       videoUrl: video2,
     },
     {
       id: 3,
       quote:
-        "Our revenue has increased dramatically since working with Marketing Advisor.",
-      company: "Arctic Air Home Services",
+        "If we had never encountered Scorpion and found a pure solution to our marketing problem, we would probably be non-existent.",
+      company: "Molberg Plumbing",
       backgroundImage: img3,
       videoUrl: video3,
     },
     {
       id: 4,
       quote:
-        "The results speak for themselves - we're booking more jobs than ever.",
-      company: "ServiceOne AC & Plumbing",
+        "Before Scorpion, we’d have to check if our phones were working. Now, I can focus on serving clients while the leads come in.",
+      company: "JC Plumbing",
+      backgroundImage: img4,
+      videoUrl: video4,
+    },
+    {
+      id: 5,
+      quote:
+        "When Scorpion and all these things came into play, I love my life, I love my job. It’s like 10-fold of what it used to be.",
+      company: "Kerrygold Plumbing",
       backgroundImage: img4,
       videoUrl: video4,
     },
@@ -67,7 +77,7 @@ const VideoTestimonialsSection = () => {
         <div className=" container mx-auto ">
           <SharedTitleSection
             category="Featured Testimonials"
-            title="Spotlight stories for HVAC companies"
+            title="Spotlight stories for plumbers"
             highlightText="Spotlight"
           />
         </div>
@@ -129,7 +139,7 @@ const VideoTestimonialsSection = () => {
 
         {/* Pagination container */}
         <div className="container mx-auto">
-          <div className="custom-pagination  mt-8 bg-white p-5 px-8 border border-gray-300 w-fit rounded-full inline-flex gap-4" />
+          <div className="custom-pagination  mt-8 bg-gray-200 p-5 px-8 border border-gray-300 w-fit rounded-full inline-flex gap-4" />
         </div>
       </div>
 

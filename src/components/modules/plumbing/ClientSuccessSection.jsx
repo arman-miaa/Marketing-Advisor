@@ -20,50 +20,50 @@ const clientData = [
   {
     id: 1,
     logo: slideImg1,
-    metric: "$4M",
-    title: "Revenue increase",
+    metric: "32x",
+    title: "Return on total Investment",
     description:
-      "Just in the past few years since our partnership with Marketing Advisor began, Hembree Heating & Air has grown by over 3x.",
+      "Scorpion's efforts have increased my lead volume drastically. Their platform ties to my scheduling software and I am pleased with the outcome.",
   },
   {
     id: 2,
     logo: slideImg2,
-    metric: "25x",
-    title: "Return on total investment",
+    metric: "9x",
+    title: "Return on paid investment",
     description:
-      "If I could give my past self any advice on marketing, I would say look to Marketing Advisor sooner.",
+      "With Scorpion's help and custom-tailored marketing solutions, Swift Services, a home services company in South Carolina, is experiencing meaningful growth.",
   },
   {
     id: 3,
     logo: slideImg3,
-    metric: "9x",
-    title: "Return on paid investment",
+    metric: "64%",
+    title: "Increase in monthly revenue",
     description:
-      "With Marketing Advisor's help and custom-tailored marketing solutions, Swift Services, a home services company in South Carolina, is experiencing meaningful growth.",
+      "My team at Scorpion makes sure to get me set up with the best strategy for reaching my long-term business goals.",
   },
   {
     id: 4,
     logo: slideImg4,
-    metric: "18x",
-    title: "Attributed return on total investment",
+    metric: "8x",
+    title: "Return on total investment",
     description:
-      "As a long-time Marketing Advisor client, Arctic Air Home Services continues to see double-digit revenue growth and strong ROI powered by Marketing Advisor's RevenueMAX.",
+      "I feel very confident about our business’s future now that Scorpion is on our team. Scorpion will get you what you need.",
   },
   {
     id: 5,
     logo: slideImg5,
-    metric: "2x",
-    title: "Increase in revenue growth",
+    metric: "49%",
+    title: "Increase in revenue",
     description:
-      "Our cost per lead is going down, and our organic search rankings are going up. It's been a really great experience.",
+      "If we had never encountered Scorpion and found a pure solution to our marketing problem, we would probably be non-existent.",
   },
   {
     id: 6,
     logo: slideImg6,
-    metric: "35%",
-    title: "Increase in average ticket value",
+    metric: "20%",
+    title: "Increase in revenue",
     description:
-      "Marketing Advisor's AI technology drives in calls that are bookable jobs.",
+      "Scorpion is all about results, constantly gives you reports, will answer any questions you have to the best of their ability.",
   },
 ];
 
@@ -78,7 +78,7 @@ export default function ClientSuccessSection() {
           <SharedTitleSection
             category="Client Success"
             title="Results that make a difference"
-            highlightText="difference"
+            highlightText="Results"
           />
         </div>
 
