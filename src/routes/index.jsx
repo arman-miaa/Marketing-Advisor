@@ -42,6 +42,7 @@ import Plumbing from "../pages/plumbing/Plumbing";
 import Roofing from "../pages/roofing/Roofing";
 import MarketingSolutions2 from "../pages/electrical/marketing-solutions/MarketingSolutions";
 import AdvisorConnect2 from "../pages/electrical/AdvisorConnect";
+import AdvertisingAi2 from "../pages/electrical/AdvertisingAi";
 
 export const router = createBrowserRouter([
   {
@@ -79,12 +80,16 @@ export const router = createBrowserRouter([
 
       // electrical page
       {
-        path: "/electrical",
+        path: "/c",
         Component: Electrical,
       },
       {
         path: "/electrical/marketing-solutions",
         Component: MarketingSolutions2,
+      },
+      {
+        path: "/electrical/advertising-ai",
+        Component: AdvertisingAi2,
       },
       {
         path: "/electrical/advisor-connect",
