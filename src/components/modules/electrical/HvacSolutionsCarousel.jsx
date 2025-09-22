@@ -41,17 +41,6 @@ const testimonials = [
   },
   {
     id: 3,
-    title: "First impressions that earn the job",
-    description:
-      "With Marketing Advisor’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
-    buttonText: "Learn More",
-    buttonLink: "/electrical/website",
-    backgroundVideo: video3,
-    tag: "Website",
-    icon: "",
-  },
-  {
-    id: 4,
     title: "Get a team that knows HVAC",
     description:
       "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
@@ -61,6 +50,18 @@ const testimonials = [
     tag: "Marketing Team",
     icon: "",
   },
+  {
+    id: 4,
+    title: "First impressions that earn the job",
+    description:
+      "With Marketing Advisor’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
+    buttonText: "Learn More",
+    buttonLink: "/electrical/website",
+    backgroundVideo: video3,
+    tag: "Website",
+    icon: "",
+  },
+
   {
     id: 5,
     title: "Get to the top and stay there",
