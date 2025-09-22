@@ -41,6 +41,7 @@ import PestControl from "../pages/pest-control/PestControl";
 import Plumbing from "../pages/plumbing/Plumbing";
 import Roofing from "../pages/roofing/Roofing";
 import MarketingSolutions2 from "../pages/electrical/marketing-solutions/MarketingSolutions";
+import AdvisorConnect2 from "../pages/electrical/AdvisorConnect";
 
 export const router = createBrowserRouter([
   {
@@ -84,6 +85,10 @@ export const router = createBrowserRouter([
       {
         path: "/electrical/marketing-solutions",
         Component: MarketingSolutions2,
+      },
+      {
+        path: "/electrical/advisor-connect",
+        Component: AdvisorConnect2,
       },
 
       // hvac page

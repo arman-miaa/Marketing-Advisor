@@ -23,7 +23,7 @@ const testimonials = [
     description:
       "Be there 24/7 with Marketing Advisor Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
     buttonText: "Learn More",
-    buttonLink: "/hvac/advisor-connect",
+    buttonLink: "/electrical/advisor-connect",
     backgroundVideo: video1,
     tag: " Advisorn Connect",
     icon: <BiSolidMessageRoundedDots />,
