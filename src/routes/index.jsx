@@ -80,7 +80,7 @@ export const router = createBrowserRouter([
 
       // electrical page
       {
-        path: "/c",
+        path: "/electrical",
         Component: Electrical,
       },
       {
