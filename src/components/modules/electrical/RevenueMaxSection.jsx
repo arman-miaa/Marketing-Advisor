@@ -68,7 +68,7 @@ export default function RevenueMaxSection() {
                 jobs, and revenue for your HVAC business.
               </p>
               <div className="flex flex-wrap gap-4 items-center">
-                <Link to="/hvac/marketing-solutions">
+                <Link to="/electrical/marketing-solutions">
                   <button className="px-6 py-3 rounded-full border cursor-pointer text-lg border-blue-600 text-blue-600 font-semibold shadow-md transition">
                     Learn More
                   </button>

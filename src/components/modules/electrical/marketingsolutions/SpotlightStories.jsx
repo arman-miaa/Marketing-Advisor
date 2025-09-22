@@ -18,9 +18,9 @@ export default function SpotlightStories() {
       {/* Section Header */}
       <div className="container mx-auto mb-8">
         <SharedTitleSection
-          category="our clients' wins"
-          title="The reason why we exist: to celebrate the success of electricians like you."
-          highlightText="success of electricians"
+          category="Featured Testimonials"
+          title="Spotlight stories for electricians"
+          highlightText="Spotlight"
         />
       </div>
 
@@ -41,23 +41,15 @@ export default function SpotlightStories() {
           {/* Logo */}
           <img src={img1} alt="West Houston Electric" className="h-12 mb-3" />
 
-          <div className="flex items-center gap-4 md:gap-8">
-            <div>
-              <h3 className="font-bold text-3xl md:text-7xl">32%</h3>
-              <p className="text-lg font-semibold">More total leads</p>
-            </div>
-            <div>
-              {/* Quote */}
-              <p className="text-lg md:text-2xl italic mb-4">
-                “Working with Scorpion has been a game changer.”
-              </p>
+          {/* Quote */}
+          <p className="text-lg md:text-2xl italic mb-4">
+            “Working with Scorpion has been a game changer.”
+          </p>
 
-              {/* Company Name */}
-              <p className="text-sm md:text-lg font-semibold">
-                Steven Dayo - West Houston Electric, Inc.
-              </p>
-            </div>
-          </div>
+          {/* Company Name */}
+          <p className="text-sm md:text-lg font-semibold">
+            West Houston Electric, Inc.
+          </p>
         </div>
 
         {/* Play Button */}

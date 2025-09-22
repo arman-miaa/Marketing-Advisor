@@ -35,10 +35,12 @@ import AcceptableUsePolicy from "../pages/footer/AcceptableUsePolicy";
 import PrivacyPolicy from "../pages/footer/PrivacyPolicy";
 import LeadershipDetail from "../components/modules/footer/about/LeadershipDetail";
 import Electrical from "../pages/electrical/Electrical";
+
 import Landscaping from "../pages/landscaping/Landscaping";
 import PestControl from "../pages/pest-control/PestControl";
 import Plumbing from "../pages/plumbing/Plumbing";
 import Roofing from "../pages/roofing/Roofing";
+import MarketingSolutions2 from "../pages/electrical/marketing-solutions/MarketingSolutions";
 
 export const router = createBrowserRouter([
   {
@@ -78,6 +80,10 @@ export const router = createBrowserRouter([
       {
         path: "/electrical",
         Component: Electrical,
+      },
+      {
+        path: "/electrical/marketing-solutions",
+        Component: MarketingSolutions2,
       },
 
       // hvac page
