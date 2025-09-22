@@ -46,6 +46,7 @@ import AdvertisingAi2 from "../pages/electrical/AdvertisingAi";
 import TeamOfExperts2 from "../pages/electrical/Team-of-experts";
 import Website2 from "../pages/electrical/Website";
 import RankingAi2 from "../pages/electrical/Ranking-ai";
+import ReputationAi2 from "../pages/electrical/Reputation-ai";
 
 export const router = createBrowserRouter([
   {
@@ -109,6 +110,10 @@ export const router = createBrowserRouter([
       {
         path: "/electrical/rankign-ai",
         Component: RankingAi2,
+      },
+      {
+        path: "/electrical/reputaion-ai",
+        Component: ReputationAi2,
       },
 
       // hvac page
