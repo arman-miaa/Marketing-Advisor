@@ -108,11 +108,11 @@ export const router = createBrowserRouter([
         Component: Website2,
       },
       {
-        path: "/electrical/rankign-ai",
+        path: "/electrical/ranking-ai",
         Component: RankingAi2,
       },
       {
-        path: "/electrical/reputaion-ai",
+        path: "/electrical/reputation-ai",
         Component: ReputationAi2,
       },
 
