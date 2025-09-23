@@ -214,7 +214,7 @@ export default function MoreStoriesSlides() {
 
               {/* HVAC Text on Top */}
               <span className="absolute top-4 left-4 text-white text-xs font-bold z-10 px-2 py-1 rounded">
-                Electrical
+                HVAC
               </span>
 
               {/* Overlay Content Bottom */}

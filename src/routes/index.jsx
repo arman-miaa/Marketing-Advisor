@@ -47,6 +47,10 @@ import TeamOfExperts2 from "../pages/electrical/Team-of-experts";
 import Website2 from "../pages/electrical/Website";
 import RankingAi2 from "../pages/electrical/Ranking-ai";
 import ReputationAi2 from "../pages/electrical/Reputation-ai";
+import EInsightsBlog from "../pages/electrical/InsightsBlog";
+import EInsightsBlog2 from "../pages/electrical/InsightsBlog2";
+import EInsightsBlog3 from "../pages/electrical/InsightsBlog3";
+import EInsightsBlog4 from "../pages/electrical/InsightsBlog4";
 
 export const router = createBrowserRouter([
   {
@@ -88,6 +92,10 @@ export const router = createBrowserRouter([
         Component: Electrical,
       },
       {
+        path: "/electrical/get-started",
+        Component: GetStarted,
+      },
+      {
         path: "/electrical/marketing-solutions",
         Component: MarketingSolutions2,
       },
@@ -114,6 +122,22 @@ export const router = createBrowserRouter([
       {
         path: "/electrical/reputation-ai",
         Component: ReputationAi2,
+      },
+      {
+        path: "/electrical/insights/blog",
+        Component: EInsightsBlog,
+      },
+      {
+        path: "/electrical/insights/blog2",
+        Component: EInsightsBlog2,
+      },
+      {
+        path: "/electrical/insights/blog3",
+        Component: EInsightsBlog3,
+      },
+      {
+        path: "/electrical/insighs/blog4",
+        Component: EInsightsBlog4,
       },
 
       // hvac page

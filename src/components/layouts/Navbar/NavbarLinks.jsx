@@ -6,7 +6,8 @@ import { Link, useLocation } from "react-router";
 export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkClick }) {
   const navRef = useRef(null);
   const location = useLocation();
-  const isInsightsPage = location.pathname.startsWith("/hvac/insights");
+  const isInsightsPage =
+    location.pathname.startsWith("/hvac/insights") || "/electrical/insights";
  const isAboutDetailPage =
    location.pathname.startsWith("/about-us/") ||
    location.pathname.startsWith("/accommodations") ||

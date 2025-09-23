@@ -11,7 +11,7 @@ const HvacNewsSection = () => {
       date: "Jul 23, 2024",
       title: "What Every Electrician Should Know About SEO",
       image: img1,
-      link: "/hvac/Insights/blog",
+      link: "/electrical/Insights/blog",
     },
     {
       id: 2,
@@ -19,14 +19,14 @@ const HvacNewsSection = () => {
       title:
         "10 Creative Electrical Advertising Ideas to Power Up Your Business",
       image: img2,
-      link: "/hvac/Insights/blog2",
+      link: "/electrical/Insights/blog2",
     },
     {
       id: 3,
       date: "Jul 3, 2024",
       title: "6 Ways Scorpion Can Help Electricians Attract More Business",
       image: img3,
-      link: "/hvac/Insights/blog3",
+      link: "/electrical/Insights/blog3",
     },
   ];
 
@@ -64,7 +64,7 @@ const HvacNewsSection = () => {
               {/* HR before Learn More */}
               <hr className="border-white/30 my-4" />
 
-              <Link to="/hvac/insights/blog">
+              <Link to="/electrical/insights/blog">
                 <button className="mt-1 cursor-pointer text-white flex items-center gap-1 hover:text-blue-100">
                   Learn More →
                 </button>
@@ -107,7 +107,7 @@ const HvacNewsSection = () => {
 
         {/* More Insights Button */}
         <div className="text-left mt-16">
-          <Button text="More Insights" to="/hvac/insights/blog4" />
+          <Button text="More Insights" to="/electrical/insights/blog4" />
         </div>
       </div>
     </section>

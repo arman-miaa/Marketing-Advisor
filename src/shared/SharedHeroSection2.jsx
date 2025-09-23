@@ -1,5 +1,3 @@
-
-
 function SharedHeroSection2({ heading, subHeading, imageSrc, bgGradient }) {
   return (
     <div
@@ -8,11 +6,13 @@ function SharedHeroSection2({ heading, subHeading, imageSrc, bgGradient }) {
     >
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 mt-12">
         {/* Left Side - Text */}
-        <div className="flex flex-col justify-center  text-center md:text-left max-w-xl">
-          <h1 className="text-3xl md:text-5xl text-left md:text-center  font-bold md:leading-14 tracking-wide">
+        <div className="flex flex-col justify-center text-center md:text-left max-w-xl">
+          <h1 className="text-3xl md:text-5xl font-bold md:leading-14 tracking-wide text-center md:text-left">
             {heading}
           </h1>
-          <p className="text-3xl text-left md:text-center md:text-xl mt-4">{subHeading}</p>
+          <p className="text-xl md:text-2xl mt-4 text-center md:text-left">
+            {subHeading}
+          </p>
         </div>
 
         {/* Right Side - Image */}
