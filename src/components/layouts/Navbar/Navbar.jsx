@@ -16,12 +16,13 @@ export default function Navbar() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const isInsightsPage =
-    location.pathname.startsWith("/hvac/insights") || "/electrical/insights";;
+    location.pathname.startsWith("/hvac/insights") ;
 
   // ✅ নতুন চেক: /about/:id page এর জন্য
   // const isAboutDetailPage = location.pathname.startsWith("/about-us/");
   const isAboutDetailPage =
     location.pathname.startsWith("/about-us/") ||
+    location.pathname.startsWith("/electrical/insights") ||
     location.pathname.startsWith("/accommodations") ||
     location.pathname.startsWith("/privacy-policy") ||
     location.pathname.startsWith("/acceptable-use-policy");

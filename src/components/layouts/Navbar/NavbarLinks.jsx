@@ -7,9 +7,10 @@ export default function NavbarLinks({ activeDropdown, setActiveDropdown, onLinkC
   const navRef = useRef(null);
   const location = useLocation();
   const isInsightsPage =
-    location.pathname.startsWith("/hvac/insights") || "/electrical/insights";
+    location.pathname.startsWith("/hvac/insights") ;
  const isAboutDetailPage =
    location.pathname.startsWith("/about-us/") ||
+   location.pathname.startsWith("/electrical/insights" )||
    location.pathname.startsWith("/accommodations") ||
    location.pathname.startsWith("/privacy-policy") ||
    location.pathname.startsWith("/acceptable-use-policy");

@@ -51,6 +51,7 @@ import EInsightsBlog from "../pages/electrical/InsightsBlog";
 import EInsightsBlog2 from "../pages/electrical/InsightsBlog2";
 import EInsightsBlog3 from "../pages/electrical/InsightsBlog3";
 import EInsightsBlog4 from "../pages/electrical/InsightsBlog4";
+import GetStarted2 from "../pages/electrical/GetStarted";
 
 export const router = createBrowserRouter([
   {
@@ -93,7 +94,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/electrical/get-started",
-        Component: GetStarted,
+        Component: GetStarted2,
       },
       {
         path: "/electrical/marketing-solutions",
