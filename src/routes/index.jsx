@@ -52,6 +52,7 @@ import EInsightsBlog2 from "../pages/electrical/InsightsBlog2";
 import EInsightsBlog3 from "../pages/electrical/InsightsBlog3";
 import EInsightsBlog4 from "../pages/electrical/InsightsBlog4";
 import GetStarted2 from "../pages/electrical/GetStarted";
+import PGetStarted from "../pages/pest-control/GetStarted";
 
 export const router = createBrowserRouter([
   {
@@ -257,6 +258,10 @@ export const router = createBrowserRouter([
       {
         path: "/pest-control",
         Component: PestControl,
+      },
+      {
+        path: "/pest-control/get-started",
+        Component: PGetStarted,
       },
 
       // plumbing page

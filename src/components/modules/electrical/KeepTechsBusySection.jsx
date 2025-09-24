@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import img from "../../../assets/images/hvac/hvac-houses.png.2506041957058.webp";
 import Button from "../../ui/Button";
 
@@ -22,7 +23,11 @@ const KeepTechsBusySection = () => {
 
           {/* Button Center Fix */}
           <div className="flex justify-center">
-            <Button text="Learn How" className="w-full md:w-auto" />
+            <Button
+              text="Learn How"
+              to="/electrical/get-started"
+              className="w-full md:w-auto"
+            />
           </div>
         </div>
       </div>

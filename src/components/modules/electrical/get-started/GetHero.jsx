@@ -1,5 +1,6 @@
 import { useState } from "react";
 import heroImg from "../../../../assets/images/electrical/get-started/GS-HS.jpg.2508191547130.webp";
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
 
 export default function GetHero() {
   const [formData, setFormData] = useState({
@@ -34,32 +35,22 @@ export default function GetHero() {
       <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32 flex items-center min-h-screen">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-40 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
-            <p className="text-blue-400 text-sm font-medium tracking-[0.4em] uppercase">
-              GET STARTED
-            </p>
+          <div className="">
+            <SharedTitleSection
+              category=""
+              title="We Bring You Revenue, Not Just Leads."
+              highlightText="Not Just Leads."
+              description="Stop chasing leads. Start booking high-value jobs.
+"
+              descriptionSize="text-base md:text-4xl"
+              theme="dark"
+            />
 
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Maximize Your{" "}
-              <span className="inline-block bg-white text-gray-900 px-4 py-1 rounded-lg">
-                Revenue
-              </span>
-            </h1>
-
-            <div className="space-y-4">
+            <div className="-mt-10">
               <p className="text-gray-300 text-lg">
-                <span className="text-white font-semibold">Marketing</span> that
-                brings you the right jobs at the right time.
-              </p>
-              <p className="text-gray-300 text-lg">
-                <span className="text-white font-semibold">Advertising</span>{" "}
-                that spends and targets intelligently to grow your business.
-              </p>
-              <p className="text-gray-300 text-lg">
-                <span className="text-white font-semibold">
-                  Revenue-driven technology
-                </span>{" "}
-                specifically built for you.
+                With decades of experience and millions of leads tracked to real
+                revenue, we make your business easy to hire and impossible to
+                ignore.
               </p>
             </div>
           </div>
