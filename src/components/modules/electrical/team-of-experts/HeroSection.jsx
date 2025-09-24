@@ -8,7 +8,7 @@ export default function HeroSection() {
       subHeading="Is Our Business"
       description="Your business deserves experts in HVAC marketing. Now you have them."
       buttonText="Get Started"
-      buttonLink="/hvac/get-started"
+      buttonLink="/electrical/get-started"
     />
   );
 }

@@ -8,7 +8,7 @@ export default function HeroSection() {
       subHeading="In Real Jobs"
       description="Show up where it matters. Get more HVAC jobs."
       buttonText="Get Started"
-      buttonLink="/hvac/get-started"
+      buttonLink="/electrical/get-started"
     />
   );
 }

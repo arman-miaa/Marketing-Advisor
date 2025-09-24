@@ -8,7 +8,7 @@ export default function HeroSection() {
       subHeading="Get Chosen."
       description="Electrical websites that get you more customers."
       buttonText="Get Started"
-      buttonLink="/hvac/get-started"
+      buttonLink="/electrical/get-started"
     />
   );
 }

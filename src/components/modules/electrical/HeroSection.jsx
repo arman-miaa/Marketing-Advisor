@@ -55,7 +55,7 @@ function HeroSection() {
 
         {/* CTA Button */}
         <div className="mb-12 md:mb-16 w-full flex justify-center ">
-          <Button text="Get Started" to="/hvac/get-started" />
+          <Button text="Get Started" to="/electrical/get-started" />
         </div>
 
         {/* Partner Logos - now using reusable component */}

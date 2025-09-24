@@ -8,7 +8,7 @@ export default function HeroSection() {
       subHeading="Drives Bookings"
       description="When it comes to someone choosing you, your reputation is a deal-maker."
       buttonText="Get Started"
-      buttonLink="/hvac/get-started"
+      buttonLink="/electrical/get-started"
     />
   );
 }

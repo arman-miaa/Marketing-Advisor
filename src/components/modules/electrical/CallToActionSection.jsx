@@ -18,7 +18,7 @@ export default function CallToActionSection() {
           </h3>
           {/* btn */}
           <div className="flex justify-center">
-            <Button text={` Learn How Today`} to="/hvac/get-started" />
+            <Button text={` Learn How Today`} to="/electrical/get-started" />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import SharedTitleSection from "../../../../shared/SharedTitleSection";
 
 export default function RevenueSection() {

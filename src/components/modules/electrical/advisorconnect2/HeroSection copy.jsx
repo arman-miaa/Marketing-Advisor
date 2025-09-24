@@ -9,7 +9,7 @@ export default function HeroSection() {
       subHeading="Visit Count"
       description="Convert more customers without lifting a finger."
       buttonText="Get Started"
-      buttonLink="/hvac/get-started"
+      buttonLink="/electrical/get-started"
     />
   );
 }
