@@ -55,6 +55,7 @@ import GetStarted2 from "../pages/electrical/GetStarted";
 import PGetStarted from "../pages/pest-control/GetStarted";
 import PMarketingSolutions from "../pages/pest-control/Marketing-solutions";
 import PLeadsAi from "../pages/pest-control/LeadsAi";
+import PRevenueIntelligence from "../pages/pest-control/RevenueIntelligence";
 
 export const router = createBrowserRouter([
   {
@@ -272,6 +273,10 @@ export const router = createBrowserRouter([
       {
         path: "/pest-control/marketing-solutions",
         Component: PMarketingSolutions,
+      },
+      {
+        path: "/pest-control/revenue-intelligence",
+        Component: PRevenueIntelligence,
       },
 
       // plumbing page

@@ -4,7 +4,7 @@ import Button from "../../../ui/Button";
 export default function AdvertisingBenefitsSection() {
   return (
     <section className="py-16 md:py-30 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
