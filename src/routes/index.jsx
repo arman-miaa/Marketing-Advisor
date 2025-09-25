@@ -54,6 +54,7 @@ import EInsightsBlog4 from "../pages/electrical/InsightsBlog4";
 import GetStarted2 from "../pages/electrical/GetStarted";
 import PGetStarted from "../pages/pest-control/GetStarted";
 import PMarketingSolutions from "../pages/pest-control/Marketing-solutions";
+import PLeadsAi from "../pages/pest-control/LeadsAi";
 
 export const router = createBrowserRouter([
   {
@@ -259,6 +260,10 @@ export const router = createBrowserRouter([
       {
         path: "/pest-control",
         Component: PestControl,
+      },
+      {
+        path: "/pest-control/leads-ai",
+        Component: PLeadsAi,
       },
       {
         path: "/pest-control/get-started",
