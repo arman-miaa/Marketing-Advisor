@@ -1,4 +1,4 @@
-import rightImg from "../../../../assets/images/marketing-solutions/leads-ai/HS_Solo-87.2505122129550.jpg";
+import rightImg from "../../../../assets/images/pest-control/HS_Solo-87.2505122129550.jpg";
 import SharedBulletSection from "../../../../shared/SharedBulletSection";
 
 export default function BuiltToDoMore() {
@@ -20,8 +20,8 @@ export default function BuiltToDoMore() {
   return (
     <SharedBulletSection
       category="Turn Leads Into Revenue "
-      title="Leads that turn into high-quality jobs"
-      highlightText="high-quality"
+      title="Leads that turn into services"
+      highlightText="Leads"
       points={points}
       buttonText="Get More Leads"
       buttonLink="/hvac/get-started"

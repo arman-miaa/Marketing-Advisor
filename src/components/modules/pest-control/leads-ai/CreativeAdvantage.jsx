@@ -7,11 +7,11 @@ export default function CreativeAdvantage() {
         {/* Header Content */}
 
         <SharedContentSection
-          subtitle="No More Questions"
-          description="No confusion. No wasted spend. Budgets AI puts your dollars where they get results—and gives you visibility every step along the way."
+          subtitle="Knowledge is Money"
+          description="Leads AI tells you everything you need to know about your leads, immediately. RevenueMAX uses that data to make smarter marketing decisions, automatically."
           descriptionSize="text-2xl md:text-5xl "
           buttonText="Get Started"
-          buttonLink="/hvac/get-started"
+          buttonLink="/pest-control/get-started"
         />
       </div>
     </section>

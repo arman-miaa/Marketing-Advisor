@@ -28,9 +28,9 @@ export default function WebImpact() {
       <ResponsiveCardSection
         cards={cards}
         category="know what's working"
-        title="Which leads are turning into jobs?"
-        highlightText="jobs?"
-        description="Every HVAC business wants to know: “Are the leads worth my time?”, “Are they ready to book?”, and “How are my CSRs handling them?” Leads AI gives you the answer. Every time."
+        title="Which leads are turning into treatments?"
+        highlightText="treatments?"
+        description="Every pest control business wants to know, “Are the leads worth my time?” “Are they ready to book?” and “How are we closing them?” Leads AI gives you the answer. Every time."
         descriptionSize="md:text-3xl mt-8 font-medium"
       />
     </section>

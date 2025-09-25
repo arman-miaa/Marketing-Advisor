@@ -7,6 +7,7 @@ export default function FinalCtaSection() {
         category=""
         title="Ready to maximize your revenue?"
         highlight="maximize"
+        to="/pest-control/get-started"
       />
     </div>
   );

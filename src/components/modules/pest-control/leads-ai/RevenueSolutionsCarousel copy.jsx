@@ -24,7 +24,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Leads AI, you automatically know the value of every lead, get immediate summaries, and see the quality of every lead and intake.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/revenue-intelligence",
+      buttonLink: "/pest-control/revenue-intelligence",
       image: slideImg1,
       tag: "Leads",
       icon: "AI",
@@ -35,7 +35,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "One platform to rule them all, from the office to your most valuable neighborhoods. Know exactly how your marketing is driving revenue, all from the palm of your hand.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/platform-and-reporting",
+      buttonLink: "/pest-control/platform-and-reporting",
       image: slideImg2,
       tag: "Advisor Platform",
     },
@@ -45,7 +45,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advertising-ai",
+      buttonLink: "/pest-control/advertising-ai",
       image: slideImg3,
       tag: "Digital Advertising",
       icon: "AI",
@@ -56,7 +56,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "Quickly turn visitors into leads with automated landing pages that give everything a potential customer needs to make you the obvious choice.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/website",
+      buttonLink: "/pest-control/website",
       image: slideImg4,
       tag: "Landing Page",
       icon: "AI",
@@ -67,7 +67,7 @@ const RevenueSolutionsCarousel = () => {
       description:
         "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/ranking-ai",
+      buttonLink: "/pest-control/ranking-ai",
       image: slideImg5,
       tag: "Ranking",
       icon: "AI",

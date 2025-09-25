@@ -9,7 +9,7 @@ export default function HeroSection() {
       heading="Not All Leads are"
       subHeading="Created Equal"
       description="Pest control companies finally know how to turn more leads into revenue."
-      buttonText="Find Out How"
+      buttonText="Get Started"
       buttonLink="/pest-control/get-started"
     />
   );
