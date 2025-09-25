@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Button from "../../../ui/Button";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
 
 const ExpertiseCarousel = () => {
   const testimonials = [
@@ -124,6 +125,13 @@ const ExpertiseCarousel = () => {
               growth.
             </span>{" "}
           </h2>
+        </div>
+        <div className="container mx-auto">
+          <SharedTitleSection
+            category="Marketing"
+            title=" Our expertise. Your growth."
+            highlightText="growth."
+          />
         </div>
 
         {/* Swiper Carousel */}

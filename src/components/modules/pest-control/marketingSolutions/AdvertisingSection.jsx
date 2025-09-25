@@ -21,7 +21,7 @@ export default function AdvertisingSection() {
       description:
         "With Advertising AI, your campaigns continuously improve, and even train other providers' AI (like Google, Microsoft, and Meta) to learn what works and remove what doesn’t.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advisor-connect",
+      buttonLink: "/pest-control/advisor-connect",
       backgroundVideo: bgVideo2,
       tag: " Digital Advertising",
       tab: "Experience advertising that drives revenue",
@@ -32,7 +32,7 @@ export default function AdvertisingSection() {
       description:
         "Quickly turn visitors into leads with automated landing pages that give everything a potential customer needs to make you the obvious choice.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/advertising-ai",
+      buttonLink: "/pest-control/advertising-ai",
       backgroundVideo: bgVideo3,
       tag: "Landing Page",
       tab: "Convert more with the right message",
@@ -43,7 +43,7 @@ export default function AdvertisingSection() {
       description:
         "With ads that run across the most important channels to your HVAC business, we’ll continue to invest in the ones that bring you the most jobs and revenue.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/website",
+      buttonLink: "/pest-control/website",
       backgroundVideo: bgVideo4,
       tag: "Budgets",
       tab: "See better returns",
@@ -54,7 +54,7 @@ export default function AdvertisingSection() {
       description:
         "Stand out with social media ads that make you the first thought when someone is faced with an HVAC problem.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/team-of-experts",
+      buttonLink: "/pest-control/team-of-experts",
       backgroundVideo: bgVideo5,
       tag: "Social Advertising",
       tab: "Hold their attention",
@@ -65,7 +65,7 @@ export default function AdvertisingSection() {
       description:
         "With high-quality video ads that showcase your brand and what you offer to the customers you want.",
       buttonText: "Learn More",
-      buttonLink: "/hvac/ranking-ai",
+      buttonLink: "/pest-control/ranking-ai",
       backgroundVideo: bgVideo5,
       tag: "Video Advertising",
       tab: "Make yourself known",
@@ -102,8 +102,10 @@ export default function AdvertisingSection() {
         {/* Header (STATIC) */}
         <SharedTitleSection
           category="Advertising"
-          title="Advertising technology for HVAC businesses that doubles down on what's driving the jobs you want."
-          highlightText="HVAC businesses"
+          title="Advertising technology that constantly works for your pest control business"
+          highlightText="pest control business"
+          description={`Spend smarter and increase your treatments.`}
+          descriptionSize="text-2xl md:text-4xl"
           theme="dark"
         />
 

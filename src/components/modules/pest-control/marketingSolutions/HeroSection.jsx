@@ -1,4 +1,4 @@
-import HeroImg from "../../../../assets/images/hvac/marketing-solutions/RevMax-Mainstage-Desktop-HVAC.jpg.webp";
+import HeroImg from "../../../../assets/images/pest-control/marketing-solutions/RevMax-Mainstage-Desktop-PestControl.jpg.webp";
 import Button from "../../../ui/Button";
 
 function HeroSection() {
@@ -23,12 +23,12 @@ function HeroSection() {
 
           {/* Subheading */}
           <p className="text-2xl lg:text-3xl mb-10 py-4 max-w-2xl leading-relaxed">
-            HVAC marketing that maximizes your revenue.
+            Pest control marketing with one goal: maximum revenue.
           </p>
 
           {/* CTA Button */}
           <div className="mb-12 md:mb-16 w-full flex justify-center">
-            <Button text="Get Started" to="/hvac/get-started" />
+            <Button text="Get Started" to="/pest-control/get-started" />
           </div>
         </div>
 

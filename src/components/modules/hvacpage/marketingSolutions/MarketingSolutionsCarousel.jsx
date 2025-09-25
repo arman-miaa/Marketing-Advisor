@@ -23,6 +23,7 @@ const MarketingSolutionsCarousel = () => {
       description:
         "With Leads AI, you automatically know the value of every lead, get immediate summaries, and see the quality of every lead and intake.",
       buttonText: "Learn More",
+      buttonLink: "/hvac/leads-ai",
       backgroundVideo: video1,
       tag: "Leads",
       icon: "AI",
@@ -33,6 +34,7 @@ const MarketingSolutionsCarousel = () => {
       description:
         "Get full visibility into revenue attribution, geographic insights, and return on investment so we can invest where it matters most.",
       buttonText: "Learn More",
+      buttonLink: "/hvac/revenue-intelligence",
       backgroundVideo: video2,
       tag: "Revenue Intelligence",
       icon: "",
@@ -43,6 +45,7 @@ const MarketingSolutionsCarousel = () => {
       description:
         "Be there 24/7 with Scorpion Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
       buttonText: "Learn More",
+      buttonLink: "/hvac/advisor-connect",
       backgroundVideo: video3,
       tag: "Advisor Connect",
       icon: <BiSolidMessageRoundedDots />,
@@ -53,6 +56,7 @@ const MarketingSolutionsCarousel = () => {
       description:
         "Our capacity planner integrates with your CRM to keep your job board full, no matter the season.",
       buttonText: "Learn More",
+      buttonLink: "/hvac/capacity-marketing-engine",
       backgroundVideo: video4,
       tag: "Capacity Marketing Engine",
       icon: "",
@@ -63,6 +67,7 @@ const MarketingSolutionsCarousel = () => {
       description:
         "One platform to rule them all, from the office to your most valuable neighborhoods. Know exactly how your marketing is driving revenue, all from the palm of your hand.",
       buttonText: "Learn More",
+      buttonLink: "/hvac/platform-and-reporting",
       backgroundVideo: video5,
       tag: "Advisor Platform",
       icon: "AI",
@@ -73,6 +78,7 @@ const MarketingSolutionsCarousel = () => {
       description:
         "In a competitive industry like HVAC, a strong reputation can be your greatest asset. With Reputation AI, get more 5-star reviews and use them to get more customers.",
       buttonText: "Learn More",
+      buttonLink: "/hvac/advisor-connect",
       backgroundVideo: video6,
       tag: "Convert",
       icon: "",
@@ -191,7 +197,7 @@ const MarketingSolutionsCarousel = () => {
                     </p>
                     {/* Button */}
                     <div className="  w-full md:w-auto flex-shrink-0">
-                      <Button text={testimonial.buttonText} to="/" />
+                      <Button text={testimonial.buttonText} to={testimonial.buttonLink} />
                     </div>
                   </div>
                 </div>

@@ -6,7 +6,7 @@ export default function WorkingWithTheBestSection() {
     <section className=" ">
       <SectionWithTitleImage
         title="Working with the Best"
-        subtitle="Connected with the providers that matter to maximize your revenue"
+        subtitle="Connected with the providers for pest control operators to maximize your revenue"
         imageSrc={sampleImage}
         imageAlt="Working with the best providers"
       />

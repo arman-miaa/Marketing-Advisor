@@ -106,7 +106,7 @@ export default function TestimonialsSection() {
           <SharedTitleSection
             category="Client Testimonials"
             title="The people and the results that matter most."
-            highlightText="matter most."
+            highlightText="results"
             theme="dark"
           />
         </div>
@@ -142,9 +142,7 @@ export default function TestimonialsSection() {
                   {/* Blue Overlay Box */}
                   <div className="absolute bottom-0 left-0 w-full bg-blue-800/60 bg-opacity-95 text-white p-4">
                     {/* Quote */}
-                    <p className=" mb-3 line-clamp-3">
-                      "{client.quote}"
-                    </p>
+                    <p className=" mb-3 line-clamp-3">"{client.quote}"</p>
 
                     {/* Name + Title + Play Btn */}
                     <div className="flex items-center justify-between mt-12 mb-8">
@@ -170,13 +168,11 @@ export default function TestimonialsSection() {
 
         {/* Custom Pagination নিচে */}
         <div className="w-fit mx-auto">
-
-        <div
-          ref={paginationRef}
-          className="mt-10 bg-blue-800 cursor-pointer flex  justify-center gap-2 border-gray-400 border p-4 rounded-full w-fit mx-auto  "
-        />
+          <div
+            ref={paginationRef}
+            className="mt-10 bg-blue-800 cursor-pointer flex  justify-center gap-2 border-gray-400 border p-4 rounded-full w-fit mx-auto  "
+          />
         </div>
-        
       </div>
       {/* Video Modal */}
       {isModalOpen && (

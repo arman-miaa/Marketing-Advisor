@@ -12,7 +12,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Button from "../../../ui/Button";
-import { BiSolidMessageRoundedDots } from "react-icons/bi";
+
+import SharedTitleSection from "../../../../shared/SharedTitleSection";
 
 const ExpertiseCarousel = () => {
   const testimonials = [
@@ -22,6 +23,7 @@ const ExpertiseCarousel = () => {
       description:
         "With Scorpion’s award-winning designers and developers, your new website will look great, load fast, and make you the easy choice.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/website",
       backgroundVideo: video1,
       tag: "Website",
       icon: "",
@@ -32,6 +34,7 @@ const ExpertiseCarousel = () => {
       description:
         "You need a marketing team that knows your business. Now you have one, complete with HVAC marketing experts and over two decades of experience maximizing revenue for businesses like yours.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/team-of-experts",
       backgroundVideo: video2,
       tag: "Marketing Team",
       icon: "",
@@ -42,6 +45,7 @@ const ExpertiseCarousel = () => {
       description:
         "With our search engine optimization technology, Ranking AI, your business will show up for the searches that bring you customers, not empty clicks and traffic.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/ranking-ai",
       backgroundVideo: video3,
       tag: "Ranking",
       icon: "AI",
@@ -52,6 +56,7 @@ const ExpertiseCarousel = () => {
       description:
         "In a competitive industry like HVAC, a strong reputation can be your greatest asset. With Reputation AI, get more 5-star reviews and use them to get more customers.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/reputation-ai",
       backgroundVideo: video4,
       tag: "Reputation",
       icon: "AI",
@@ -62,6 +67,7 @@ const ExpertiseCarousel = () => {
       description:
         "See your HVAC company come to life with professionally produced videos and photography that show why you’re the best in your space.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/brand-storytelling",
       backgroundVideo: video5,
       tag: "Brand Storytelling",
       icon: "",
@@ -72,6 +78,7 @@ const ExpertiseCarousel = () => {
       description:
         "From content creation to running ads and most importantly, keeping your brand top of mind, we handle your social media so you’re always top of mind.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/leads-ai",
       backgroundVideo: video6,
       tag: "Convert",
       icon: "",
@@ -111,19 +118,15 @@ const ExpertiseCarousel = () => {
   }, [activeIndex]);
 
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-blue-50 py-16 md:pt-30 px-4">
+    <section className="bg-gradient-to-b from-white to-blue-50 py-16 md:pt-30 px-4">
       <div>
         {/* Header */}
-        <div className="text-left mb-12 container mx-auto">
-          <p className="text-blue-500 uppercase font-semibold tracking-wider mb-4">
-            Marketing
-          </p>
-          <h2 className="text-4xl md:text-6xl mt-12 font-bold text-white">
-            Our expertise. Your
-            <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 rounded-md text-black">
-              growth.
-            </span>{" "}
-          </h2>
+        <div className="container mx-auto">
+          <SharedTitleSection
+            category="Marketing"
+            title="Get more customers. Grow your revenue."
+            highlightText="revenue."
+          />
         </div>
 
         {/* Swiper Carousel */}
@@ -188,7 +191,7 @@ const ExpertiseCarousel = () => {
                     </p>
                     {/* Button */}
                     <div className="  w-full md:w-auto flex-shrink-0">
-                      <Button text={testimonial.buttonText} to="/" />
+                      <Button text={testimonial.buttonText} to={testimonial.buttonLink} />
                     </div>
                   </div>
                 </div>

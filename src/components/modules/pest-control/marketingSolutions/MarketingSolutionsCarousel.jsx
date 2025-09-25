@@ -2,8 +2,7 @@ import video1 from "../../../../assets/images/hvac/box1.mp4";
 import video2 from "../../../../assets/images/hvac/output4.mp4";
 import video3 from "../../../../assets/images/hvac/HVAC Marketing & Advertising Services (12) [hvac-12].mp4";
 import video4 from "../../../../assets/images/hvac/output6.mp4";
-import video5 from "../../../../assets/images/hvac/HVAC Marketing & Advertising Services (13) [hvac-13].mp4";
-import video6 from "../../../../assets/images/hvac/output2.mp4";
+
 
 import { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,10 +18,11 @@ const MarketingSolutionsCarousel = () => {
   const testimonials = [
     {
       id: 1,
-      title: "Every lead, fully realized",
+      title: "Understand every lead",
       description:
-        "With Leads AI, you automatically know the value of every lead, get immediate summaries, and see the quality of every lead and intake.",
+        "With Leads AI, you automatically know everything about your leads, from quality to intake.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/leads-ai",
       backgroundVideo: video1,
       tag: "Leads",
       icon: "AI",
@@ -33,6 +33,7 @@ const MarketingSolutionsCarousel = () => {
       description:
         "Get full visibility into revenue attribution, geographic insights, and return on investment so we can invest where it matters most.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/revenue-intelligence",
       backgroundVideo: video2,
       tag: "Revenue Intelligence",
       icon: "",
@@ -43,38 +44,20 @@ const MarketingSolutionsCarousel = () => {
       description:
         "Be there 24/7 with Scorpion Connect: your AI customer service rep that answers questions, books appointments, accepts payments, and gives potential customers everything they need to turn into a booked job.",
       buttonText: "Learn More",
+      buttonLink: "/pest-control/advisor-connect",
       backgroundVideo: video3,
       tag: "Advisor Connect",
       icon: <BiSolidMessageRoundedDots />,
     },
     {
       id: 4,
-      title: "Keep your schedule full",
-      description:
-        "Our capacity planner integrates with your CRM to keep your job board full, no matter the season.",
-      buttonText: "Learn More",
-      backgroundVideo: video4,
-      tag: "Capacity Marketing Engine",
-      icon: "",
-    },
-    {
-      id: 5,
       title: "See everything in one place",
       description:
-        "One platform to rule them all, from the office to your most valuable neighborhoods. Know exactly how your marketing is driving revenue, all from the palm of your hand.",
+        "Advisor platform goes where you go. Know exactly how your marketing is driving revenue, from right where you are.",
       buttonText: "Learn More",
-      backgroundVideo: video5,
+      buttonLink: "/pest-control/platform-and-reporting",
+      backgroundVideo: video4,
       tag: "Advisor Platform",
-      icon: "AI",
-    },
-    {
-      id: 6,
-      title: "Create a reputation for results",
-      description:
-        "In a competitive industry like HVAC, a strong reputation can be your greatest asset. With Reputation AI, get more 5-star reviews and use them to get more customers.",
-      buttonText: "Learn More",
-      backgroundVideo: video6,
-      tag: "Convert",
       icon: "",
     },
   ];
@@ -124,8 +107,10 @@ const MarketingSolutionsCarousel = () => {
         <div className="container mx-auto md:px-10">
           <SharedTitleSection
             category="at the forefront"
-            title="Marketing and technology for HVAC companies that books more jobs."
-            highlightText="more jobs."
+            title="Marketing technology built for pest control operators"
+            highlightText="pest control operators"
+            description={`Full routes. More recurring revenue.`}
+            descriptionSize="text-2xl md:text-4xl"
           />
         </div>
 
@@ -164,8 +149,6 @@ const MarketingSolutionsCarousel = () => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40" />
 
-           
-
                 {/* top tag */}
 
                 <div className="absolute top-0 left-0 right-0 p-8 text-white">
@@ -191,7 +174,7 @@ const MarketingSolutionsCarousel = () => {
                     </p>
                     {/* Button */}
                     <div className="  w-full md:w-auto flex-shrink-0">
-                      <Button text={testimonial.buttonText} to="/" />
+                      <Button text={testimonial.buttonText} to={testimonial.buttonLink} />
                     </div>
                   </div>
                 </div>
