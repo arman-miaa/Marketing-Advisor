@@ -1,6 +1,7 @@
 
 
 import { useState } from "react";
+import SharedTitleSection from "../../../shared/SharedTitleSection";
 
 
 export default function ContactFormSection() {
@@ -34,13 +35,16 @@ export default function ContactFormSection() {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Heading */}
-          <div className="space-y-4  text-center">
-            <p className=" font-medium text-blue-600 tracking-wider uppercase">
-              Ready to talk now?
-            </p>
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900">
-              Let's do it.
-            </h2>
+          <div className="space-y-4  text-left">
+         
+            <SharedTitleSection
+              category="Contact US"
+              title="Let’s Get Connected,"
+              highlightText="opportunities."
+              description="Tell us about your ultimate goal and we’ll
+              help you reach it. Fill out a form or schedule a call."
+              descriptionSize="text-base md:text-2xl"
+            />
           </div>
 
           {/* Right side - Form */}
