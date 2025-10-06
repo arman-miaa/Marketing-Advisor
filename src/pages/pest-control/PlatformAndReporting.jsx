@@ -6,7 +6,7 @@ import RevenueSolutionsCarousel from "../../components/modules/pest-control/plat
 
 import NavigationMenu from "../../shared/NavigationMenu";
 import WebImpact from "../../components/modules/pest-control/platform-and-reporting/WebImpact";
-
+// helo
 
 export default function PPlatformAndReporting() {
   return (
